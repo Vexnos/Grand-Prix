@@ -1,0 +1,1 @@
+execute positioned -734 133 -4043 as @a[distance=..5,tag=!hailstone] run function race:checkpoints/hailstone
