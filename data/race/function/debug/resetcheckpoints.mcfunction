@@ -1,26 +1,4 @@
-# Teams
-team join 1 @a
-
-# Gamemode
-gamemode adventure @a
-
-# Effects
-effect give @a saturation infinite 0 true
-effect give @a regeneration infinite 1 true
-
-# Time
-time set 0
-
-# TP all players
-tp @a -302 119 -4283
-
-# Spawn
-setworldspawn -302 119 -4283
-spawnpoint @a -302 119 -4283
-
-# Scoreboards
 scoreboard players set @a checkpoints 0
-scoreboard objectives setdisplay list checkpoints
 scoreboard players set #checkpoint hailstone 0
 scoreboard players set #checkpoint northwindPass 0
 scoreboard players set #checkpoint ardoniArena 0
@@ -73,15 +51,3 @@ tag @a remove sendaria
 tag @a remove ardoniCemetery
 tag @a remove nestoria
 tag @a remove galePoint
-
-# Gamerules
-gamerule keepInventory true
-gamerule doImmediateRespawn true
-gamerule randomTickSpeed 0
-gamerule doMobSpawning false
-gamerule doDaylightCycle false
-gamerule doWeatherCycle false
-gamerule mobGriefing false
-
-# Worldborder
-worldborder set 40
