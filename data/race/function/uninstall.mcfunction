@@ -59,3 +59,4 @@ scoreboard objectives remove sendaria
 scoreboard objectives remove ardoniCemetery
 scoreboard objectives remove nestoria
 scoreboard objectives remove galePoint
+scoreboard objectives remove countdown

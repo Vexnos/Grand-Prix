@@ -35,8 +35,10 @@ scoreboard objectives add sendaria dummy
 scoreboard objectives add ardoniCemetery dummy
 scoreboard objectives add nestoria dummy
 scoreboard objectives add galePoint dummy
+scoreboard objectives add countdown dummy
 scoreboard objectives setdisplay below_name health
 scoreboard players set #max checkpoints 24
+scoreboard players set #countdown countdown 0
 
 # Main
 function race:main_10t

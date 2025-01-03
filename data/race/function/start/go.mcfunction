@@ -21,6 +21,7 @@ give @a simple_backpack:backpack
 # Titles
 title @a title {"text":"GO!","color":"green","bold":true}
 execute as @a at @s run playsound minecraft:item.goat_horn.sound.0 master @s
+execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
 
 # Leave Team 
 team leave @a

@@ -83,6 +83,10 @@ gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule mobGriefing false
 
+# Remove all XP
+xp set @a 0 levels
+xp set @a 0 points
+
 # Worldborder
 worldborder center -302 -4283
-worldborder set 40
+worldborder set 61
