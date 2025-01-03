@@ -84,4 +84,5 @@ gamerule doWeatherCycle false
 gamerule mobGriefing false
 
 # Worldborder
+worldborder center -302 -4283
 worldborder set 40

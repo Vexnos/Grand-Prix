@@ -1,5 +1,16 @@
-execute positioned -734 133 -4043 as @a[distance=..5,tag=!hailstone] run function race:checkpoints/hailstone
-execute positioned -22 174 -3419 as @a[distance=..5,tag=!northwindPass] run function race:checkpoints/northwindpass
-execute positioned -551 61 -3363 as @a[distance=..5,tag=!ardoniArena] run function race:checkpoints/ardoniarena
-execute positioned -1152 119 -2990 as @a[distance=..5,tag=!kaltaria] run function race:checkpoints/kaltaria
-execute positioned -1528 79 -2459 as @a[distance=..5,tag=!voltaria] run function race:checkpoints/voltaria
+execute in minecraft:overworld positioned -734 133 -4043 as @a[distance=..1,tag=!hailstone] run function race:checkpoints/hailstone
+execute in minecraft:overworld positioned -22 174 -3419 as @a[distance=..1,tag=!northwindPass] run function race:checkpoints/northwindpass
+execute in minecraft:overworld positioned -551 61 -3363 as @a[distance=..1,tag=!ardoniArena] run function race:checkpoints/ardoniarena
+execute in minecraft:overworld positioned -1152 119 -2990 as @a[distance=..1,tag=!kaltaria] run function race:checkpoints/kaltaria
+execute in minecraft:overworld positioned -1528 79 -2459 as @a[distance=..1,tag=!voltaria] run function race:checkpoints/voltaria
+execute in minecraft:overworld positioned -1291 90 -1302 as @a[distance=..1,tag=!oakendale] run function race:checkpoints/oakendale
+execute in minecraft:overworld positioned -1946 168 -967 as @a[distance=..1,tag=!etherea] run function race:checkpoints/etherea
+execute in minecraft:overworld positioned -3805 102 -63 as @a[distance=..1,tag=!felora] run function race:checkpoints/felora
+execute in minecraft:overworld positioned -3416 82 385 as @a[distance=..1,tag=!fortZuka] run function race:checkpoints/fortzuka
+execute in minecraft:overworld positioned -1376 81 -186 as @a[distance=..1,tag=!redstoneAcademy] run function race:checkpoints/redstoneacademy
+execute in minecraft:overworld positioned -703 84 -178 as @a[distance=..1,tag=!vault] run function race:checkpoints/vault
+execute in minecraft:the_nether positioned -376 58 -1089 as @a[distance=..1,tag=!nazgard] run function race:checkpoints/nazgard
+execute in minecraft:the_end positioned -1113 55 -472 as @a[distance=..1,tag=!theEnd] run function race:checkpoints/theend
+execute in minecraft:overworld positioned -703 99 579 as @a[distance=..1,tag=!crownPeak] run function race:checkpoints/crownpeak
+execute in minecraft:overworld positioned -21 199 894 as @a[distance=..1,tag=!mtVelgrin] run function race:checkpoints/mtvelgrin
+execute in minecraft:overworld positioned -55 51 2470 as @a[distance=..1,tag=!tartarus] run function race:checkpoints/tartarus

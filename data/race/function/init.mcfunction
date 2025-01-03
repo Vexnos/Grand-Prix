@@ -4,9 +4,6 @@ team modify 1 collisionRule never
 team modify 1 friendlyFire false
 team join 1 @a
 
-# Worldborder
-worldborder center -302 -4283
-
 # Spawn
 setworldspawn -302 119 -4283
 
