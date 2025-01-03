@@ -1,0 +1,22 @@
+# Set Spawnpoint
+execute in minecraft:overworld run spawnpoint @s -193 99 -2383
+tellraw @s {"text":"Spawnpoint Set!","color":"green"}
+
+# Compasses
+clear @s compass
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 615, 111, -3165]}},custom_name='{"text":"☆ Ardoni Cemetary ☆","color":"gold","italic":false}']
+
+# Checkpoint score
+scoreboard players add @s checkpoints 1
+
+# Surplus Items
+# execute unless score #checkpoint sendaria matches 1.. run function race:items/sendaria
+
+# Tags and Scoreboards
+scoreboard players set #checkpoint sendaria 1
+tag @s add sendaria
+
+# Titles
+title @s actionbar {"text":"Checkpoint!","color":"green"}
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Sendaria!","color":"gold"}]
+execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
