@@ -20,3 +20,6 @@ tag @s add northwindPass
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Northwind Pass!","color":"gold"}]
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
+
+# Catchup
+effect give @a[tag=!northwindPass] speed 40 1 false

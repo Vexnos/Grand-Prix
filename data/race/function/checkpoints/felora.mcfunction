@@ -20,3 +20,6 @@ tag @s add felora
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Felora!","color":"gold"}]
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
+
+# Catchup
+effect give @a[tag=!felora] speed 40 1 false

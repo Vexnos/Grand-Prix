@@ -20,3 +20,6 @@ tag @s add fortZuka
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Fort Zuka!","color":"gold"}]
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
+
+# Catchup
+effect give @a[tag=!fortZuka] speed 40 1 false

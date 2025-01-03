@@ -20,3 +20,6 @@ tag @s add nestoria
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Nestoria!","color":"gold"}]
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
+
+# Catchup
+effect give @a[tag=!nestoria] speed 40 1 false

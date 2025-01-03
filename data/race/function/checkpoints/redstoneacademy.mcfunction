@@ -20,3 +20,6 @@ tag @s add redstoneAcademy
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the Redstone Academy!","color":"gold"}]
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
+
+# Catchup
+effect give @a[tag=!redstoneAcademy] speed 40 1 false
