@@ -82,6 +82,7 @@ gamerule doMobSpawning false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule mobGriefing false
+gamerule fallDamage false
 
 # Remove all XP
 xp set @a 0 levels

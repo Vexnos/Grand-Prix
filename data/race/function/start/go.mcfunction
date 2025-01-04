@@ -5,6 +5,7 @@ gamemode survival @a
 gamerule doMobSpawning true
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
+gamerule fallDamage true
 
 # Worldborder
 worldborder center 0 0
