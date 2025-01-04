@@ -4,7 +4,7 @@ tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -703, 82, -178]}},custom_name='{"text":"☆ Gale Point ☆","color":"gold","italic":false}']
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -16, 76, -4704]}},custom_name='{"text":"☆ Gale Point ☆","color":"gold","italic":false}']
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1
