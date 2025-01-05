@@ -11,8 +11,8 @@ clear @s compass
 # Surplus Items
 
 # Titles
-execute unless score #checkpoint galePoint matches 1.. run title @a title [{"selector":"@s","color":"dark_green"},{"text":" has Won!","color":"gold"}]
-execute if score #checkpoint galePoint matches 1.. run title @a title [{"selector":"@s","color":"dark_green"},{"text":" has Finished!","color":"gold"}]
+execute unless score #checkpoint galePoint matches 1.. run tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has Won!","color":"gold"}]
+execute if score #checkpoint galePoint matches 1.. run tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has Finished!","color":"gold"}]
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
 
 # Resistance
