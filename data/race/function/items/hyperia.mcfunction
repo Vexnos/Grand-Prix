@@ -7,5 +7,5 @@ give @a diamond_axe[enchantments={levels:{sharpness:3}}]
 give @a golden_apple 3
 give @a end_crystal 16
 give @a obsidian 32
-give @a cooked_beef 32
+give @a cooked_beef 16
 give @a potion[potion_contents={potion:"minecraft:strong_swiftness"}]
