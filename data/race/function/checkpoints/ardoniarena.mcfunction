@@ -1,4 +1,6 @@
 # Set Spawnpoint
+execute in minecraft:overworld run spawnpoint @s -551 61 -3363
+tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
