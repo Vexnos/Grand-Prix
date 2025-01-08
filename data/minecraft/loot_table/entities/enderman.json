@@ -1,0 +1,45 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "bonus_rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 1,
+                                "min": 0
+                            },
+                            "function": "minecraft:set_count"
+                        },
+                        {
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 1,
+                                "min": 0
+                            },
+                            "enchantment": "minecraft:looting",
+                            "function": "minecraft:enchanted_count_increase",
+                            "conditions": []
+                        }
+                    ],
+                    "name": "minecraft:ender_pearl"
+                }
+            ],
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "dimension": "minecraft:overworld"
+                    }
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:entities/enderman"
+}
