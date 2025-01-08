@@ -10,7 +10,7 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 1569, 8
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #checkpoint ardoniCemetery matches 1.. run function race:items/ardonicemetary
+execute unless score #checkpoint ardoniCemetery matches 1.. run function race:items/ardonicemetery
 
 # Tags and Scoreboards
 scoreboard players set #checkpoint ardoniCemetery 1
@@ -18,7 +18,7 @@ tag @s add ardoniCemetery
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the Ardoni Cemetary!","color":"gold"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the Ardoni Cemetery!","color":"gold"}]
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup
