@@ -84,9 +84,15 @@ gamerule doWeatherCycle false
 gamerule mobGriefing false
 gamerule fallDamage false
 
+# Reset all Advancements
+advancement revoke @a everything
+
 # Remove all XP
 xp set @a 0 levels
 xp set @a 0 points
+
+# Clear Inventories
+clear @a
 
 # Worldborder
 worldborder center -302 -4283
