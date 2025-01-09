@@ -19,6 +19,7 @@ tag @s add hyperia
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Hyperia!","color":"gold"}]
+advancement grant @s only race:hyperia
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup

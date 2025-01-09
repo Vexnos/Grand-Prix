@@ -18,6 +18,7 @@ tag @s add nazgard
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Nazgard!","color":"gold"}]
+advancement grant @s only race:nazgard
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup

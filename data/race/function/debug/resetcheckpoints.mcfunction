@@ -51,3 +51,6 @@ tag @a remove sendaria
 tag @a remove ardoniCemetery
 tag @a remove nestoria
 tag @a remove galePoint
+
+# Revoke all Advancements
+advancement revoke @a everything

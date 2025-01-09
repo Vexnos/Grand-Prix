@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:allium"
+        },
+        "title": {
+            "text": "Ardonia Grand Prix",
+            "type": "text"
+        },
+        "description": {
+            "text": "Enter the Race!",
+            "type": "text",
+            "color": "#01f4e3"
+        },
+        "background": "minecraft:textures/block/stone_bricks.png",
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

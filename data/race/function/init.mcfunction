@@ -2,10 +2,6 @@
 team add 1 "Be Nice"
 team modify 1 collisionRule never
 team modify 1 friendlyFire false
-team join 1 @a
-
-# Spawn
-setworldspawn -302 119 -4283
 
 # Scoreboards
 scoreboard objectives add checkpoints dummy

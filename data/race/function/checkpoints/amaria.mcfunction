@@ -19,6 +19,7 @@ tag @s add amaria
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Amaria!","color":"gold"}]
+advancement grant @s only race:amaria
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup

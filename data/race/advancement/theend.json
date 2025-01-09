@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "title": {
+            "text": "The End",
+            "type": "text",
+            "color": "#FFFF55"
+        },
+        "description": {
+            "text": "Reach the End",
+            "type": "text",
+            "color": "#FFFF55"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "race:nazgard",
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

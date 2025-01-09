@@ -19,6 +19,7 @@ tag @s add etherea
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Etherea!","color":"gold"}]
+advancement grant @s only race:etherea
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup

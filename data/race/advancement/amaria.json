@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:potion",
+            "components": {
+                "potion_contents": "regeneration",
+                "enchantment_glint_override": true
+            }
+        },
+        "title": {
+            "text": "Amaria",
+            "type": "text",
+            "color": "#FFFF55"
+        },
+        "description": {
+            "text": "Reach Amaria",
+            "type": "text",
+            "color": "#FFFF55"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent": "race:meridian",
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

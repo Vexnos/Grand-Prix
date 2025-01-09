@@ -14,6 +14,7 @@ clear @s compass
 execute unless score #checkpoint galePoint matches 1.. run tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has Won!","color":"gold"}]
 execute if score #checkpoint galePoint matches 1.. run tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has Finished!","color":"gold"}]
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
+advancement grant @s only race:galepoint
 
 # Resistance
 effect give @s resistance infinite 5 true

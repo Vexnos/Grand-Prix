@@ -19,6 +19,7 @@ tag @s add sendaria
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Sendaria!","color":"gold"}]
+advancement grant @s only race:sendaria
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup

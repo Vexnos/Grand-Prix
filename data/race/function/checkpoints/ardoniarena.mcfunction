@@ -19,6 +19,7 @@ tag @s add ardoniArena
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the Tournament Arena!","color":"gold"}]
+advancement grant @s only race:ardoniarena
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup

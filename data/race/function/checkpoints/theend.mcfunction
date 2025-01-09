@@ -17,6 +17,7 @@ tag @s add theEnd
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
 tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the End!","color":"gold"}]
+advancement grant @s only race:theend
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup

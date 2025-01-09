@@ -94,6 +94,9 @@ xp set @a 0 points
 # Clear Inventories
 clear @a
 
+# Kill rogue items
+kill @e[type=item]
+
 # Worldborder
 worldborder center -302 -4283
 worldborder set 61
