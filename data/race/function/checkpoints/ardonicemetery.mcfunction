@@ -18,7 +18,7 @@ tag @s add ardoniCemetery
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the Ardoni Cemetery!","color":"gold"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the ","color":"gold"},{"text":"Ardoni Cemetery!","color":"green"}]
 advancement grant @s only race:ardonicemetery
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

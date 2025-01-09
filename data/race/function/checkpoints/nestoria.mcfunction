@@ -18,7 +18,7 @@ tag @s add nestoria
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Nestoria!","color":"gold"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"Nestoria!","color":"green"}]
 advancement grant @s only race:nestoria
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

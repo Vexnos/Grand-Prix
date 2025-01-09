@@ -18,7 +18,7 @@ tag @s add biggerton
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Biggerton!","color":"gold"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"Biggerton!","color":"green"}]
 advancement grant @s only race:biggerton
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

@@ -18,7 +18,7 @@ tag @s add redstoneAcademy
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the Redstone Academy!","color":"gold"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached the ","color":"gold"},{"text":"Redstone Academy!","color":"green"}]
 advancement grant @s only race:redstoneacademy
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

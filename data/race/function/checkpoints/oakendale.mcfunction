@@ -18,7 +18,7 @@ tag @s add oakendale
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached Oakendale!","color":"gold"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"Oakendale!","color":"green"}]
 advancement grant @s only race:oakendale
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
