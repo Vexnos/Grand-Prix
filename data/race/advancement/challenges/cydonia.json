@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:creeper_head"
+            "id": "minecraft:dead_bush"
         },
         "title": {
-            "text": "Boom Boom Boom",
+            "text": "Cydonia",
             "type": "text"
         },
         "description": {
-            "text": "Die to a Creeper in Felora",
+            "text": "Kill a player in Cydonia",
             "type": "text"
         },
         "frame": "challenge",
@@ -19,27 +19,30 @@
     "parent": "race:firstshrine",
     "criteria": {
         "root": {
-            "trigger": "minecraft:entity_killed_player",
+            "trigger": "minecraft:player_killed_entity",
             "conditions": {
-                "entity": {
-                    "type": "minecraft:creeper",
+                "player": {
                     "location": {
                         "position": {
                             "x": {
-                                "min": -4184,
-                                "max": -2862
+                                "min": -634,
+                                "max": 1737
                             },
                             "y": {
-                                "min": 45,
-                                "max": 175
+                                "min": 40,
+                                "max": 200
                             },
                             "z": {
-                                "min": -664,
-                                "max": 904
+                                "min": 3096,
+                                "max": 4860
                             }
                         },
+                        "biomes": "minecraft:desert",
                         "dimension": "minecraft:overworld"
                     }
+                },
+                "entity": {
+                    "type": "minecraft:player"
                 }
             }
         }

@@ -1,14 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:vine"
+            "id": "minecraft:creeper_head"
         },
         "title": {
-            "text": "Do it for the Vine",
+            "text": "Boom Boom Boom",
             "type": "text"
         },
         "description": {
-            "text": "Die to a Phantom in Ataraxia",
+            "text": "Die to a Creeper in Felden",
             "type": "text"
         },
         "frame": "challenge",
@@ -22,22 +22,23 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:phantom",
+                    "type": "minecraft:creeper",
                     "location": {
                         "position": {
                             "x": {
-                                "min": 59,
-                                "max": 344
+                                "min": -4184,
+                                "max": -2862
                             },
                             "y": {
-                                "min": 54,
-                                "max": 218
+                                "min": 45,
+                                "max": 175
                             },
                             "z": {
-                                "min": -778,
-                                "max": -564
+                                "min": -664,
+                                "max": 904
                             }
                         },
+                        "biomes": "minecraft:jungle",
                         "dimension": "minecraft:overworld"
                     }
                 }

@@ -60,3 +60,5 @@ scoreboard objectives remove ardoniCemetery
 scoreboard objectives remove nestoria
 scoreboard objectives remove galePoint
 scoreboard objectives remove countdown
+scoreboard objectives remove fallDistance
+scoreboard objectives remove deaths

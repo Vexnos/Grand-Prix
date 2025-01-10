@@ -1,0 +1,61 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:flint_and_steel"
+        },
+        "title": {
+            "text": "Time to Put an End to this Nuisance",
+            "type": "text"
+        },
+        "description": {
+            "text": "Set fire to Niika's tree fort",
+            "type": "text"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "race:firstshrine",
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -2975,
+                                "max": -2944
+                            },
+                            "y": {
+                                "min": 74,
+                                "max": 115
+                            },
+                            "z": {
+                                "min": 462,
+                                "max": 496
+                            }
+                        },
+                        "biomes": "minecraft:jungle",
+                        "dimension": "minecraft:overworld"
+                    }
+                },
+                "location": [
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "items": [
+                                "minecraft:flint_and_steel",
+                                "minecraft:fire_charge"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

@@ -32,6 +32,8 @@ scoreboard objectives add ardoniCemetery dummy
 scoreboard objectives add nestoria dummy
 scoreboard objectives add galePoint dummy
 scoreboard objectives add countdown dummy
+scoreboard objectives add fallDistance dummy
+scoreboard objectives add deaths deathCount
 scoreboard objectives setdisplay below_name health
 scoreboard players set #max checkpoints 24
 scoreboard players set #countdown countdown 0

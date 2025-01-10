@@ -1,0 +1,47 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:vine"
+        },
+        "title": {
+            "text": "Do It For the Vine",
+            "type": "text"
+        },
+        "description": {
+            "text": "Die to a Phantom in Ataraxia",
+            "type": "text"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "race:firstshrine",
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:phantom",
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": 59,
+                                "max": 344
+                            },
+                            "y": {
+                                "min": 54,
+                                "max": 218
+                            },
+                            "z": {
+                                "min": -778,
+                                "max": -564
+                            }
+                        },
+                        "dimension": "minecraft:overworld"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:water_bucket"
+        },
+        "title": {
+            "text": "Amaria'd",
+            "type": "text"
+        },
+        "description": {
+            "text": "This advancement explains itself",
+            "type": "text"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "race:firstshrine",
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
