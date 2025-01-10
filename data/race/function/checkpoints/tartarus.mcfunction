@@ -18,7 +18,7 @@ tag @s add tartarus
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"Tartarus!","color":"green"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Tartarus]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach Tartarus","color":"green"}}}]
 advancement grant @s only race:tartarus
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

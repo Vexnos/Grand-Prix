@@ -18,7 +18,7 @@ tag @s add northwindPass
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"Northwind Pass!","color":"green"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Northwind Pass]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach Northwind Pass","color":"green"}}}]
 advancement grant @s only race:northwindpass
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

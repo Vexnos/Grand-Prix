@@ -18,7 +18,7 @@ tag @s add fortZuka
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"Fort Zuka!","color":"green"}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Fort Zuka]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach Fort Zuka","color":"green"}}}]
 advancement grant @s only race:fortzuka
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
