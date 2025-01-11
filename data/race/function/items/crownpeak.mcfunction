@@ -7,4 +7,4 @@ give @a shield
 give @a diamond_sword[enchantments={levels:{sharpness:2,unbreaking:2}}]
 give @a bow[enchantments={levels:{power:3,unbreaking:2}}]
 give @a oak_log 16
-give @a cooked_salmon 32
+give @a cooked_salmon 16
