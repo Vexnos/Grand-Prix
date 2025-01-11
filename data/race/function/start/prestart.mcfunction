@@ -91,6 +91,9 @@ advancement revoke @a everything
 xp set @a 0 levels
 xp set @a 0 points
 
+# Kill Everyone to Reset Phantoms
+kill @a
+
 # Clear Inventories
 clear @a
 
