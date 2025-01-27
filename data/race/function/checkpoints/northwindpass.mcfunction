@@ -1,5 +1,5 @@
 # Set Spawnpoint
-execute in minecraft:overworld run spawnpoint @s -22 174 -3419
+execute in minecraft:overworld run spawnpoint @s -22 176 -3419
 tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
