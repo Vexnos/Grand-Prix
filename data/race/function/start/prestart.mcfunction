@@ -4,10 +4,6 @@ team join 1 @a
 # Gamemode
 gamemode adventure @a
 
-# Effects
-effect give @a saturation infinite 0 true
-effect give @a regeneration infinite 1 true
-
 # Time
 time set 0
 
@@ -91,8 +87,9 @@ advancement revoke @a everything
 xp set @a 0 levels
 xp set @a 0 points
 
-# Kill Everyone to Reset Phantoms
-kill @a
+# Effects
+effect give @a saturation infinite 0 true
+effect give @a regeneration infinite 1 true
 
 # Clear Inventories
 clear @a
