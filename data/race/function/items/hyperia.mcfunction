@@ -14,7 +14,7 @@ item replace entity @a armor.legs with diamond_leggings[enchantments={blast_prot
 item replace entity @a armor.feet with diamond_boots[enchantments={blast_protection:2,protection:2,feather_falling:2,depth_strider:3}]
 give @a diamond_pickaxe[enchantments={levels:{efficiency:5}}]
 give @a diamond_axe[enchantments={levels:{cleaving:2}}]
-give @a bow[enchantments={levels:{power:5,punch:2,flame:1,infinity:1}}]
+give @a bow[enchantments={levels:{power:5,punch:2,flame:1,infinity:1,unbreaking:3}}]
 give @a golden_apple 3
 give @a end_crystal 16
 give @a obsidian 32
