@@ -3,9 +3,9 @@ clear @a diamond_helmet
 clear @a diamond_chestplate
 clear @a diamond_leggings
 clear @a diamond_boots
-clear @a iron_axe
-clear @a iron_pickaxe
-clear @a bow
+# clear @a iron_axe
+# clear @a iron_pickaxe
+# clear @a bow
 
 # Surplus Items
 item replace entity @a armor.head with diamond_helmet[enchantments={blast_protection:2,protection:2,respiration:3,aqua_affinity:1}]

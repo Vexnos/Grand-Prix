@@ -3,8 +3,8 @@ clear @a iron_helmet
 clear @a iron_chestplate
 clear @a iron_leggings
 clear @a iron_boots
-clear @a diamond_sword
-clear @a bow
+# clear @a diamond_sword
+# clear @a bow
 clear @a shield
 
 # Surplus Items

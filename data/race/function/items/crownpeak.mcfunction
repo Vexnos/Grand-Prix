@@ -3,8 +3,8 @@ clear @a iron_helmet
 clear @a iron_chestplate
 clear @a iron_leggings
 clear @a iron_boots
-clear @a iron_sword
-clear @a bow
+# clear @a iron_sword
+# clear @a bow
 
 # Surplus Items
 item replace entity @a armor.chest with iron_chestplate[enchantments={levels:{protection:2}}]
