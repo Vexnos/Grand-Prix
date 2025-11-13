@@ -12,7 +12,7 @@
             "type": "text",
             "color": "#01f4e3"
         },
-        "background": "minecraft:textures/block/stone_bricks.png",
+        "background": "minecraft:block/deepslate_bricks",
         "frame": "goal",
         "show_toast": false,
         "announce_to_chat": false
