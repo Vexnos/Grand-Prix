@@ -3,7 +3,11 @@
         "icon": {
             "id": "minecraft:carrot_on_a_stick",
             "components": {
-                "custom_model_data": 2
+                "custom_model_data": {
+                    "floats": [
+                        2
+                    ]
+                }
             }
         },
         "title": {

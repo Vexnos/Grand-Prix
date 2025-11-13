@@ -3,7 +3,11 @@
         "icon": {
             "id": "minecraft:diamond_sword",
             "components": {
-                "custom_model_data": 11
+                "custom_model_data": {
+                    "floats": [
+                        11
+                    ]
+                }
             }
         },
         "title": {

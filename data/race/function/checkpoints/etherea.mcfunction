@@ -4,7 +4,7 @@ tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -3805, 100, -63]}},custom_name='{"text":"☆ Felora ☆","color":"gold","italic":false}']
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -3805, 100, -63]}},custom_name={"text":"☆ Felora ☆","color":"gold","italic":false}]
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1
@@ -18,7 +18,7 @@ tag @s add etherea
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Etherea]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach Etherea","color":"green"}}}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Etherea]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Etherea","color":"green"}}}]
 advancement grant @s only race:etherea
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

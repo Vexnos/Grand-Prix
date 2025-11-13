@@ -4,7 +4,7 @@ tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 1569, 83, -3202]}},custom_name='{"text":"☆ Nestoria ☆","color":"gold","italic":false}']
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 1569, 83, -3202]}},custom_name={"text":"☆ Nestoria ☆","color":"gold","italic":false}]
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1
@@ -18,7 +18,7 @@ tag @s add ardoniCemetery
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[The Ardoni Cemetery]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach the Ardoni Cemetery","color":"green"}}}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[The Ardoni Cemetery]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach the Ardoni Cemetery","color":"green"}}}]
 advancement grant @s only race:ardonicemetery
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

@@ -4,7 +4,7 @@ tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -21, 197, 894]}},custom_name='{"text":"☆ Mt Velgrin ☆","color":"gold","italic":false}']
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -21, 197, 894]}},custom_name={"text":"☆ Mt Velgrin ☆","color":"gold","italic":false}]
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1
@@ -18,7 +18,7 @@ tag @s add crownPeak
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Crown Peak]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach Crown Peak","color":"green"}}}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Crown Peak]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Crown Peak","color":"green"}}}]
 advancement grant @s only race:crownpeak
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

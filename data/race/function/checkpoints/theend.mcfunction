@@ -2,7 +2,7 @@
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -703, 97, 579]}},custom_name='{"text":"☆ Crown Peak ☆","color":"gold","italic":false}']
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -703, 97, 579]}},custom_name={"text":"☆ Crown Peak ☆","color":"gold","italic":false}]
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1
@@ -16,7 +16,7 @@ tag @s add theEnd
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[The End]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach The End","color":"green"}}}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[The End]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach The End","color":"green"}}}]
 advancement grant @s only race:theend
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

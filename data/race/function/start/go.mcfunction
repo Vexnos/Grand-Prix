@@ -16,8 +16,7 @@ effect clear @a
 
 # Inventory
 clear @a
-give @a compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -735, 130, -4042]}},custom_name='{"text":"☆ Hailstone ☆","color":"gold","italic":false}']
-give @a simple_backpack:backpack
+give @a compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -735, 130, -4042]}},custom_name={"text":"☆ Hailstone ☆","color":"gold","italic":false}]
 
 # Titles
 title @a title {"text":"GO!","color":"green","bold":true}

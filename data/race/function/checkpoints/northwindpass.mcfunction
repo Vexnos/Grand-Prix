@@ -4,7 +4,7 @@ tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -551, 59, -3363]}},custom_name='{"text":"☆ Ardoni Arena ☆","color":"gold","italic":false}']
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -551, 59, -3363]}},custom_name={"text":"☆ Ardoni Arena ☆","color":"gold","italic":false}]
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1
@@ -18,7 +18,7 @@ tag @s add northwindPass
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Northwind Pass]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach Northwind Pass","color":"green"}}}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Northwind Pass]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Northwind Pass","color":"green"}}}]
 advancement grant @s only race:northwindpass
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

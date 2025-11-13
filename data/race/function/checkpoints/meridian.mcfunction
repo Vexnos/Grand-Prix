@@ -4,7 +4,7 @@ tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 1569, 105, 1199]}},custom_name='{"text":"☆ Amaria ☆","color":"gold","italic":false}']
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 1569, 105, 1199]}},custom_name={"text":"☆ Amaria ☆","color":"gold","italic":false}]
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1
@@ -18,7 +18,7 @@ tag @s add meridian
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Meridian]","color":"green","hoverEvent":{"action":"show_text","contents":{"text":"Reach Meridian","color":"green"}}}]
+tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Meridian]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Meridian","color":"green"}}}]
 advancement grant @s only race:meridian
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
