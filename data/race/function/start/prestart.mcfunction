@@ -109,5 +109,5 @@ kill @e[type=item]
 difficulty peaceful
 
 # Worldborder
-worldborder center -302 -4283
-worldborder set 61
+worldborder center -283 -4264
+worldborder set 100
