@@ -18,7 +18,7 @@ tag @s add hailstone
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Hailstone]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Hailstone","color":"green"}}}]
+#tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Hailstone]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Hailstone","color":"green"}}}]
 advancement grant @s only race:hailstone
 execute as @s at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

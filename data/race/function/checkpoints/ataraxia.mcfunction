@@ -18,7 +18,7 @@ tag @s add ataraxia
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Ataraxia]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Ataraxia","color":"green"}}}]
+#tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Ataraxia]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Ataraxia","color":"green"}}}]
 advancement grant @s only race:ataraxia
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 

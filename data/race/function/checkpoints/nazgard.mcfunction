@@ -17,7 +17,7 @@ tag @s add nazgard
 
 # Titles
 title @s actionbar {"text":"Checkpoint!","color":"green"}
-tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Nazgard]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Nazgard","color":"green"}}}]
+#tellraw @a [{"selector":"@s","color":"dark_green"},{"text":" has reached ","color":"gold"},{"text":"[Nazgard]","color":"green","hover_event":{"action":"show_text","value":{"text":"Reach Nazgard","color":"green"}}}]
 advancement grant @s only race:nazgard
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
