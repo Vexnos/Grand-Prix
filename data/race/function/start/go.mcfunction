@@ -6,6 +6,8 @@ gamerule doMobSpawning true
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 gamerule fallDamage true
+gamerule doTraderSpawning true
+gamerule doPatrolSpawning true
 
 # Worldborder
 worldborder center 0 0
@@ -25,3 +27,9 @@ execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @
 
 # Leave Team 
 team leave @a
+
+# Difficulty to Hard
+difficulty hard
+
+# Start the Timer
+function race:timer

@@ -34,6 +34,7 @@ scoreboard objectives add galePoint dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add fallDistance dummy
 scoreboard objectives add deaths deathCount
+scoreboard objectives add timer dummy
 scoreboard objectives setdisplay below_name health
 scoreboard players set #max checkpoints 24
 scoreboard players set #countdown countdown 0

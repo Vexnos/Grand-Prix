@@ -62,3 +62,4 @@ scoreboard objectives remove galePoint
 scoreboard objectives remove countdown
 scoreboard objectives remove fallDistance
 scoreboard objectives remove deaths
+scoreboard objectives remove timer

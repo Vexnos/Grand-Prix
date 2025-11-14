@@ -14,6 +14,9 @@ tp @a -302 119 -4283
 setworldspawn -302 119 -4283
 spawnpoint @a -302 119 -4283
 
+# Clear The Timer Schedule
+schedule clear race:timer
+
 # Scoreboards
 scoreboard players set @a checkpoints 0
 scoreboard objectives setdisplay list checkpoints
@@ -42,6 +45,9 @@ scoreboard players set #checkpoint sendaria 0
 scoreboard players set #checkpoint ardoniCemetery 0
 scoreboard players set #checkpoint nestoria 0
 scoreboard players set #checkpoint galePoint 0
+scoreboard players set #seconds timer 0
+scoreboard players set #minutes timer 0
+scoreboard players set #hours timer 0
 
 # Reset Tags
 tag @a remove hailstone
@@ -79,6 +85,8 @@ gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule mobGriefing false
 gamerule fallDamage false
+gamerule doTraderSpawning false
+gamerule doPatrolSpawning false
 
 # Reset all Advancements
 advancement revoke @a everything
@@ -96,6 +104,9 @@ clear @a
 
 # Kill rogue items
 kill @e[type=item]
+
+# Difficulty Peaceful
+difficulty peaceful
 
 # Worldborder
 worldborder center -302 -4283
