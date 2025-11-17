@@ -4,7 +4,6 @@ gamemode survival @a
 # Gamerules
 gamerule doMobSpawning true
 gamerule doDaylightCycle true
-gamerule doWeatherCycle true
 gamerule fallDamage true
 gamerule doTraderSpawning true
 gamerule doPatrolSpawning true
