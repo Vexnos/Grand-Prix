@@ -1,5 +1,8 @@
 # Teams
 team remove 1
+team remove blue
+team remove red
+team remove yellow
 
 # Worldborder
 worldborder center 0 0
@@ -63,3 +66,4 @@ scoreboard objectives remove countdown
 scoreboard objectives remove fallDistance
 scoreboard objectives remove deaths
 scoreboard objectives remove timer
+scoreboard objectives remove teamsEnabled

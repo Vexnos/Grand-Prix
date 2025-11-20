@@ -3,6 +3,22 @@ team add 1 "Be Nice"
 team modify 1 collisionRule never
 team modify 1 friendlyFire false
 
+team add blue "Blue"
+team modify blue friendlyFire true
+team modify blue color blue
+
+team add red "Red"
+team modify red friendlyFire true
+team modify red color red
+
+team add yellow "Yellow"
+team modify yellow friendlyFire true
+team modify yellow color yellow
+
+team add green "Green"
+team modify green friendlyFire true
+team modify green color green
+
 # Scoreboards
 scoreboard objectives add checkpoints dummy
 scoreboard objectives add health health {"text":"❤","color":"red"}
@@ -35,6 +51,7 @@ scoreboard objectives add countdown dummy
 scoreboard objectives add fallDistance dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add timer dummy
+scoreboard objectives add teamsEnabled dummy
 scoreboard objectives setdisplay below_name health
 scoreboard players set #max checkpoints 24
 scoreboard players set #countdown countdown 0

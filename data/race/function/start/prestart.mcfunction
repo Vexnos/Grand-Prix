@@ -1,4 +1,5 @@
 # Teams
+team leave @a
 team join 1 @a
 
 # Gamemode
@@ -48,6 +49,7 @@ scoreboard players set #checkpoint galePoint 0
 scoreboard players set #seconds timer 0
 scoreboard players set #minutes timer 0
 scoreboard players set #hours timer 0
+scoreboard players set @a deaths 0
 
 # Reset Tags
 tag @a remove hailstone
@@ -75,6 +77,8 @@ tag @a remove sendaria
 tag @a remove ardoniCemetery
 tag @a remove nestoria
 tag @a remove galePoint
+tag @a remove president
+tag @a remove bodyguard
 
 # Gamerules
 gamerule keepInventory true
@@ -96,6 +100,7 @@ xp set @a 0 levels
 xp set @a 0 points
 
 # Effects
+effect clear @a
 effect give @a saturation infinite 0 true
 effect give @a regeneration infinite 1 true
 
