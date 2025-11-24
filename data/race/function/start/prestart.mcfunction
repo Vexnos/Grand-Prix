@@ -91,6 +91,7 @@ gamerule mobGriefing false
 gamerule fallDamage false
 gamerule doTraderSpawning false
 gamerule doPatrolSpawning false
+gamerule locatorBar false
 
 # Reset all Advancements
 advancement revoke @a everything
