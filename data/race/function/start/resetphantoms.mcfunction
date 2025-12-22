@@ -1,3 +1,3 @@
 kill @a
 
-schedule function race:start/prestart 3s
+schedule function race:reset 3s

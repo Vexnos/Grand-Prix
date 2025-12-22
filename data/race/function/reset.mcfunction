@@ -1,6 +1,6 @@
 # Teams
 team leave @a
-team join 1 @a
+team join be_nice @a
 
 # Gamemode
 gamemode adventure @a
@@ -50,6 +50,7 @@ scoreboard players set #seconds timer 0
 scoreboard players set #minutes timer 0
 scoreboard players set #hours timer 0
 scoreboard players set @a deaths 0
+scoreboard players set #players players 0
 
 # Reset Tags
 tag @a remove hailstone
@@ -79,6 +80,7 @@ tag @a remove nestoria
 tag @a remove galePoint
 tag @a remove president
 tag @a remove bodyguard
+tag @a remove horse_name
 
 # Gamerules
 gamerule keepInventory true
@@ -107,6 +109,9 @@ effect give @a regeneration infinite 1 true
 
 # Clear Inventories
 clear @a
+
+# Kill skeleton horses
+kill @e[type=skeleton_horse]
 
 # Kill rogue items
 kill @e[type=item]
