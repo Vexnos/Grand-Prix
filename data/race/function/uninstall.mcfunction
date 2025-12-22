@@ -50,7 +50,6 @@ tag @a remove horse_name
 scoreboard objectives remove checkpoints
 scoreboard objectives remove health
 scoreboard objectives remove countdown
-scoreboard objectives remove fallDistance
 scoreboard objectives remove deaths
 scoreboard objectives remove timer
 scoreboard objectives remove gamemode

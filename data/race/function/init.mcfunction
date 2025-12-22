@@ -56,7 +56,6 @@ team modify 8 color light_purple
 scoreboard objectives add checkpoints dummy
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add countdown dummy
-scoreboard objectives add fallDistance dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add timer dummy
 scoreboard objectives add gamemode dummy
