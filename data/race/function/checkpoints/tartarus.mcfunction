@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 61, 83,
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #checkpoint tartarus matches 1.. run function race:items/tartarus
+execute unless score #tartarus checkpoints matches 1.. run function race:items/tartarus
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint tartarus 1
+scoreboard players set #tartarus checkpoints 1
 tag @s add tartarus
 
 # Titles

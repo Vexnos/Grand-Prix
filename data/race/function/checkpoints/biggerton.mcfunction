@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -193, 9
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint biggerton matches 1.. run function race:items/biggerton
+# execute unless score #biggerton checkpoints matches 1.. run function race:items/biggerton
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint biggerton 1
+scoreboard players set #biggerton checkpoints 1
 tag @s add biggerton
 
 # Titles

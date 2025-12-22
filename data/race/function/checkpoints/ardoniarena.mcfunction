@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -1152, 
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint ardoniArena matches 1.. run function race:items/ardoniarena
+# execute unless score #ardoniArena checkpoints matches 1.. run function race:items/ardoniarena
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint ardoniArena 1
+scoreboard players set #ardoniArena checkpoints 1
 tag @s add ardoniArena
 
 # Titles

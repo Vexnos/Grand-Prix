@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 98, 168
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #checkpoint hyperia matches 1.. run function race:items/hyperia
+execute unless score #hyperia checkpoints matches 1.. run function race:items/hyperia
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint hyperia 1
+scoreboard players set #hyperia checkpoints 1
 tag @s add hyperia
 
 # Titles

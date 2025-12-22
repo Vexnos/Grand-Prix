@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -703, 8
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint redstoneAcademy matches 1.. run function race:items/redstoneacademy
+# execute unless score #redstoneAcademy checkpoints matches 1.. run function race:items/redstoneacademy
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint redstoneAcademy 1
+scoreboard players set #redstoneAcademy checkpoints 1
 tag @s add redstoneAcademy
 
 # Titles

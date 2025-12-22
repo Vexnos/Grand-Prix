@@ -11,10 +11,10 @@ give @s compass[lodestone_tracker={target:{dimension:"the_nether",pos:[I; -376, 
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint vault matches 1.. run function race:items/vault
+# execute unless score #vault checkpoints matches 1.. run function race:items/vault
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint vault 1
+scoreboard players set #vault checkpoints 1
 tag @s add vault
 
 # Titles

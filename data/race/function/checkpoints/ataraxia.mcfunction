@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -396, 9
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint ataraxia matches 1.. run function race:items/ataraxia
+# execute unless score #ataraxia checkpoints matches 1.. run function race:items/ataraxia
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint ataraxia 1
+scoreboard players set #ataraxia checkpoints 1
 tag @s add ataraxia
 
 # Titles

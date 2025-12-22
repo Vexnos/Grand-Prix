@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -3805, 
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint etherea matches 1.. run function race:items/etherea
+# execute unless score #etherea checkpoints matches 1.. run function race:items/etherea
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint etherea 1
+scoreboard players set #etherea checkpoints 1
 tag @s add etherea
 
 # Titles

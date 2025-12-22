@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -1376, 
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint fortZuka matches 1.. run function race:items/fortzuka
+# execute unless score #fortZuka checkpoints matches 1.. run function race:items/fortzuka
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint fortZuka 1
+scoreboard players set #fortZuka checkpoints 1
 tag @s add fortZuka
 
 # Titles

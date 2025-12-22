@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; 1842, 1
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint amaria matches 1.. run function race:items/amaria
+# execute unless score #amaria checkpoints matches 1.. run function race:items/amaria
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint amaria 1
+scoreboard players set #amaria checkpoints 1
 tag @s add amaria
 
 # Titles

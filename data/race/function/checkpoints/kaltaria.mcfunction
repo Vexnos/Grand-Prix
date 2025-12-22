@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -1528, 
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #checkpoint kaltaria matches 1.. run function race:items/kaltaria
+execute unless score #kaltaria checkpoints matches 1.. run function race:items/kaltaria
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint kaltaria 1
+scoreboard players set #kaltaria checkpoints 1
 tag @s add kaltaria
 
 # Titles

@@ -10,10 +10,10 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -16, 76
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #checkpoint nestoria matches 1.. run function race:items/nestoria
+# execute unless score #nestoria checkpoints matches 1.. run function race:items/nestoria
 
 # Tags and Scoreboards
-scoreboard players set #checkpoint nestoria 1
+scoreboard players set #nestoria checkpoints 1
 tag @s add nestoria
 
 # Titles
