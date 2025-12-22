@@ -26,31 +26,31 @@ scoreboard players set #nestoria checkpoints 0
 scoreboard players set #galePoint checkpoints 0
 
 # Reset Tags
-tag @a remove hailstone
-tag @a remove northwindPass
-tag @a remove ardoniArena
-tag @a remove kaltaria
-tag @a remove voltaria
-tag @a remove oakendale
-tag @a remove etherea
-tag @a remove felora
-tag @a remove fortZuka
-tag @a remove redstoneAcademy
-tag @a remove nazgard
-tag @a remove vault
-tag @a remove theEnd
-tag @a remove crownPeak
-tag @a remove mtVelgrin
-tag @a remove tartarus
-tag @a remove meridian
-tag @a remove amaria
-tag @a remove hyperia
-tag @a remove ataraxia
-tag @a remove biggerton
-tag @a remove sendaria
-tag @a remove ardoniCemetery
-tag @a remove nestoria
-tag @a remove galePoint
+tag @e remove hailstone
+tag @e remove northwindPass
+tag @e remove ardoniArena
+tag @e remove kaltaria
+tag @e remove voltaria
+tag @e remove oakendale
+tag @e remove etherea
+tag @e remove felora
+tag @e remove fortZuka
+tag @e remove redstoneAcademy
+tag @e remove nazgard
+tag @e remove vault
+tag @e remove theEnd
+tag @e remove crownPeak
+tag @e remove mtVelgrin
+tag @e remove tartarus
+tag @e remove meridian
+tag @e remove amaria
+tag @e remove hyperia
+tag @e remove ataraxia
+tag @e remove biggerton
+tag @e remove sendaria
+tag @e remove ardoniCemetery
+tag @e remove nestoria
+tag @e remove galePoint
 
 # Revoke all Advancements
 advancement revoke @a everything
