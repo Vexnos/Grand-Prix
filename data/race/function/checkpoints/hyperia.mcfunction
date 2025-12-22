@@ -24,3 +24,5 @@ execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master 
 
 # Catchup
 effect give @a[tag=!hyperia] speed 40 1 false
+execute if score #mode gamemode matches 2 at @s as @e[type=skeleton_horse,sort=nearest,limit=1] run tag @s add hyperia
+execute if score #mode gamemode matches 2 run effect give @e[type=skeleton_horse,tag=!hyperia] speed 40 1 false
