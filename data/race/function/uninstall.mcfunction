@@ -1,8 +1,17 @@
 # Teams
-team remove 1
+team remove be_nice
 team remove blue
 team remove red
 team remove yellow
+team remove green
+team remove 1
+team remove 2
+team remove 3
+team remove 4
+team remove 5
+team remove 6
+team remove 7
+team remove 8
 
 # Worldborder
 worldborder center 0 0
@@ -33,6 +42,9 @@ tag @a remove sendaria
 tag @a remove ardoniCemetery
 tag @a remove nestoria
 tag @a remove galePoint
+tag @a remove bodyguard
+tag @a remove president
+tag @a remove horse_name
 
 # Remove Scoreboards
 scoreboard objectives remove checkpoints
@@ -66,4 +78,6 @@ scoreboard objectives remove countdown
 scoreboard objectives remove fallDistance
 scoreboard objectives remove deaths
 scoreboard objectives remove timer
-scoreboard objectives remove teamsEnabled
+scoreboard objectives remove gamemode
+scoreboard objectives remove players
+scoreboard objectives remove start
