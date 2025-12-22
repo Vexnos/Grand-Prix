@@ -1,13 +1,13 @@
 {
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:using_item",
+            "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
-                    "items": "minecraft:ender_eye",
+                    "items": "minecraft:nether_star",
                     "components": {
-                        "minecraft:consumable": {
-                            "consume_seconds": 999999
+                        "minecraft:custom_data": {
+                            "teleporter": "yes"
                         }
                     }
                 }

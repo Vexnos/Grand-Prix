@@ -18,7 +18,7 @@ effect clear @a
 # Inventory
 clear @a
 give @a compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -735, 130, -4042]}},custom_name={"text":"☆ Hailstone ☆","color":"gold","italic":false}]
-execute if score #mode gamemode matches 2 run give @a ender_eye[custom_name={text:"Teleport Horse",italic:false,color:"light_purple"},enchantment_glint_override=true,consumable={consume_seconds:999999,animation:eat},use_cooldown={seconds:1,cooldown_group:"teleport_horse"},max_stack_size=1]
+execute if score #mode gamemode matches 2 run give @a nether_star[custom_name={text:"Teleport Horse",italic:false,color:"light_purple"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:"teleport_horse"},max_stack_size=2,custom_data={teleporter:yes}]
 
 # Titles
 title @a title {"text":"GO!","color":"green","bold":true}
