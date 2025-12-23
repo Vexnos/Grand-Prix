@@ -51,6 +51,7 @@ scoreboard players set #minutes timer 0
 scoreboard players set #hours timer 0
 scoreboard players set @a deaths 0
 scoreboard players set #players players 0
+scoreboard players set #startline phase 1
 
 # Reset Tags
 tag @e remove hailstone

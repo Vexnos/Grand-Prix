@@ -54,3 +54,4 @@ scoreboard objectives remove timer
 scoreboard objectives remove gamemode
 scoreboard objectives remove players
 scoreboard objectives remove start
+scoreboard objectives remove phase

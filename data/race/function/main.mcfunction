@@ -8,3 +8,6 @@ execute as @a[tag=admin,scores={start=1..}] run function race:start/start_trigge
 
 # Portals
 function race:portals
+
+# Regen and Saturation during the Pre-Race phase
+execute if score #startline phase matches 1 as @a[scores={deaths=1..}] run function race:start/effects
