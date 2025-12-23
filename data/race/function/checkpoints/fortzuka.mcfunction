@@ -4,7 +4,7 @@ tellraw @s {"text":"Spawnpoint Set!","color":"green"}
 
 # Compasses
 clear @s compass
-give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -1376, 79, -186]}},custom_name={"text":"☆ Redstone Academy ☆","color":"gold","italic":false}]
+give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -3486, 27, 1272]}},custom_name={"text":"☆ Mt Tempus ☆","color":"gold","italic":false}]
 
 # Checkpoint score
 scoreboard players add @s checkpoints 1

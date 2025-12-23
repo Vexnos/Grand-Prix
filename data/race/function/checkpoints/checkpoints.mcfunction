@@ -8,6 +8,7 @@ execute if score #mode gamemode matches 0..1 in minecraft:overworld positioned -
 execute if score #mode gamemode matches 0..1 in minecraft:overworld positioned -1946 168 -967 as @a[distance=..2,tag=!etherea,tag=!bodyguard] run function race:checkpoints/verify/etherea
 execute if score #mode gamemode matches 0..1 in minecraft:overworld positioned -3805 102 -63 as @a[distance=..2,tag=!felora,tag=!bodyguard] run function race:checkpoints/verify/felora
 execute if score #mode gamemode matches 0..1 in minecraft:overworld positioned -3416 82 385 as @a[distance=..2,tag=!fortZuka,tag=!bodyguard] run function race:checkpoints/verify/fortzuka
+execute if score #mode gamemode matches 0..1 in minecraft:overworld positioned -3486 29 1272 as @a[distance=..2,tag=!mtTempus,tag=!bodyguard] run function race:checkpoints/verify/mttempus
 execute if score #mode gamemode matches 0..1 in minecraft:overworld positioned -1376 81 -186 as @a[distance=..2,tag=!redstoneAcademy,tag=!bodyguard] run function race:checkpoints/verify/redstoneacademy
 execute if score #mode gamemode matches 0..1 in minecraft:overworld positioned -703 84 -178 as @a[distance=..2,tag=!vault,tag=!bodyguard] run function race:checkpoints/verify/vault
 execute if score #mode gamemode matches 0..1 in minecraft:the_nether positioned -376 58 -1089 as @a[distance=..2,tag=!nazgard,tag=!bodyguard] run function race:checkpoints/verify/nazgard
@@ -36,6 +37,7 @@ execute if score #mode gamemode matches 2 in minecraft:overworld positioned -129
 execute if score #mode gamemode matches 2 in minecraft:overworld positioned -1946 168 -967 as @a[distance=..2,tag=!etherea,tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/etherea
 execute if score #mode gamemode matches 2 in minecraft:overworld positioned -3805 102 -63 as @a[distance=..2,tag=!felora,tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/felora
 execute if score #mode gamemode matches 2 in minecraft:overworld positioned -3416 82 385 as @a[distance=..2,tag=!fortZuka,tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/fortzuka
+execute if score #mode gamemode matches 2 in minecraft:overworld positioned -3486 29 1272 as @a[distance=..2,tag=!mtTempus,tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/mttempus
 execute if score #mode gamemode matches 2 in minecraft:overworld positioned -1376 81 -186 as @a[distance=..2,tag=!redstoneAcademy,tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/redstoneacademy
 execute if score #mode gamemode matches 2 in minecraft:overworld positioned -703 84 -178 as @a[distance=..2,tag=!vault,tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/vault
 execute if score #mode gamemode matches 2 in minecraft:the_nether positioned -376 58 -1089 as @a[distance=..2,tag=!nazgard,tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/nazgard

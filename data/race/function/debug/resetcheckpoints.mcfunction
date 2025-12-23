@@ -8,6 +8,7 @@ scoreboard players set #oakendale checkpoints 0
 scoreboard players set #etherea checkpoints 0
 scoreboard players set #felora checkpoints 0
 scoreboard players set #fortZuka checkpoints 0
+scoreboard players set #mtTempus checkpoints 0
 scoreboard players set #redstoneAcademy checkpoints 0
 scoreboard players set #nazgard checkpoints 0
 scoreboard players set #vault checkpoints 0
@@ -35,6 +36,7 @@ tag @e remove oakendale
 tag @e remove etherea
 tag @e remove felora
 tag @e remove fortZuka
+tag @e remove mtTempus
 tag @e remove redstoneAcademy
 tag @e remove nazgard
 tag @e remove vault
