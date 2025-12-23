@@ -1,8 +1,4 @@
 # Teams
-team add be_nice "Be Nice"
-team modify be_nice collisionRule never
-team modify be_nice friendlyFire false
-
 team add blue "Blue"
 team modify blue friendlyFire true
 team modify blue color blue

@@ -2,11 +2,12 @@
 gamemode survival @a
 
 # Gamerules
-gamerule doMobSpawning true
+gamerule spawnMonsters true
 gamerule doDaylightCycle true
 gamerule fallDamage true
 gamerule doTraderSpawning true
 gamerule doPatrolSpawning true
+gamerule pvp true
 
 # Worldborder
 worldborder center 0 0
@@ -24,9 +25,6 @@ execute if score #mode gamemode matches 2 run give @a nether_star[custom_name={t
 title @a title {"text":"GO!","color":"green","bold":true}
 execute as @a at @s run playsound minecraft:item.goat_horn.sound.0 master @s
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s
-
-# Difficulty to Hard
-difficulty hard
 
 # Start the Timer
 function race:timer

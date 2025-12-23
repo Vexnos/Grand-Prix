@@ -1,5 +1,4 @@
 # Teams
-team remove be_nice
 team remove blue
 team remove red
 team remove yellow

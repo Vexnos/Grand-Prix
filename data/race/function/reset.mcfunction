@@ -1,6 +1,5 @@
 # Teams
 team leave @a
-team join be_nice @a
 
 # Gamemode
 gamemode adventure @a
@@ -88,7 +87,7 @@ tag @a remove horse_name
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule randomTickSpeed 0
-gamerule doMobSpawning false
+gamerule spawnMonsters false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule mobGriefing false
@@ -96,6 +95,8 @@ gamerule fallDamage false
 gamerule doTraderSpawning false
 gamerule doPatrolSpawning false
 gamerule locatorBar false
+gamerule allowEnteringNetherUsingPortals false
+gamerule pvp false
 
 # Reset all Advancements
 advancement revoke @a everything
@@ -117,9 +118,6 @@ kill @e[type=skeleton_horse]
 
 # Kill rogue items
 kill @e[type=item]
-
-# Difficulty Peaceful
-difficulty peaceful
 
 # Worldborder
 worldborder center -283 -4264

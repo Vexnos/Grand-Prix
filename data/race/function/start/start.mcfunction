@@ -1,5 +1,4 @@
 # Teams Mode
-execute unless score #mode gamemode matches 1 run team leave @a
 execute if score #mode gamemode matches 1 unless entity @a[team=blue] run function race:start/teams
 
 # Horse Mode
