@@ -88,6 +88,7 @@ tag @a remove horse_name
 gamerule keepInventory true
 gamerule doImmediateRespawn true
 gamerule randomTickSpeed 0
+gamerule doMobSpawning false
 gamerule spawnMonsters false
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false

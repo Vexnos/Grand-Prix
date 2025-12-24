@@ -2,6 +2,7 @@
 gamemode survival @a
 
 # Gamerules
+gamerule doMobSpawning true
 gamerule spawnMonsters true
 gamerule doDaylightCycle true
 gamerule fallDamage true
