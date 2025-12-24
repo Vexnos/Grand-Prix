@@ -23,6 +23,5 @@ advancement grant @s only race:ataraxia
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 # Catchup
-effect give @a[tag=!ataraxia] speed 40 1 false
-execute if score #mode gamemode matches 2 at @s as @e[type=skeleton_horse,sort=nearest,limit=1] run tag @s add ataraxia
-execute if score #mode gamemode matches 2 run effect give @e[type=skeleton_horse,tag=!ataraxia] speed 40 1 false
+execute unless score #mode gamemode matches 2 run effect give @a[tag=!ataraxia] speed 40 1 false
+execute if score #mode gamemode matches 2 run effect give @a[tag=!ataraxia] luck 40 0 true
