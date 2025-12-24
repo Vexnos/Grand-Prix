@@ -24,4 +24,4 @@ execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master 
 
 # Catchup
 execute unless score #mode gamemode matches 2 run effect give @a[tag=!kaltaria] speed 40 1 false
-execute if score #mode gamemode matches 2 run effect give @a[tag=!kaltaria] luck 40 0 true
+execute if score #mode gamemode matches 2 run effect give @a[tag=!kaltaria] luck 20 0 true
