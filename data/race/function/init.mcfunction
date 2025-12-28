@@ -59,7 +59,6 @@ scoreboard objectives add players dummy
 scoreboard objectives add start trigger
 scoreboard objectives add phase dummy
 scoreboard objectives setdisplay below_name health
-scoreboard players set #max checkpoints 25
 scoreboard players set #countdown countdown 0
 
 # Main
