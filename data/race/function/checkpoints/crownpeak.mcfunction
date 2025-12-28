@@ -10,7 +10,7 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -21, 19
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #crownPeak checkpoints matches 1.. run function race:items/crownpeak
+execute unless score #crownPeak checkpoints matches 1.. run function race:checkpoints/items/crownpeak
 
 # Tags and Scoreboards
 scoreboard players set #crownPeak checkpoints 1

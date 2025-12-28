@@ -10,7 +10,7 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -551, 5
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #northwindPass checkpoints matches 1.. run function race:items/northwindpass
+execute unless score #northwindPass checkpoints matches 1.. run function race:checkpoints/items/northwindpass
 
 # Tags and Scoreboards
 scoreboard players set #northwindPass checkpoints 1

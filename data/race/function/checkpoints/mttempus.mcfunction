@@ -10,7 +10,7 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -1376, 
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-# execute unless score #mtTempus checkpoints matches 1.. run function race:items/mttempus
+# execute unless score #mtTempus checkpoints matches 1.. run function race:checkpoints/items/mttempus
 
 # Tags and Scoreboards
 scoreboard players set #mtTempus checkpoints 1

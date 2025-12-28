@@ -9,7 +9,7 @@ give @s compass[lodestone_tracker={target:{dimension:"the_end",pos:[I; -1113, 53
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #nazgard checkpoints matches 1.. run function race:items/nazgard
+execute unless score #nazgard checkpoints matches 1.. run function race:checkpoints/items/nazgard
 
 # Tags and Scoreboards
 scoreboard players set #nazgard checkpoints 1

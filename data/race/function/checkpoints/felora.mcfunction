@@ -10,7 +10,7 @@ give @s compass[lodestone_tracker={target:{dimension:"overworld",pos:[I; -3416, 
 scoreboard players add @s checkpoints 1
 
 # Surplus Items
-execute unless score #felora checkpoints matches 1.. run function race:items/felora
+execute unless score #felora checkpoints matches 1.. run function race:checkpoints/items/felora
 
 # Tags and Scoreboards
 scoreboard players set #felora checkpoints 1
