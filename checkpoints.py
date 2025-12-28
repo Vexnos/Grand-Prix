@@ -121,7 +121,7 @@ def compile_checkpoints(course):
     for checkpoint in course["checkpoints"]:
         reset_lines.append(f"scoreboard players set #{checkpoint['id']} checkpoints 0")
         reset_lines.append(f"tag @e remove {checkpoint['id']}")
-    with open("data/race/function/debug/resetcheckpoints.mcfunction", "w") as file:
+    with open("data/race/function/resetcheckpoints.mcfunction", "w") as file:
         file.write("\n".join(reset_lines))
 
 def compile_setup_function(course):
