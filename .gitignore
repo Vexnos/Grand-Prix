@@ -1,6 +1,5 @@
 amaria_volume.txt
-/data/race/function/debug/oldscoreboards.mcfunction
 /data/race/advancement/checkpoints/
 /data/race/function/setup/*
 /data/race/function/checkpoints.mcfunction
-/data/race/function/debug/resetcheckpoints.mcfunction
+/data/race/function/resetcheckpoints.mcfunction
