@@ -41,19 +41,19 @@ def clear_folder(path):
 # Compile Advancements
 def compile_advancements(course):
     clear_folder(ADVANCEMENTS_PATH) # Delete old advancements
-    for previous, item, nxt in previous_and_next(course["checkpoints"]):
+    for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
         advancement = {
             "display": {
                 "icon": {
-                    "id": item['advancement_icon']
+                    "id": checkpoint['advancement_icon']
                 },
                 "title": {
-                    "text": item['name'],
+                    "text": checkpoint['name'],
                     "type": "text",
                     "color": "#FFFF55"
                 },
                 "description": {
-                    "text": item['description'],
+                    "text": checkpoint['description'],
                     "type": "text",
                     "color": "#FFFF55"
                 },
@@ -69,52 +69,114 @@ def compile_advancements(course):
                 }
             }
         }
-        if "custom_model_data" in item:
+        if "custom_model_data" in checkpoint:
             advancement["display"]["icon"]["components"] = {
                 "minecraft:custom_model_data": {
                     "floats": [
-                        item["custom_model_data"]
+                        checkpoint["custom_model_data"]
                     ]
                 }
             }
-        if "potion_contents" in item:
+        if "potion_contents" in checkpoint:
             advancement["display"]["icon"]["components"] = {
-                "potion_contents": item["potion_contents"],
+                "potion_contents": checkpoint["potion_contents"],
                 "enchantment_glint_override": True
             }
-        with open(f"{ADVANCEMENTS_PATH}{item['id']}.json", "w") as file:
+        with open(f"{ADVANCEMENTS_PATH}{checkpoint['id']}.json", "w") as file:
             json.dump(advancement, file, indent=4)
 
 def compile_checkpoints(course):
     # Compile checkpoints.mcfunction
     checkpoints_lines = []
-    for previous, item, nxt in previous_and_next(course["checkpoints"]):
-        x, y, z = item["lodestone"] # Retrieve coordinates for each checkpoint
+    for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
+        x, y, z = checkpoint["lodestone"] # Retrieve coordinates for each checkpoint
         y += 2
         if previous == None: # First checkpoint doesn't need to be verified
             # Normal Mode
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] run function race:checkpoints/{item['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/{checkpoint['id']}")
             # Horse Mode
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/{item['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/{checkpoint['id']}")
         elif nxt == None: # Finish Line needs special treatment
             # Normal Mode
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{item['id']}")
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] if score @s checkpoints < #max checkpoints run function race:notfinished")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] if score @s checkpoints < #max checkpoints run function race:notfinished")
             # Horse Mode
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{item['id']}")
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints < #max checkpoints run function race:notfinished")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints < #max checkpoints run function race:notfinished")
         else: # All checkpoints after the first checkpoint, but before Finish Line
             # Normal Mode
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] run function race:checkpoints/verify/{item['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/verify/{checkpoint['id']}")
             # Horse Mode
-            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/{item['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/{checkpoint['id']}")
     with open("data/race/function/checkpoints.mcfunction", "w") as file:
         file.write("\n".join(checkpoints_lines))
 
     # Clear old checkpoints if any exist
-    # clear_folder(CHECKPOINTS_PATH)
-    # os.makedirs(f"{CHECKPOINTS_PATH}/verify")
-    # os.makedirs(f"{CHECKPOINTS_PATH}/items")
+    clear_folder(CHECKPOINTS_PATH)
+    os.makedirs(f"{CHECKPOINTS_PATH}/verify")
+    os.makedirs(f"{CHECKPOINTS_PATH}/items")
+
+    # Compile Individual Checkpoint Functions
+    for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
+        x, y, z = checkpoint['lodestone']
+        y += 2
+        checkpoints_lines = ["# Set Spawnpoint"]
+        checkpoints_lines.append(f"execute in minecraft:{checkpoint['dimension']} run spawnpoint @s {x} {y} {z}")
+        checkpoints_lines.append("tellraw @s " + "{text:\"Spawnpoint Set!\",color:\"green\"}")
+        checkpoints_lines.append(f"advancement grant @s only race:checkpoints/{checkpoint['id']}\n")
+        checkpoints_lines.append("# Compasses")
+        checkpoints_lines.append("clear @s compass")
+        if nxt is None:
+            checkpoints_lines.append("\n#Titles")
+            checkpoints_lines.append(f"execute unless score #{checkpoint['id']} checkpoints matches 1.. as @s run function race:finish/win")
+            checkpoints_lines.append(f"execute if score #{checkpoint['id']} checkpoints matches 1.. as @s run function race:finish/loser")
+            checkpoints_lines.append("execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s\n")
+            checkpoints_lines.append("# Tags and Scoreboards")
+            checkpoints_lines.append(f"scoreboard players set #{checkpoint['id']} checkpoints 1")
+            checkpoints_lines.append(f"tag @s add {checkpoint['id']}\n")
+            checkpoints_lines.append("# Resistance")
+            checkpoints_lines.append("effect give @s resistance infinite 5 true")
+        else:
+            color = "gold"
+            if nxt['dimension'] != "overworld":
+                data = PORTALS[nxt['dimension']]
+                x, y, z = data['lodestone']
+                color = data['color']
+                checkpoints_lines.append("give @s compass[lodestone_tracker={target:{dimension:\"overworld\"" + f",pos:[I; {x}, {y}, {z}]" + "}},custom_name={text:\"☆ " + data['name'] + " ☆\",color:\"" + color + "\",italic:false}]")
+            if "color" in nxt:
+                color = nxt['color']
+            x, y, z = nxt['lodestone']
+            checkpoints_lines.append("give @s compass[lodestone_tracker={target:{dimension:\"" + nxt['dimension'] + f"\",pos:[I; {x}, {y}, {z}]" + "}},custom_name={text:\"☆ " + nxt['name'] + " ☆\",color:\"" + color + "\",italic:false}]\n")
+            checkpoints_lines.append("# Checkpoint score")
+            checkpoints_lines.append("scoreboard players add @s checkpoints 1\n")
+            if "items" in checkpoint:
+                checkpoints_lines.append("# Items")
+                checkpoints_lines.append(f"execute unless score #{checkpoint['id']} checkpoints matches 1.. run function race:checkpoints/items/{checkpoint['id']}")
+                result = "\n".join(checkpoint["items"])
+                with open(f"{CHECKPOINTS_PATH}items/{checkpoint['id']}.mcfunction", "w") as file:
+                    file.write(result)
+            checkpoints_lines.append("# Tags and Scoreboards")
+            checkpoints_lines.append(f"scoreboard players set #{checkpoint['id']} checkpoints 1")
+            checkpoints_lines.append(f"tag @s add {checkpoint['id']}\n")
+            checkpoints_lines.append("# Titles")
+            checkpoints_lines.append("title @s actionbar {text:\"Checkpoint!\",color:\"green\"}")
+            checkpoints_lines.append(f"execute as @s at @s run playsound minecraft:entity.experience_orb.pickup master @s\n")
+            checkpoints_lines.append("# Catchup Mechanic")
+            checkpoints_lines.append(f"execute unless score #mode gamemode matches 2 run effect give @a[tag=!{checkpoint['id']}] speed 40 1 false")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 run effect give @a[tag=!{checkpoint['id']}] luck 20 0 true")
+        with open(f"{CHECKPOINTS_PATH}{checkpoint['id']}.mcfunction", "w") as file:
+            file.write("\n".join(checkpoints_lines))
+
+    # Compile Verify Functions
+    for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
+        if previous is None:
+            continue
+        result = []
+        result.append(f"execute as @s[tag={previous['id']}] run function race:checkpoints/{checkpoint['id']}")
+        result.append(f"execute as @s[tag=!{previous['id']}] run title @s actionbar [" + "{text:\"You have missed \",color:\"red\"},{text:\"" + previous['name'] + "!\",color:\"gold\",bold:true},{text:\" Go back!\",color:\"red\"}]")
+        result.append(f"execute as @s[tag=!{previous['id']}] at @s run playsound minecraft:entity.ender_dragon.growl master @s")
+        with open(f"{CHECKPOINTS_PATH}verify/{checkpoint['id']}.mcfunction", "w") as file:
+            file.write("\n".join(result))
 
     # Compile Reset Checkpoints Function
     reset_lines = ["scoreboard players set @a checkpoints 0", "advancement revoke @a everything"]
@@ -162,12 +224,26 @@ def compile_setup_function(course):
 ADVANCEMENTS_PATH = "data/race/advancement/checkpoints/"
 CHECKPOINTS_PATH = "data/race/function/checkpoints/"
 
+# Portals
+PORTALS = {
+    "the_nether": {
+        "name": "Nether Portal",
+        "color": "dark_red",
+        "lodestone": [-495, 101, -221]
+    },
+    "the_end": {
+        "name": "Stronghold",
+        "color": "dark_purple",
+        "lodestone": [-572, 77, 96]
+    }
+}
+
 #-------Main-Routine-------
 if __name__ == "__main__":
     # Import course from json
     path = input("Please input the path to your course here (or select a preset: main, reverse): ").lower()
     course = import_course(path)
     
-    # compile_advancements(course)
-    # compile_setup_function(course)
+    compile_advancements(course)
+    compile_setup_function(course)
     compile_checkpoints(course)

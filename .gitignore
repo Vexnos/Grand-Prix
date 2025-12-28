@@ -3,3 +3,4 @@ amaria_volume.txt
 /data/race/function/setup/*
 /data/race/function/checkpoints.mcfunction
 /data/race/function/resetcheckpoints.mcfunction
+/data/race/function/checkpoints/*

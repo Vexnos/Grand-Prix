@@ -37,7 +37,6 @@
             "description": "Descend the Tournament Arena",
             "dimension": "overworld",
             "lodestone": [-22, 174, -3419],
-            "items": [],
             "advancement_icon": "diamond_sword",
             "custom_model_data": 2
         },
@@ -62,7 +61,6 @@
             "description": "Reach Voltaria",
             "dimension": "overworld",
             "lodestone": [-1528, 77, -2459],
-            "items": [],
             "advancement_icon": "diamond_sword",
             "custom_model_data": 4
         },
@@ -89,7 +87,6 @@
             "description": "Ascend the Tower",
             "dimension": "overworld",
             "lodestone": [-1946, 166, -967],
-            "items": [],
             "advancement_icon": "dragon_egg"
         },
         {
@@ -115,7 +112,6 @@
             "description": "Break through the Walls",
             "dimension": "overworld",
             "lodestone": [-3416, 80, 385],
-            "items": [],
             "advancement_icon": "bow"
         },
         {
@@ -124,7 +120,6 @@
             "description": "Realize IT WASN'T IN MAHOA DOCKS",
             "dimension": "overworld",
             "lodestone": [-3486, 27, 1272],
-            "items": [],
             "advancement_icon": "magma_block"
         },
         {
@@ -133,7 +128,6 @@
             "description": "Pass University",
             "dimension": "overworld",
             "lodestone": [-1376, 79, -186],
-            "items": [],
             "advancement_icon": "redstone"
         },
         {
@@ -142,7 +136,6 @@
             "description": "Enter the Vault",
             "dimension": "overworld",
             "lodestone": [-703, 82, -178],
-            "items": [],
             "advancement_icon": "emerald"
         },
         {
@@ -162,7 +155,6 @@
             "description": "Avert your Gaze",
             "dimension": "the_end",
             "lodestone": [-1113, 53, -472],
-            "items": [],
             "advancement_icon": "end_crystal"
         },
         {
@@ -190,7 +182,6 @@
             "description": "Scale Mount Velgrin",
             "dimension": "overworld",
             "lodestone": [-21, 197, 894],
-            "items": [],
             "advancement_icon": "carrot_on_a_stick",
             "custom_model_data": 2
         },
@@ -233,7 +224,6 @@
             "description": "Survive the Fall",
             "dimension": "overworld",
             "lodestone": [1569, 105, 1199],
-            "items": [],
             "advancement_icon": "potion",
             "potion_contents": "regeneration"
         },
@@ -265,7 +255,6 @@
             "description": "Ascend the Islands",
             "dimension": "overworld",
             "lodestone": [98, 168, -618],
-            "items": [],
             "advancement_icon": "vine"
         },
         {
@@ -274,7 +263,6 @@
             "description": "Ring the Bell",
             "dimension": "overworld",
             "lodestone": [-396, 98, -1376],
-            "items": [],
             "advancement_icon": "bell"
         },
         {
@@ -283,7 +271,6 @@
             "description": "Take a break, you deserve it :)",
             "dimension": "overworld",
             "lodestone": [-193, 97, -2383],
-            "items": [],
             "advancement_icon": "diamond_sword",
             "custom_model_data": 12
         },
@@ -305,7 +292,6 @@
             "description": "Catch a Fish",
             "dimension": "overworld",
             "lodestone": [1569, 83, -3202],
-            "items": [],
             "advancement_icon": "blue_orchid"
         },
         {
@@ -314,7 +300,6 @@
             "description": "Finish the Race!",
             "dimension": "overworld",
             "lodestone": [-16, 76, -4704],
-            "items": [],
             "advancement_icon": "gold_block"
         }
     ]
