@@ -24,7 +24,8 @@ def previous_and_next(some_iterable):
 def import_course(path):
     preset_courses = {
         "main": "courses/main.json",
-        "reverse": "courses/reverse.json"
+        "reverse": "courses/reverse.json",
+        "test": "courses/__template.json"
     }
     # Check if path is in presets dictionary
     if path in preset_courses:
@@ -88,7 +89,34 @@ def compile_checkpoints(course):
     pass
 
 def compile_setup_function(course):
-    pass
+    # Create Setup Directory
+    os.makedirs("data/race/function/setup/", exist_ok=True)
+
+    # Create Forceloading Function
+    setup = []
+    place_checkpoints = ["kill @e[type=item_display]", "kill @e[type=text_display]"]
+    last_iteration_index = len(course["checkpoints"]) - 1
+    for i, checkpoint in enumerate(course["checkpoints"]):
+        x, y, z = checkpoint["lodestone"]
+        setup.append(f"execute in minecraft:{checkpoint['dimension']} run forceload add {x} {z}")
+        place_checkpoints.append(f"execute in minecraft:{checkpoint['dimension']} run setblock {x} {y} {z} lodestone replace")
+        if i == last_iteration_index:
+            glow_color = "16777045"
+            text_color = "yellow"
+            text_name = "Finish Line"
+        else:
+            glow_color = "65280"
+            text_color = "green"
+            text_name = "Checkpoint"
+        y += 3.1875
+        place_checkpoints.append(f"execute in minecraft:{checkpoint['dimension']} run summon text_display {x} {y} {z} " + "{Invulnerable:1b,alignment:\"center\",background:0,billboard:\"center\",default_background:1b,glow_color_override:0,height:0.0f,interpolation_duration:0,line_width:200,see_through:0b,shadow:0b,shadow_radius:0.0f,shadow_strength:1.0f,teleport_duration:0,text:{color:\"" + text_color + "\",text:\"" + text_name + "\"},text_opacity:-1b,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,0.0f,0.0f]},view_range:0.99647886f,width:0.0f}")
+        y += 0.4375
+        place_checkpoints.append(f"execute in minecraft:{checkpoint['dimension']} run summon item_display {x} {y} {z} " + "{Glowing:1b,Invulnerable:1b,Rotation:[0.0f,0.0f],billboard:\"center\",glow_color_override:" + glow_color + ",height:0.0f,interpolation_duration:0,item:{count:1,id:\"minecraft:nether_star\"},item_display:\"ground\",shadow_radius:0.0f,shadow_strength:1.0f,teleport_duration:0,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,0.0f,0.0f]},view_range:1.0f,width:0.0f}")
+    setup.append("schedule function race:setup/place_checkpoints 10s")
+    with open("data/race/function/setup/setup.mcfunction", "w") as file:
+        file.write("\n".join(setup))
+    with open("data/race/function/setup/place_checkpoints.mcfunction", "w") as file:
+        file.write("\n".join(place_checkpoints))
 
 #-------Constants-------
 # Paths
@@ -102,4 +130,5 @@ if __name__ == "__main__":
     path = input("Please input the path to your course here (or select a preset: main, reverse): ").lower()
     course = import_course(path)
     
-    compile_advancements(course)
+    # compile_advancements(course)
+    compile_setup_function(course)
