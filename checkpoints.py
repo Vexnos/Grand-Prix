@@ -111,6 +111,19 @@ def compile_checkpoints(course):
     with open("data/race/function/checkpoints.mcfunction", "w") as file:
         file.write("\n".join(checkpoints_lines))
 
+    # Clear old checkpoints if any exist
+    # clear_folder(CHECKPOINTS_PATH)
+    # os.makedirs(f"{CHECKPOINTS_PATH}/verify")
+    # os.makedirs(f"{CHECKPOINTS_PATH}/items")
+
+    # Compile Reset Checkpoints Function
+    reset_lines = ["scoreboard players set @a checkpoints 0", "advancement revoke @a everything"]
+    for checkpoint in course["checkpoints"]:
+        reset_lines.append(f"scoreboard players set #{checkpoint['id']} checkpoints 0")
+        reset_lines.append(f"tag @e remove {checkpoint['id']}")
+    with open("data/race/function/debug/resetcheckpoints.mcfunction", "w") as file:
+        file.write("\n".join(reset_lines))
+
 def compile_setup_function(course):
     # Create Setup Directory
     os.makedirs("data/race/function/setup/", exist_ok=True)
@@ -148,7 +161,6 @@ def compile_setup_function(course):
 # Paths
 ADVANCEMENTS_PATH = "data/race/advancement/checkpoints/"
 CHECKPOINTS_PATH = "data/race/function/checkpoints/"
-ITEMS_PATH = "data/race/function/checkpoints/items/"
 
 #-------Main-Routine-------
 if __name__ == "__main__":
