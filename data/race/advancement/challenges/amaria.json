@@ -16,7 +16,7 @@
         "announce_to_chat": true,
         "hidden": true
     },
-    "parent": "race:firstshrine",
+    "parent": "race:root",
     "criteria": {
         "root": {
             "trigger": "minecraft:impossible"

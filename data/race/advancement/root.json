@@ -1,7 +1,14 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:allium"
+            "id": "minecraft:carrot_on_a_stick",
+            "components": {
+                "custom_model_data": {
+                    "floats": [
+                        4
+                    ]
+                }
+            }
         },
         "title": {
             "text": "Ardonia Grand Prix",
