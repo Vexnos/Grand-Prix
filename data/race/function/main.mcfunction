@@ -1,4 +1,4 @@
-function race:checkpoints/checkpoints
+function race:checkpoints
 execute if score #mode gamemode matches 1 run function race:deaths/president
 execute if score #mode gamemode matches 1 run function race:deaths/bodyguard
 
