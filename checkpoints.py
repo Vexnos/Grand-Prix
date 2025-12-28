@@ -86,7 +86,30 @@ def compile_advancements(course):
             json.dump(advancement, file, indent=4)
 
 def compile_checkpoints(course):
-    pass
+    # Compile checkpoints.mcfunction
+    checkpoints_lines = []
+    for previous, item, nxt in previous_and_next(course["checkpoints"]):
+        x, y, z = item["lodestone"] # Retrieve coordinates for each checkpoint
+        y += 2
+        if previous == None: # First checkpoint doesn't need to be verified
+            # Normal Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] run function race:checkpoints/{item['id']}")
+            # Horse Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/{item['id']}")
+        elif nxt == None: # Finish Line needs special treatment
+            # Normal Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{item['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] if score @s checkpoints < #max checkpoints run function race:notfinished")
+            # Horse Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{item['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints < #max checkpoints run function race:notfinished")
+        else: # All checkpoints after the first checkpoint, but before Finish Line
+            # Normal Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard] run function race:checkpoints/verify/{item['id']}")
+            # Horse Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{item['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{item['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/{item['id']}")
+    with open("data/race/function/checkpoints.mcfunction", "w") as file:
+        file.write("\n".join(checkpoints_lines))
 
 def compile_setup_function(course):
     # Create Setup Directory
