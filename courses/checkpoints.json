@@ -94,8 +94,8 @@
     "custom_model_data": 10
   },
   {
-    "id": "kaltaria_meeting_room",
-    "name": "Ardoni Master meeting room",
+    "id": "ardoni_council_chamber",
+    "name": "Ardoni Council Chambers",
     "description": "Plan an attack on Mt Velgrin",
     "lodestone": [-1230, 101, -3259],
     "advancement_icon": "diamond_sword",
