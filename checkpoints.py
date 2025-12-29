@@ -241,7 +241,7 @@ def compile_setup_function(course):
     if "color" in first_checkpoint:
         color = first_checkpoint['color']
     x, y, z = first_checkpoint['lodestone']
-    result = ("give @s compass[lodestone_tracker={target:{dimension:\"" + first_checkpoint['dimension'] + f"\",pos:[I; {x}, {y}, {z}]" + "}},custom_name={text:\"☆ " + first_checkpoint['name'] + " ☆\",color:\"" + color + "\",italic:false}]\n")
+    result = ("give @a compass[lodestone_tracker={target:{dimension:\"" + first_checkpoint['dimension'] + f"\",pos:[I; {x}, {y}, {z}]" + "}},custom_name={text:\"☆ " + first_checkpoint['name'] + " ☆\",color:\"" + color + "\",italic:false}]\n")
     with open("data/race/function/start/firstcompass.mcfunction", "w") as file:
         file.write(result)
 
