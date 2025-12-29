@@ -5,3 +5,4 @@ amaria_volume.txt
 /data/race/function/resetcheckpoints.mcfunction
 /data/race/function/checkpoints/*
 /data/race/function/start/worldborder.mcfunction
+/data/race/function/start/firstcompass.mcfunction

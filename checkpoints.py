@@ -235,6 +235,16 @@ def compile_setup_function(course):
     with open("data/race/function/start/worldborder.mcfunction", "w") as file:
         file.write("\n".join(result))
 
+    # First Compass
+    first_checkpoint = course["checkpoints"][0]
+    color = "gold"
+    if "color" in first_checkpoint:
+        color = first_checkpoint['color']
+    x, y, z = first_checkpoint['lodestone']
+    result = ("give @s compass[lodestone_tracker={target:{dimension:\"" + first_checkpoint['dimension'] + f"\",pos:[I; {x}, {y}, {z}]" + "}},custom_name={text:\"☆ " + first_checkpoint['name'] + " ☆\",color:\"" + color + "\",italic:false}]\n")
+    with open("data/race/function/start/firstcompass.mcfunction", "w") as file:
+        file.write(result)
+
 #-------Constants-------
 # Paths
 ADVANCEMENTS_PATH = "data/race/advancement/checkpoints/"
