@@ -241,14 +241,18 @@ def compile_setup_function(course):
         file.write("\n".join(result))
 
     # First Compass
+    result = []
     first_checkpoint = course["checkpoints"][0]
     color = "gold"
     if "color" in first_checkpoint:
         color = first_checkpoint['color']
     x, y, z = first_checkpoint['lodestone']
-    result = ("give @a compass[lodestone_tracker={target:{dimension:\"" + first_checkpoint['dimension'] + f"\",pos:[I; {x}, {y}, {z}]" + "}},custom_name={text:\"☆ " + first_checkpoint['name'] + " ☆\",color:\"" + color + "\",italic:false}]\n")
+    result.append("give @a compass[lodestone_tracker={target:{dimension:\"" + first_checkpoint['dimension'] + f"\",pos:[I; {x}, {y}, {z}]" + "}},custom_name={text:\"☆ " + first_checkpoint['name'] + " ☆\",color:\"" + color + "\",italic:false}]")
+    if len(course["initial_items"]) > 0:
+        for item in course["initial_items"]:
+            result.append(item)
     with open("data/race/function/start/firstcompass.mcfunction", "w") as file:
-        file.write(result)
+        file.write("\n".join(result))
 
 #-------Constants-------
 # Paths
