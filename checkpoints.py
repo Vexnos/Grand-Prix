@@ -215,6 +215,8 @@ def compile_setup_function(course):
         y += 0.4375
         # Item Display
         place_checkpoints.append(f"execute in minecraft:{checkpoint['dimension']} run summon item_display {x} {y} {z} " + "{Glowing:1b,Invulnerable:1b,Rotation:[0.0f,0.0f],billboard:\"center\",glow_color_override:" + glow_color + ",height:0.0f,interpolation_duration:0,item:{count:1,id:\"minecraft:nether_star\"},item_display:\"ground\",shadow_radius:0.0f,shadow_strength:1.0f,teleport_duration:0,transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],translation:[0.0f,0.0f,0.0f]},view_range:1.0f,width:0.0f}")
+    # Remove Forceloads
+    place_checkpoints.append("forceload remove all")
     setup.append("schedule function race:setup/place_checkpoints 10s") # Schedule the place_checkpoints function after 10s
     # Write to files
     with open("data/race/function/setup/setup.mcfunction", "w") as file:
