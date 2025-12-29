@@ -201,6 +201,14 @@
             "advancement_icon": "diamond_ore"
         },
         {
+            "id": "cydonia_mines",
+            "name": "Cydonia Mines",
+            "description": "Descend the Mines",
+            "dimension": "overworld",
+            "lodestone": [-159, 41, 3527],
+            "advancement_icon": "lapis_ore"
+        },
+        {
             "id": "meridian",
             "name": "Meridian",
             "description": "Don't get Cydonia'd",
@@ -221,6 +229,14 @@
             "advancement_icon": "sand"
         },
         {
+            "id": "kaeru",
+            "name": "Kaeru",
+            "description": "Defeat the Magnorites",
+            "dimension": "overworld",
+            "lodestone": [727, 104, 3625],
+            "advancement_icon": "red_sandstone"
+        },
+        {
             "id": "amaria",
             "name": "Amaria",
             "description": "Survive the Fall",
@@ -228,6 +244,14 @@
             "lodestone": [1569, 105, 1199],
             "advancement_icon": "potion",
             "potion_contents": "regeneration"
+        },
+        {
+            "id": "diamond_heights",
+            "name": "Diamond Heights",
+            "description": "Become a C.E.O",
+            "dimension": "overworld",
+            "lodestone": [1413, 116, -61],
+            "advancement_icon": "diamond_block"
         },
         {
             "id": "hyperia",
@@ -296,6 +320,14 @@
             "lodestone": [1569, 83, -3202],
             "advancement_icon": "diamond_sword",
             "custom_model_data": 11
+        },
+        {
+            "id": "silverwatch",
+            "name": "Silverwatch",
+            "description": "Brave the Blizzard",
+            "dimension": "overworld",
+            "lodestone": [603, 77, -3963],
+            "advancement_icon": "snowball"
         },
         {
             "id": "gale_point",

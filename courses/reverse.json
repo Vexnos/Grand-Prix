@@ -11,8 +11,12 @@
             "name": "Silverwatch",
             "description": "Brave the Blizzard",
             "dimension": "overworld",
-            "lodestone": [603, 77, -3963],
-            "advancement_icon": "packed_ice"
+            "lodestone": [
+                603,
+                77,
+                -3963
+            ],
+            "advancement_icon": "snowball"
         },
         {
             "id": "nestoria",
@@ -107,6 +111,18 @@
             "advancement_icon": "quartz_block"
         },
         {
+            "id": "diamond_heights",
+            "name": "Diamond Heights",
+            "description": "Become a C.E.O",
+            "dimension": "overworld",
+            "lodestone": [
+                1413,
+                116,
+                -61
+            ],
+            "advancement_icon": "diamond_block"
+        },
+        {
             "id": "amaria",
             "name": "Amaria",
             "description": "Survive the Fall",
@@ -118,6 +134,18 @@
             ],
             "advancement_icon": "potion",
             "potion_contents": "regeneration"
+        },
+        {
+            "id": "kaeru",
+            "name": "Kaeru",
+            "description": "Defeat the Magnorites",
+            "dimension": "overworld",
+            "lodestone": [
+                727,
+                104,
+                3625
+            ],
+            "advancement_icon": "red_sandstone"
         },
         {
             "id": "meridian",
@@ -142,6 +170,18 @@
                 "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
             ],
             "advancement_icon": "sand"
+        },
+        {
+            "id": "cydonia_mines",
+            "name": "Cydonia Mines",
+            "description": "Descend the Mines",
+            "dimension": "overworld",
+            "lodestone": [
+                -159,
+                41,
+                3527
+            ],
+            "advancement_icon": "lapis_ore"
         },
         {
             "id": "tartarus",
@@ -387,23 +427,6 @@
                 "give @a water_bucket"
             ],
             "advancement_icon": "snow_block"
-        },
-        {
-            "id": "hailstone",
-            "name": "Hailstone",
-            "description": "Reach Hailstone",
-            "dimension": "overworld",
-            "lodestone": [
-                -735,
-                130,
-                -4042
-            ],
-            "items": [
-                "give @a cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={text:\"Grandma's Biscuit\",italic:false}] 32",
-                "give @a leather_boots",
-                "give @a stone_sword"
-            ],
-            "advancement_icon": "prismarine_bricks"
         },
         {
             "id": "first_shrine",
