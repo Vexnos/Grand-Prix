@@ -1,0 +1,254 @@
+{
+    "name": "Secondary Grand Prix Course",
+    "start_description": "Crown Peak Beacon",
+    "start_coordinates": [-704, 99, 580],
+    "worldborder_center": [-704, 580],
+    "worldborder_size": 40,
+    "initial_items": [],
+    "checkpoints": [
+        {
+            "id": "redstone_academy",
+            "name": "Redstone Academy",
+            "description": "Reach the Redstone Academy",
+            "dimension": "overworld",
+            "lodestone": [-1376, 106, -254],
+            "advancement_icon": "redstone"
+        },
+        {
+            "id": "hamburville",
+            "name": "Hamburville",
+            "description": "Reach Hamburville",
+            "dimension": "overworld",
+            "lodestone": [-2323, 86, 273],
+            "advancement_icon": "jungle_planks"
+        },
+        {
+            "id": "riverstead",
+            "name": "Riverstead",
+            "description": "Reach Riverstead",
+            "dimension": "overworld",
+            "lodestone": [-3543, 78, 661],
+            "advancement_icon": "wither_skeleton_skull"
+        },
+        {
+            "id": "felora",
+            "name": "Felora",
+            "description": "Reach Felora",
+            "dimension": "overworld",
+            "lodestone": [-3771, 120, -42],
+            "advancement_icon": "jungle_leaves"
+        },
+        {
+            "id": "etherea",
+            "name": "Etherea",
+            "description": "Reach Etherea",
+            "dimension": "overworld",
+            "lodestone": [-1946, 157, -928],
+            "advancement_icon": "dragon_egg"
+        },
+        {
+            "id": "twin_pass",
+            "name": "Twin Pass",
+            "description": "Reach Twin Pass",
+            "dimension": "overworld",
+            "lodestone": [-1087, 169, -969],
+            "advancement_icon": "glowstone"
+        },
+        {
+            "id": "conchord_forestry",
+            "name": "Conchord Forestry",
+            "description": "Reach the Conchord Forestry",
+            "dimension": "overworld",
+            "lodestone": [-942, 78, -1830],
+            "advancement_icon": "oak_log"
+        },
+        {
+            "id": "voltaria",
+            "name": "Voltaria",
+            "description": "Reach Voltaria",
+            "dimension": "overworld",
+            "lodestone": [-1528, 77, -2459],
+            "advancement_icon": "diamond_sword",
+            "custom_model_data": 4
+        },
+        {
+            "id": "mendoria",
+            "name": "Mendoria",
+            "description": "Reach Mendoria",
+            "dimension": "overworld",
+            "lodestone": [-2077, 93, -3275],
+            "advancement_icon": "diamond_sword",
+            "custom_model_data": 10
+        },
+        {
+            "id": "council_chamber",
+            "name": "Ardoni Council Chamber",
+            "description": "Reach the Council Chamber",
+            "dimension": "overworld",
+            "lodestone": [-1230, 101, -3259],
+            "advancement_icon": "diamond_sword",
+            "custom_model_data": 9
+        },
+        {
+            "id": "ardoni_arena",
+            "name": "Tournament Arena",
+            "description": "Reach the Tournament Arena",
+            "dimension": "overworld",
+            "lodestone": [-539, 60, -3372],
+            "advancement_icon": "diamond_sword",
+            "custom_model_data": 2
+        },
+        {
+            "id": "ardoni_cemetery",
+            "name": "Ardoni Burial Grounds",
+            "description": "Reach the Ardoni Burial Grounds",
+            "dimension": "overworld",
+            "lodestone": [615, 111, -3165],
+            "advancement_icon": "blue_orchid"
+        },
+        {
+            "id": "nestoria",
+            "name": "Nestoria",
+            "description": "Reach Nestoria",
+            "dimension": "overworld",
+            "lodestone": [1569, 83, -3202],
+            "advancement_icon": "diamond_sword",
+            "custom_model_data": 11
+        },
+        {
+            "id": "sendaria",
+            "name": "Sendaria",
+            "description": "Reach Sendaria",
+            "dimension": "overworld",
+            "lodestone": [-216, 88, -2734],
+            "advancement_icon": "diamond_sword",
+            "custom_model_data": 12
+        },
+        {
+            "id": "hogtown",
+            "name": "Hogtown",
+            "description": "Reach Hogtown",
+            "dimension": "overworld",
+            "lodestone": [-69, 85, -1695],
+            "advancement_icon": "potion",
+            "potion_contents": "poison"
+        },
+        {
+            "id": "ataraxia",
+            "name": "Ataraxia",
+            "description": "Reach Ataraxia",
+            "dimension": "overworld",
+            "lodestone": [159, 130, -664],
+            "advancement_icon": "diamond_axe",
+            "custom_model_data": 1
+        },
+        {
+            "id": "hyperia",
+            "name": "Hyperia",
+            "description": "Reach Hyperia",
+            "dimension": "overworld",
+            "lodestone": [1842, 107, -289],
+            "advancement_icon": "quartz_block"
+        },
+        {
+            "id": "pinkolson_farm",
+            "name": "Pinkolson Farm",
+            "description": "Reach Pinkolson Farm",
+            "dimension": "overworld",
+            "lodestone": [663, 80, -49],
+            "advancement_icon": "rabbit_stew"
+        },
+        {
+            "id": "camp_enher",
+            "name": "Camp Enher",
+            "description": "Reach Camp Enher",
+            "dimension": "overworld",
+            "lodestone": [158, 90, 1488],
+            "advancement_icon": "pointed_dripstone"
+        },
+        {
+            "id": "mt_kaelos",
+            "name": "Mount Kaelos",
+            "description": "Reach Mount Kaelos",
+            "dimension": "overworld",
+            "lodestone": [217, 59, 2812],
+            "advancement_icon": "magma_block"
+        },
+        {
+            "id": "meridian",
+            "name": "Meridian",
+            "description": "Don't get Cydonia'd",
+            "dimension": "overworld",
+            "lodestone": [61, 83, 4605],
+            "advancement_icon": "sand"
+        },
+        {
+            "id": "tartarus",
+            "name": "Tartarus",
+            "description": "Reach Tartarus",
+            "dimension": "overworld",
+            "lodestone": [-55, 49, 2470],
+            "advancement_icon": "diamond_ore"
+        },
+        {
+            "id": "bhengorn",
+            "name": "Bhengorn",
+            "description": "Reach Bhengorn",
+            "dimension": "overworld",
+            "lodestone": [-650, 113, 2166],
+            "advancement_icon": "spruce_sapling"
+        },
+        {
+            "id": "mt_velgrin",
+            "name": "Mount Velgrin",
+            "description": "Scale Mount Velgrin",
+            "dimension": "overworld",
+            "lodestone": [-21, 197, 894],
+            "advancement_icon": "carrot_on_a_stick",
+            "custom_model_data": 2
+        },
+        {
+            "id": "heart_of_ardonia",
+            "name": "Heart of Ardonia",
+            "description": "Reach the Heart of Ardonia",
+            "dimension": "overworld",
+            "lodestone": [-2, 70, 0],
+            "advancement_icon": "beacon"
+        },
+        {
+            "id": "nazgard",
+            "name": "Nazgard",
+            "description": "Break into the Vault",
+            "dimension": "the_nether",
+            "lodestone": [-376, 56, -1089],
+            "items": [
+                "give @a potion[potion_contents={potion:\"minecraft:fire_resistance\"}]"
+            ],
+            "advancement_icon": "chiseled_nether_bricks"
+        },
+        {
+            "id": "vault",
+            "name": "The Vault",
+            "description": "Enter the Vault",
+            "dimension": "overworld",
+            "lodestone": [-703, 82, -178],
+            "advancement_icon": "emerald"
+        },
+        {
+            "id": "the_end",
+            "name": "The End Domain",
+            "description": "Avert your Gaze",
+            "dimension": "the_end",
+            "lodestone": [-1113, 53, -472],
+            "advancement_icon": "end_crystal"
+        },
+        {
+            "id": "crown_peak",
+            "name": "Crown Peak",
+            "description": "Behold the Throne",
+            "dimension": "overworld",
+            "lodestone": [-622, 115, 579],
+            "advancement_icon": "obsidian"
+        }
+    ]
+}

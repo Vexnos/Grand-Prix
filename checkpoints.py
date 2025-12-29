@@ -25,7 +25,7 @@ def import_course(path):
     preset_courses = {
         "main": "courses/main.json",
         "reverse": "courses/reverse.json",
-        "test": "courses/__template.json"
+        "crownpeak": "courses/crownpeak.json"
     }
     # Check if path is in presets dictionary
     if path in preset_courses:
@@ -272,7 +272,7 @@ PORTALS = {
 #-------Main-Routine-------
 if __name__ == "__main__":
     # Import course from json
-    path = input("Please input the path to your course here (or select a preset: main, reverse): ").lower()
+    path = input("Please input the path to your course here (or select a preset: main, reverse, crownpeak): ").lower()
     course = import_course(path)
     
     compile_advancements(course)
