@@ -13,4 +13,4 @@ function race:portals
 execute if score #startline phase matches 1 as @a[scores={deaths=1..}] run function race:start/effects
 
 # Give speed to every horse for their rider having the luck effect
-execute if score #mode gamemode matches 2 as @a[predicate=race:has_luck] at @s run effect give @e[type=skeleton_horse,sort=nearest,limit=1] speed 1 1 false
+execute if score #mode gamemode matches 2 as @a[predicate=race:has_luck] at @s run effect give @e[type=skeleton_horse,sort=nearest,limit=1] speed 1 0 false
