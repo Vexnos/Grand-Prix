@@ -122,7 +122,7 @@
             "description": "Realize IT WASN'T IN MAHOA DOCKS",
             "dimension": "overworld",
             "lodestone": [-3486, 27, 1272],
-            "advancement_icon": "magma_block"
+            "advancement_icon": "wither_skeleton_skull"
         },
         {
             "id": "redstone_academy",
