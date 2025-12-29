@@ -13,10 +13,19 @@
             "id": "hamburville"
         },
         {
+            "id": "stonevale"
+        },
+        {
+            "id": "aerilon"
+        },
+        {
             "id": "riverstead_bell"
         },
         {
             "id": "felora_parliament"
+        },
+        {
+            "id": "fronchester"
         },
         {
             "id": "etherea_dragon_egg"
@@ -55,7 +64,7 @@
             "id": "galleous_forge"
         },
         {
-            "id": "hyperia_beacon"
+            "id": "hyperia_parliament"
         },
         {
             "id": "pinkolson_farm"
@@ -67,13 +76,10 @@
             "id": "mt_kaelos"
         },
         {
-            "id": "meridian_beacon"
+            "id": "cydonia_mines"
         },
         {
             "id": "tartarus_throne"
-        },
-        {
-            "id": "bhengorn_meeting_room"
         },
         {
             "id": "mt_velgrin_portal"

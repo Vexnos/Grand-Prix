@@ -609,11 +609,11 @@
         "advancement_icon": "todo"
     },
     {
-        "id": "fronchester_well",
+        "id": "fronchester",
         "name": "Fronchester",
-        "description": "todo",
-        "lodestone": [-3032, 54, -688],
-        "advancement_icon": "todo"
+        "description": "Reach Fronchester",
+        "lodestone": [-3032, 75, -713],
+        "advancement_icon": "oak_wood"
     },
     {
         "id": "mahoa_docks_ship",
@@ -722,6 +722,13 @@
         "lodestone": [-2960, 94, 478],
         "advancement_icon": "flint_and_steel"
     },
+	{
+		"id": "aerilon",
+		"name": "Aerilon",
+		"description": "Dream of Snowmen",
+		"lodestone": [-2849, 79, 318],
+		"advancement_icon": "carved_pumpkin"
+	},
     {
         "id": "basalt_mines",
         "name": "Basalt Mines",
@@ -746,9 +753,9 @@
     {
         "id": "stonevale",
         "name": "Stonevale",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Stonevale: Become Moth",
+        "lodestone": [-2115, 93, -211],
+        "advancement_icon": "campfire"
     },
     {
         "id": "thralkeld",
