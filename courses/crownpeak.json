@@ -82,10 +82,7 @@
             "id": "heart_of_ardonia_beacon"
         },
         {
-            "id": "nazgard_vault",
-            "items": [
-                "give @a potion[potion_contents={potion:\"minecraft:fire_resistance\"}]"
-            ]
+            "id": "nazgard_vault"
         },
         {
             "id": "vault"
