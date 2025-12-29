@@ -61,5 +61,8 @@ scoreboard objectives add phase dummy
 scoreboard objectives setdisplay below_name health
 scoreboard players set #countdown countdown 0
 
+# Forceload the Sign
+execute in minecraft:overworld run forceload add -302 -4283
+
 # Main
 function race:main_10t
