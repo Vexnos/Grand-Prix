@@ -42,7 +42,7 @@ def import_course(path):
         for key in "name", "description", "advancement_icon", "lodestone":
             checkpoint[key] = checkpoint_data[key]
         checkpoint["dimension"] = checkpoint_data["dimension"] if "dimension" in checkpoint_data else "overworld"
-        for key in "custom_model_data", "potion_contents":
+        for key in "custom_model_data", "potion_contents", "banner_patterns":
             if key in checkpoint_data:
                 checkpoint[key] = checkpoint_data[key]
     return course
@@ -97,6 +97,10 @@ def compile_advancements(course):
             advancement["display"]["icon"]["components"] = {
                 "potion_contents": checkpoint["potion_contents"],
                 "enchantment_glint_override": True
+            }
+        if "banner_patterns" in checkpoint:
+            advancement["display"]["icon"]["components"] = {
+                "minecraft:banner_patterns": checkpoint["banner_patterns"]
             }
         with open(f"{ADVANCEMENTS_PATH}{checkpoint['id']}.json", "w") as file:
             json.dump(advancement, file, indent=4)

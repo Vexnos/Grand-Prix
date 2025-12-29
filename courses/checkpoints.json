@@ -16,9 +16,52 @@
     {
         "id": "hailstone_beacon",
         "name": "Hailstone",
-        "description": "Reach Hailstone's beacon",
+        "description": "Reach Hailstone's Beacon",
         "lodestone": [-735, 130, -4042],
-        "advancement_icon": "prismarine_bricks"
+        "advancement_icon": "light_blue_banner",
+		"banner_patterns": [
+			{
+				"color": "blue",
+				"pattern": "gradient"
+			},
+			{
+				"color": "white",
+				"pattern": "triangles_bottom"
+			},
+			{
+				"color": "light_blue",
+				"pattern": "triangles_top"
+			},
+			{
+				"color": "white",
+				"pattern": "flower"
+			}
+		]
+    },
+	{
+        "id": "hailstone_keep",
+        "name": "Hailstone",
+        "description": "Reach Hailstone's Keep",
+        "lodestone": [-829, 152, -4042],
+        "advancement_icon": "light_blue_banner",
+		"banner_patterns": [
+			{
+				"color": "blue",
+				"pattern": "gradient"
+			},
+			{
+				"color": "white",
+				"pattern": "triangles_bottom"
+			},
+			{
+				"color": "light_blue",
+				"pattern": "triangles_top"
+			},
+			{
+				"color": "white",
+				"pattern": "flower"
+			}
+		]
     },
     {
         "id": "walls_of_time_back",
@@ -89,7 +132,7 @@
         "id": "kaltaria_shrine",
         "name": "Kaltaria",
         "description": "Practise with your Aggressium Song",
-        "lodestone": [-1190, 107, -3257],
+        "lodestone": [-1220, 90, -2934],
         "advancement_icon": "carrot_on_a_stick",
         "custom_model_data": 10
     },
@@ -150,7 +193,7 @@
     },
     {
         "id": "aechelos_house",
-        "name": "Aechelos' House",
+        "name": "Nestoria",
         "description": "Nuke the house",
         "lodestone": [1585, 69, -3213],
         "advancement_icon": "diamond_sword",
@@ -224,8 +267,8 @@
         "advancement_icon": "todo"
     },
     {
-        "id": "mr_finch_house",
-        "name": "Mr Finch's House",
+        "id": "underwood",
+        "name": "Underwood",
         "description": "Harvest the sugar cane",
         "lodestone": "todo",
         "advancement_icon": "iron_hoe"
@@ -256,14 +299,50 @@
         "name": "Oakendale",
         "description": "Reach Oakendale",
         "lodestone": [-1291, 88, -1302],
-        "advancement_icon": "wheat"
+        "advancement_icon": "green_banner",
+		"banner_patterns": [
+			{
+				"color": "green",
+				"pattern": "stripe_downright"
+			},
+			{
+				"color": "brown",
+				"pattern": "triangle_bottom"
+			},
+			{
+				"color": "brown",
+				"pattern": "triangle_top"
+			},
+			{
+				"color": "white",
+				"pattern": "cross"
+			}
+		]
     },
     {
         "id": "oakendale_parliament",
         "name": "Oakendale",
         "description": "todo",
         "lodestone": "todo",
-        "advancement_icon": "todo"
+        "advancement_icon": "green_banner",
+		"banner_patterns": [
+			{
+				"color": "green",
+				"pattern": "stripe_downright"
+			},
+			{
+				"color": "brown",
+				"pattern": "triangle_bottom"
+			},
+			{
+				"color": "brown",
+				"pattern": "triangle_top"
+			},
+			{
+				"color": "white",
+				"pattern": "cross"
+			}
+		]
     },
     {
         "id": "conchord_forestry",
@@ -281,7 +360,7 @@
     },
     {
         "id": "clementine_house",
-        "name": "Clementine's House",
+        "name": "Biggerton",
         "description": "Get attacked by bandits",
         "lodestone": "todo",
         "advancement_icon": "todo"
@@ -324,8 +403,8 @@
     },
     {
         "id": "claudia_house",
-        "name": "Claudia's House",
-        "description": "Accuse the accountant of being a bandit",
+        "name": "Forson",
+        "description": "Accuse the accountant of being a Bandit",
         "lodestone": [1811, 79, -1994],
         "advancement_icon": "todo"
     },
@@ -394,7 +473,7 @@
     },
     {
         "id": "sandford_house",
-        "name": "Sandford's House",
+        "name": "Havenshire",
         "description": "todo",
         "lodestone": "todo",
         "advancement_icon": "todo"
@@ -429,7 +508,7 @@
     },
     {
         "id": "tobias_house",
-        "name": "Tobias' house",
+        "name": "Diamond Heights",
         "description": "todo",
         "lodestone": "todo",
         "advancement_icon": "todo"
@@ -450,7 +529,7 @@
     },
     {
         "id": "galvim_house",
-        "name": "Galvim's House",
+        "name": "Hyperia",
         "description": "Assassinate the lawyer",
         "lodestone": [1665, 81, -500],
         "advancement_icon": "paper"
@@ -460,28 +539,24 @@
         "name": "Hyperia",
         "description": "Admire the Architecture",
         "lodestone": [1842, 107, -289],
-        "advancement_icon": "quartz_block"
+        "advancement_icon": "gray_banner",
+		"banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
     },
     {
         "id": "hyperia_parliament",
         "name": "Hyperia",
         "description": "Bribe the politicians",
         "lodestone": [1905, 123, -289],
-        "advancement_icon": "todo"
+        "advancement_icon": "gray_banner",
+		"banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
     },
     {
         "id": "hyperia_port",
         "name": "Hyperia",
         "description": "todo",
         "lodestone": [1861, 98, -455],
-        "advancement_icon": "todo"
-    },
-    {
-        "id": "hyperia_lighthouse",
-        "name": "Hyperia",
-        "description": "todo",
-        "lodestone": [1788, 109, -138],
-        "advancement_icon": "todo"
+        "advancement_icon": "gray_banner",
+		"banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
     },
     {
         "id": "isuma",
@@ -559,15 +634,58 @@
         "name": "Felora",
         "description": "Survive the Jungle",
         "lodestone": [-3805, 100, -63],
-        "advancement_icon": "jungle_leaves"
+        "advancement_icon": "black_banner",
+		"banner_patterns": [
+			{
+				"color": "green",
+				"pattern": "triangle_top"
+			},
+			{
+				"color": "green",
+				"pattern": "stripe_center"
+			},
+			{
+				"color": "lime",
+				"pattern": "flower"
+			},
+			{
+				"color": "black",
+				"pattern": "rhombus"
+			},
+			{
+				"color": "lime",
+				"pattern": "circle"
+			}
+		]
     },
     {
         "id": "felora_parliament",
         "name": "Felora",
         "description": "Reach Felora",
         "lodestone": [-3771, 120, -42],
-        "advancement_icon": "jungle_leaves",
-        "todo" : "Felden flag"
+        "advancement_icon": "black_banner",
+		"banner_patterns": [
+			{
+				"color": "green",
+				"pattern": "triangle_top"
+			},
+			{
+				"color": "green",
+				"pattern": "stripe_center"
+			},
+			{
+				"color": "lime",
+				"pattern": "flower"
+			},
+			{
+				"color": "black",
+				"pattern": "rhombus"
+			},
+			{
+				"color": "lime",
+				"pattern": "circle"
+			}
+		]
     },
     {
         "id": "ferndale_tavern",
@@ -640,25 +758,27 @@
         "advancement_icon": "todo"
     },
     {
-        "id": "sullivan_house",
+        "id": "sulliman_house",
         "name": "Crown Peak",
-        "description": "todo",
+        "description": "Keep Your Nose Outta Trouble, Kid",
         "lodestone": [-634, 132, 497],
-        "advancement_icon": "todo"
+        "advancement_icon": "brewing_stand"
     },
     {
         "id": "crown_peak_throne",
         "name": "Crown Peak",
         "description": "Behold the Throne",
         "lodestone": [-622, 115, 579],
-        "advancement_icon": "obsidian"
+        "advancement_icon": "gray_banner",
+		"banner_patterns": [{"color":"light_gray","pattern":"minecraft:bricks"},{"color":"purple","pattern":"minecraft:triangle_top"},{"color":"gray","pattern":"minecraft:border"},{"color":"white","pattern":"minecraft:straight_cross"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"white","pattern":"minecraft:circle"}]
     },
     {
         "id": "crown_peak_beacon",
         "name": "Crown Peak",
         "description": "Behold the Throne",
         "lodestone": [-703, 97, 579],
-        "advancement_icon": "beacon"
+        "advancement_icon": "gray_banner",
+		"banner_patterns": [{"color":"light_gray","pattern":"minecraft:bricks"},{"color":"purple","pattern":"minecraft:triangle_top"},{"color":"gray","pattern":"minecraft:border"},{"color":"white","pattern":"minecraft:straight_cross"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"white","pattern":"minecraft:circle"}]
     },
     {
         "id": "crown_peak_cake_stand",
@@ -690,7 +810,7 @@
     },
     {
         "id": "thrakatos_office",
-        "name": "Thrakatos' Office",
+        "name": "Redstone Academy",
         "description": "Research Unlimited Power",
         "lodestone": [-1360, 107, -243],
         "advancement_icon": "lightning_rod"
@@ -711,7 +831,7 @@
     },
     {
         "id": "heart_of_ardonia_beacon",
-        "name": "Heart of Ardonia Beacon",
+        "name": "Heart of Ardonia",
         "description": "Reach the Heart of Ardonia",
         "lodestone": [-2, 70, 0],
         "advancement_icon": "beacon"
@@ -854,7 +974,8 @@
         "name": "Tartarus",
         "description": "Successfully Execute Operation Pickaxe",
         "lodestone": [-55, 49, 2470],
-        "advancement_icon": "diamond_ore"
+        "advancement_icon": "red_banner",
+		"banner_patterns": [{"color":"red","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:circle"},{"color":"black","pattern":"minecraft:triangle_top"},{"color":"black","pattern":"minecraft:triangle_bottom"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:curly_border"},{"color":"black","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"black","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:rhombus"}]
     },
     {
         "id": "tartarus_treasure_room",
@@ -868,7 +989,8 @@
         "name": "Tartarus",
         "description": "MLG into Tartarus",
         "lodestone": [-55, 31, 2453],
-        "advancement_icon": "diamond_ore"
+        "advancement_icon": "red_banner",
+		"banner_patterns": [{"color":"red","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:circle"},{"color":"black","pattern":"minecraft:triangle_top"},{"color":"black","pattern":"minecraft:triangle_bottom"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:curly_border"},{"color":"black","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"black","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:rhombus"}]
     },
     {
         "id": "tartarus_crypt",
@@ -952,14 +1074,42 @@
         "name": "Meridian",
         "description": "Don't get Cydonia'd",
         "lodestone": [61, 83, 4605],
-        "advancement_icon": "sand"
+        "advancement_icon": "white_banner",
+		"banner_patterns": [
+			{
+				"color": "gray",
+				"pattern": "half_horizontal"
+			},
+			{
+				"color": "orange",
+				"pattern": "stripe_middle"
+			},
+			{
+				"color": "orange",
+				"pattern": "rhombus"
+			}
+		]
     },
     {
         "id": "meridian_parliament",
         "name": "Meridian",
         "description": "todo",
         "lodestone": "todo",
-        "advancement_icon": "todo"
+        "advancement_icon": "white_banner",
+		"banner_patterns": [
+			{
+				"color": "gray",
+				"pattern": "half_horizontal"
+			},
+			{
+				"color": "orange",
+				"pattern": "stripe_middle"
+			},
+			{
+				"color": "orange",
+				"pattern": "rhombus"
+			}
+		]
     },
     {
         "id": "mt_tempus_necrobase",
