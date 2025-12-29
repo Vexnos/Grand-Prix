@@ -3,7 +3,7 @@
 File: checkpoints.py
 Project: Ardonia Grand Prix Checkpoint Compiler
 Date: 2025-12-28
-Author: Vexnos
+Authors: Vexnos, Mathmagician8191
 -----------------------------------------------
 '''
 #-------Libraries-------
