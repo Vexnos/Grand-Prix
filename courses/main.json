@@ -7,71 +7,39 @@
     "initial_items": [],
     "checkpoints": [
         {
-            "id": "hailstone",
-            "name": "Hailstone",
-            "description": "Reach Hailstone",
-            "dimension": "overworld",
-            "lodestone": [-735, 130, -4042],
+            "id": "hailstone_beacon",
             "items": [
                 "give @a cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={text:\"Grandma's Biscuit\",italic:false}] 32",
                 "give @a leather_boots",
                 "give @a stone_sword"
-            ],
-            "advancement_icon": "prismarine_bricks"
+            ]
         },
         {
             "id": "northwind_pass",
-            "name": "Northwind Pass",
-            "description": "Traverse the Northwind Pass",
-            "dimension": "overworld",
-            "lodestone": [-22, 174, -3419],
             "items": [
                 "give @a carrot 16",
                 "give @a stone_axe",
                 "give @a leather_helmet",
                 "give @a water_bucket"
-            ],
-            "advancement_icon": "snow_block"
+            ]
         },
         {
-            "id": "ardoni_arena",
-            "name": "Tournament Arena",
-            "description": "Descend the Tournament Arena",
-            "dimension": "overworld",
-            "lodestone": [-22, 174, -3419],
-            "advancement_icon": "diamond_sword",
-            "custom_model_data": 2
+            "id": "ardoni_arena"
         },
         {
-            "id": "kaltaria",
-            "name": "Kaltaria",
-            "description": "Reach Kaltaria",
-            "dimension": "overworld",
-            "lodestone": [-1152, 117, -2990],
+            "id": "kaltaria_village",
             "items": [
                 "give @a carrot 16",
                 "give @a leather_chestplate",
                 "give @a leather_leggings",
                 "give @a stone_pickaxe"
-            ],
-            "advancement_icon": "diamond_sword",
-            "custom_model_data": 9
+            ]
         },
         {
-            "id": "voltaria",
-            "name": "Voltaria",
-            "description": "Reach Voltaria",
-            "dimension": "overworld",
-            "lodestone": [-1528, 77, -2459],
-            "advancement_icon": "diamond_sword",
-            "custom_model_data": 4
+            "id": "voltaria_shrine"
         },
         {
-            "id": "oakendale",
-            "name": "Oakendale",
-            "description": "Reach Oakendale",
-            "dimension": "overworld",
-            "lodestone": [-1291, 88, -1302],
+            "id": "oakendale_beacon",
             "items": [
                 "give @a iron_chestplate",
                 "give @a iron_boots",
@@ -80,23 +48,13 @@
                 "give @a arrow 32",
                 "give @a bread 16",
                 "give @a lava_bucket"
-            ],
-            "advancement_icon": "wheat"
+            ]
         },
         {
-            "id": "etherea",
-            "name": "Etherea",
-            "description": "Ascend the Tower",
-            "dimension": "overworld",
-            "lodestone": [-1946, 166, -967],
-            "advancement_icon": "dragon_egg"
+            "id": "etherea_tower"
         },
         {
-            "id": "felora",
-            "name": "Felora",
-            "description": "Survive the Jungle",
-            "dimension": "overworld",
-            "lodestone": [-3805, 100, -63],
+            "id": "felora_beacon",
             "items": [
                 "give @a iron_helmet",
                 "give @a iron_leggings",
@@ -105,66 +63,31 @@
                 "give @a iron_pickaxe",
                 "give @a bow[enchantments={power:1,unbreaking:2}]",
                 "give @a bread 16"
-            ],
-            "advancement_icon": "jungle_leaves"
+            ]
         },
         {
-            "id": "fort_zuka",
-            "name": "Fort Zuka",
-            "description": "Break through the Walls",
-            "dimension": "overworld",
-            "lodestone": [-3416, 80, 385],
-            "advancement_icon": "bow"
+            "id": "fort_zuka"
         },
         {
-            "id": "mt_tempus",
-            "name": "Mount Tempus",
-            "description": "Realize IT WASN'T IN MAHOA DOCKS",
-            "dimension": "overworld",
-            "lodestone": [-3486, 27, 1272],
-            "advancement_icon": "wither_skeleton_skull"
+            "id": "mt_tempus_necrobase"
         },
         {
-            "id": "redstone_academy",
-            "name": "Redstone Academy",
-            "description": "Pass University",
-            "dimension": "overworld",
-            "lodestone": [-1376, 79, -186],
-            "advancement_icon": "redstone"
+            "id": "redstone_academy_reactor"
         },
         {
-            "id": "vault",
-            "name": "The Vault",
-            "description": "Enter the Vault",
-            "dimension": "overworld",
-            "lodestone": [-703, 82, -178],
-            "advancement_icon": "emerald"
+            "id": "vault"
         },
         {
-            "id": "nazgard",
-            "name": "Nazgard",
-            "description": "Break into the Vault",
-            "dimension": "the_nether",
-            "lodestone": [-376, 56, -1089],
+            "id": "nazgard_vault",
             "items": [
                 "give @a potion[potion_contents={potion:\"minecraft:fire_resistance\"}]"
-            ],
-            "advancement_icon": "chiseled_nether_bricks"
+            ]
         },
         {
-            "id": "the_end",
-            "name": "The End Domain",
-            "description": "Avert your Gaze",
-            "dimension": "the_end",
-            "lodestone": [-1113, 53, -472],
-            "advancement_icon": "end_crystal"
+            "id": "the_end"
         },
         {
-            "id": "crown_peak",
-            "name": "Crown Peak",
-            "description": "Behold the Throne",
-            "dimension": "overworld",
-            "lodestone": [-703, 97, 579],
+            "id": "crown_peak_beacon",
             "items": [
                 "give @a iron_chestplate[enchantments={protection:2}]",
                 "give @a iron_helmet[enchantments={protection:2}]",
@@ -175,45 +98,24 @@
                 "give @a bow[enchantments={power:3,unbreaking:2}]",
                 "give @a oak_log 16",
                 "give @a cooked_salmon 16"
-            ],
-            "advancement_icon": "beacon"
+            ]
         },
         {
-            "id": "mt_velgrin",
-            "name": "Mount Velgrin",
-            "description": "Scale Mount Velgrin",
-            "dimension": "overworld",
-            "lodestone": [-21, 197, 894],
-            "advancement_icon": "carrot_on_a_stick",
-            "custom_model_data": 2
+            "id": "mt_velgrin_portal"
         },
         {
-            "id": "tartarus",
-            "name": "Tartarus",
-            "description": "Successfully Execute Operation Pickaxe",
-            "dimension": "overworld",
-            "lodestone": [-55, 49, 2470],
+            "id": "tartarus_throne",
             "items": [
                 "give @a cooked_beef 8",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"}] 2",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2"
-            ],
-            "advancement_icon": "diamond_ore"
+            ]
         },
         {
-            "id": "cydonia_mines",
-            "name": "Cydonia Mines",
-            "description": "Descend the Mines",
-            "dimension": "overworld",
-            "lodestone": [-159, 41, 3527],
-            "advancement_icon": "lapis_ore"
+            "id": "cydonia_mines"
         },
         {
-            "id": "meridian",
-            "name": "Meridian",
-            "description": "Don't get Cydonia'd",
-            "dimension": "overworld",
-            "lodestone": [61, 83, 4605],
+            "id": "meridian_beacon",
             "items": [
                 "give @a diamond_helmet[enchantments={protection:2}]",
                 "give @a diamond_chestplate[enchantments={protection:2}]",
@@ -225,40 +127,19 @@
                 "give @a shield[enchantments={unbreaking:3},base_color=\"black\"]",
                 "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
                 "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
-            ],
-            "advancement_icon": "sand"
+            ]
         },
         {
-            "id": "kaeru",
-            "name": "Kaeru",
-            "description": "Defeat the Magnorites",
-            "dimension": "overworld",
-            "lodestone": [727, 104, 3625],
-            "advancement_icon": "red_sandstone"
+            "id": "kaeru"
         },
         {
-            "id": "amaria",
-            "name": "Amaria",
-            "description": "Survive the Fall",
-            "dimension": "overworld",
-            "lodestone": [1569, 105, 1199],
-            "advancement_icon": "potion",
-            "potion_contents": "regeneration"
+            "id": "amaria_checkpoint"
         },
         {
-            "id": "diamond_heights",
-            "name": "Diamond Heights",
-            "description": "Become a C.E.O",
-            "dimension": "overworld",
-            "lodestone": [1413, 116, -61],
-            "advancement_icon": "diamond_block"
+            "id": "diamond_heights_mayor"
         },
         {
-            "id": "hyperia",
-            "name": "Hyperia",
-            "description": "Admire the Architecture",
-            "dimension": "overworld",
-            "lodestone": [1842, 107, -289],
+            "id": "hyperia_beacon",
             "items": [
                 "give @a diamond_helmet[enchantments={blast_protection:2,protection:2,respiration:3,aqua_affinity:1}]",
                 "give @a diamond_chestplate[enchantments={blast_protection:2,protection:2}]",
@@ -272,70 +153,32 @@
                 "give @a obsidian 32",
                 "give @a cooked_beef 16",
                 "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
-            ],
-            "advancement_icon": "quartz_block"
+            ]
         },
         {
-            "id": "ataraxia",
-            "name": "Ataraxia",
-            "description": "Ascend the Islands",
-            "dimension": "overworld",
-            "lodestone": [98, 168, -618],
-            "advancement_icon": "vine"
+            "id": "ataraxia_shrine"
         },
         {
-            "id": "biggerton",
-            "name": "Biggerton",
-            "description": "Ring the Bell",
-            "dimension": "overworld",
-            "lodestone": [-396, 98, -1376],
-            "advancement_icon": "bell"
+            "id": "biggerton_bell"
         },
         {
-            "id": "sendaria",
-            "name": "Sendaria",
-            "description": "Take a break, you deserve it :)",
-            "dimension": "overworld",
-            "lodestone": [-193, 97, -2383],
-            "advancement_icon": "diamond_sword",
-            "custom_model_data": 12
+            "id": "sendaria_osivian_shrine"
         },
         {
             "id": "ardoni_cemetery",
-            "name": "Ardoni Cemetery",
-            "description": "Pay your respects",
-            "dimension": "overworld",
-            "lodestone": [615, 111, -3165],
             "items": [
                 "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
                 "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
-            ],
-            "advancement_icon": "blue_orchid"
+            ]
         },
         {
-            "id": "nestoria",
-            "name": "Nestoria",
-            "description": "Catch a Fish",
-            "dimension": "overworld",
-            "lodestone": [1569, 83, -3202],
-            "advancement_icon": "diamond_sword",
-            "custom_model_data": 11
+            "id": "nestoria_shrine"
         },
         {
-            "id": "silverwatch",
-            "name": "Silverwatch",
-            "description": "Brave the Blizzard",
-            "dimension": "overworld",
-            "lodestone": [603, 77, -3963],
-            "advancement_icon": "snowball"
+            "id": "silverwatch_inn"
         },
         {
-            "id": "gale_point",
-            "name": "Gale Point",
-            "description": "Finish the Race!",
-            "dimension": "overworld",
-            "lodestone": [-16, 76, -4704],
-            "advancement_icon": "gold_block"
+            "id": "gale_point"
         }
     ]
 }

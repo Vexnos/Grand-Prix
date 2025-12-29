@@ -1,0 +1,985 @@
+[
+  {
+    "id": "first_shrine",
+    "name": "First Shrine",
+    "description": "Avoid Scheduling conflicts",
+    "lodestone": [-302, 117, -4283],
+    "advancement_icon": "allium"
+  },
+  {
+    "id": "gale_point",
+    "name": "Gale point",
+    "description": "Finish the Race!",
+    "lodestone": [-16, 76, -4704],
+    "advancement_icon": "gold_block"
+  },
+  {
+    "id": "hailstone_beacon",
+    "name": "Hailstone Beacon",
+    "description": "Reach Hailstone's beacon",
+    "lodestone": [-735, 130, -4042],
+    "advancement_icon": "prismarine_bricks"
+  },
+  {
+    "id": "walls_of_time_back",
+    "name": "Walls of Time",
+    "description": "Peruse the Walls of Time",
+    "lodestone": [-401, 120, -4232],
+    "advancement_icon": "oak_shelf"
+  },
+  {
+    "id": "walls_of_time_undercroft",
+    "name": "Walls of Time Undercroft",
+    "description": "Descend the Walls of Time",
+    "lodestone": [-444, 104, -4232],
+    "advancement_icon": "bookshelf"
+  },
+  {
+    "id": "frostburn",
+    "name": "Frostburn",
+    "description": "Freeze to Death",
+    "lodestone": [-123, 74, -4474],
+    "advancement_icon": "blue_ice"
+  },
+  {
+    "id": "silverwatch_castle",
+    "name": "Silverwatch castle",
+    "description": "Enter the Dragon's Mouth",
+    "lodestone": [661, 98, -4022],
+    "advancement_icon": "dragon_head"
+  },
+  {
+    "id": "silverwatch_inn",
+    "name": "Silverwatch inn",
+    "description": "Brave the Blizzard",
+    "lodestone": [603, 77, -3963],
+    "advancement_icon": "snowball"
+  },
+  {
+    "id": "camp_salmore",
+    "name": "Camp Salmore",
+    "description": "Hide from Allarak",
+    "lodestone": [479, 153, -3561],
+    "advancement_icon": "raw_cod"
+  },
+  {
+    "id": "northwind_pass",
+    "name": "Northwind Pass",
+    "description": "Traverse the Northwind Pass",
+    "lodestone": [-22, 174, -3419],
+    "advancement_icon": "snow_block"
+  },
+  {
+    "id": "mendoria_shrine",
+    "name": "Mendoria Shrine",
+    "description": "Farm in Peace",
+    "lodestone": [-2077, 93, -3275],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 10
+  },
+  {
+    "id": "kaltaria_village",
+    "name": "Kaltaria",
+    "description": "Find the Kaltaria Village",
+    "lodestone": [-1152, 117, -2990],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 9
+  },
+  {
+    "id": "kaltaria_shrine",
+    "name": "Kaltaria Shrine",
+    "description": "Practise with your Aggressium Song",
+    "lodestone": [-1190, 107, -3257],
+    "advancement_icon": "carrot_on_a_stick",
+    "custom_model_data": 10
+  },
+  {
+    "id": "kaltaria_meeting_room",
+    "name": "Ardoni Master meeting room",
+    "description": "Plan an attack on Mt Velgrin",
+    "lodestone": [-1230, 101, -3259],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 9
+  },
+  {
+    "id": "voltaria_shrine",
+    "name": "Voltaria Shrine",
+    "description": "Forge the Primes",
+    "lodestone": [-1528, 77, -2459],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 4
+  },
+  {
+    "id": "floating_tree",
+    "name": "Voltaria Floating Tree",
+    "description": "Climb the tree",
+    "lodestone": [-1305, 195, -2363],
+    "advancement_icon": "oak_sapling"
+  },
+  {
+    "id": "sendaria_osivian_shrine",
+    "name": "Sendaria Osivian Shrine",
+    "description": "Take a break, you deserve it :)",
+    "lodestone": [-193, 97, -2383],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 12
+  },
+  {
+    "id": "sendaria_old_checkpoint",
+    "name": "Sendaria Osivian Village",
+    "description": "Safeguard the Mobilium Prime",
+    "lodestone": [-210, 92, -2346],
+    "advancement_icon": "carrot_on_a_stick",
+    "custom_model_data": 8
+  },
+  {
+    "id": "sendaria_master_shrine",
+    "name": "Sendaria Master Shrine",
+    "description": "Practise with your Mobilium Song",
+    "lodestone": [-124, 83, -2754],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 12
+  },
+  {
+    "id": "sendaria_communal_area",
+    "name": "Sendaria Communal Area Tables",
+    "description": "Steal the chairs",
+    "lodestone": [-216, 88, -2734],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 12
+  },
+  {
+    "id": "aechelos_house",
+    "name": "Aechelos' house",
+    "description": "Nuke the house",
+    "lodestone": [1585, 69, -3213],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 5
+  },
+  {
+    "id": "nestoria_shrine",
+    "name": "Nestoria Shrine",
+    "description": "Catch a Fish",
+    "lodestone": [1569, 83, -3202],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 11
+  },
+  {
+    "id": "ardoni_arena_shrine",
+    "name": "Tournament Arena Shrine",
+    "description": "Prepare your weapons",
+    "lodestone": [-548, 115, -3383],
+    "advancement_icon": "carrot_on_a_stick",
+    "custom_model_data": 2
+  },
+  {
+    "id": "ardoni_arena",
+    "name": "Tournament Arena",
+    "description": "Descend the Tournament Arena",
+    "lodestone": [-551, 59, -3363],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 2
+  },
+  {
+    "id": "ardoni_arena_alternate",
+    "name": "Tournament Arena",
+    "description": "Descend the Tournament Arena",
+    "lodestone": [-539, 60, -3372],
+    "advancement_icon": "diamond_sword",
+    "custom_model_data": 2
+  },
+  {
+    "id": "ardoni_cemetery",
+    "name": "Ardoni Cemetery",
+    "description": "Pay your respects",
+    "lodestone": [615, 111, -3165],
+    "advancement_icon": "blue_orchid"
+  },
+  {
+    "id": "west_port_fountain",
+    "name": "West Port Fountain",
+    "description": "Make a wish!",
+    "lodestone": [-3162, 78, -2084],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "marshline",
+    "name": "Marshline",
+    "description": "todo",
+    "lodestone": [-2467, 74, -2630],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "deeproot",
+    "name": "Deeproot",
+    "description": "todo",
+    "lodestone": [-2053, 99, -2155],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "ireden",
+    "name": "Ireden",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "mr_finch_house",
+    "name": "Mr Finch's house",
+    "description": "Harvest the sugar cane",
+    "lodestone": "todo",
+    "advancement_icon": "iron_hoe"
+  },
+  {
+    "id": "leewa",
+    "name": "Leewa",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "etherea_tower",
+    "name": "Etherea Tower",
+    "description": "Scale the Tower",
+    "lodestone": [-1946, 166, -967],
+    "advancement_icon": "enchanting_table"
+  },
+  {
+    "id": "etherea_dragon_egg",
+    "name": "Etherea Dragon Egg",
+    "description": "Steal the Dragon Egg",
+    "lodestone": [-1946, 157, -928],
+    "advancement_icon": "dragon_egg"
+  },
+  {
+    "id": "oakendale_beacon",
+    "name": "Oakendale Beacon",
+    "description": "Reach Oakendale",
+    "lodestone": [-1291, 88, -1302],
+    "advancement_icon": "wheat"
+  },
+  {
+    "id": "oakendale_parliament",
+    "name": "Oakendale Parliament",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "conchord_forestry",
+    "name": "Conchord Forestry",
+    "description": "Reach the Conchord Forestry",
+    "lodestone": [-942, 78, -1830],
+    "advancement_icon": "oak_log"
+  },
+  {
+    "id": "biggerton_bell",
+    "name": "Biggerton Bell",
+    "description": "Ring the Bell",
+    "lodestone": [-396, 98, -1376],
+    "advancement_icon": "bell"
+  },
+  {
+    "id": "clementine_house",
+    "name": "Clementine's house",
+    "description": "Get attacked by bandits",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "hogtown",
+    "name": "Hogtown",
+    "description": "Visit the bar",
+    "lodestone": [-69, 85, -1695],
+    "advancement_icon": "potion",
+    "potion_contents": "poison"
+  },
+  {
+    "id": "twin_pass",
+    "name": "Twin Pass",
+    "description": "Reach Twin Pass",
+    "lodestone": [-1087, 169, -969],
+    "advancement_icon": "glowstone"
+  },
+  {
+    "id": "tabora_crags",
+    "name": "Tabora Crags",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "badlands",
+    "name": "Badlands",
+    "description": "todo",
+    "lodestone": [-762, 89, -2222],
+    "advancement_icon": "dead_bush"
+  },
+  {
+    "id": "koa_base",
+    "name": "Knights of Ardonia base",
+    "description": "todo",
+    "lodestone": [-207, 73, -1006],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "claudia_house",
+    "name": "Claudia's house",
+    "description": "Accuse the accountant of being a bandit",
+    "lodestone": [1811, 79, -1994],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "forson_main_hall",
+    "name": "Forson main hall",
+    "description": "todo",
+    "lodestone": [1856, 81, -1959],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "solkad_north_inn",
+    "name": "Solkad North Inn",
+    "description": "Burn down the inn",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "solkad_north_port",
+    "name": "Solkad North Port",
+    "description": "Catch some bandits",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "solkad_north_church",
+    "name": "Solkad North Church",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "solkad_north_windmill",
+    "name": "Solkad North Windmill",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "solkad",
+    "name": "Solkad",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "solkad_west",
+    "name": "Solkad West",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "dalhurst",
+    "name": "Dalhurst",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "havenshire_port",
+    "name": "Havenshire Port",
+    "description": "Find the Unyielding Legion",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "sandford_house",
+    "name": "Sandford's house",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "derna",
+    "name": "Derna",
+    "description": "todo",
+    "lodestone": [1050, 85, -803],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "hydraphel_mines",
+    "name": "Hydraphel Mines",
+    "description": "todo",
+    "lodestone": [1212, 29, -641],
+    "advancement_icon": "iron_ore"
+  },
+  {
+    "id": "devalon",
+    "name": "Devalon",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "stripped_oak_log"
+  },
+  {
+    "id": "diamond_heights_mayor",
+    "name": "Diamond Heights",
+    "description": "Become the mayor",
+    "lodestone": [1413, 116, -61],
+    "advancement_icon": "diamond_block"
+  },
+  {
+    "id": "toabias_house",
+    "name": "Tobias' house",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "diamond_heights_inn",
+    "name": "Diamond Heights Inn",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "diamond_heights_bank",
+    "name": "Diamond Heights Bank",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "galvim_house",
+    "name": "Galvim's house",
+    "description": "Assassinate the lawyer",
+    "lodestone": [1665, 81, -500],
+    "advancement_icon": "paper"
+  },
+  {
+    "id": "hyperia_beacon",
+    "name": "Hyperia Beacon",
+    "description": "Admire the Architecture",
+    "lodestone": [1842, 107, -289],
+    "advancement_icon": "quartz_block"
+  },
+  {
+    "id": "hyperia_parliament",
+    "name": "Hyperia Parliament",
+    "description": "Bribe the politicians",
+    "lodestone": [1905, 123, -289],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "hyperia_port",
+    "name": "Hyperia Port",
+    "description": "todo",
+    "lodestone": [1861, 98, -455],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "hyperia_lighthouse",
+    "name": "Hyperia Lighthouse",
+    "description": "todo",
+    "lodestone": [1788, 109, -138],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "isuma",
+    "name": "Isuma",
+    "description": "todo",
+    "lodestone": [2195, 165, 434],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "pinkolson_farm",
+    "name": "Pinkolson Farm",
+    "description": "Reach Pinkolson Farm",
+    "lodestone": [663, 80, -49],
+    "advancement_icon": "rabbit_stew"
+  },
+  {
+    "id": "belestar_jetty",
+    "name": "Belestar_Jetty",
+    "description": "todo",
+    "lodestone": [936, 88, 530],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "amaria_checkpoint",
+    "name": "Amaria",
+    "description": "Survive the Fall",
+    "lodestone": [1569, 105, 1199],
+    "advancement_icon": "potion",
+    "potion_contents": "regeneration"
+  },
+  {
+    "id": "amaria_old_checkpoint",
+    "name": "Amaria (Legacy)",
+    "description": "todo",
+    "lodestone": [1579, 157, 1248],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "waimiria_house",
+    "name": "Waimiria's house",
+    "description": "todo",
+    "lodestone": [1473, 90, 712],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "fort_bravmin",
+    "name": "Fort Bravmin mess hall",
+    "description": "todo",
+    "lodestone": [-3669, 103, -1158],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "fronchester_well",
+    "name": "Fronchester well",
+    "description": "todo",
+    "lodestone": [-3032, 54, -688],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "mahoa_docks_ship",
+    "name": "Mahoa docks ship",
+    "description": "Stow away",
+    "lodestone": [-4197, 76, -76],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "mahoa_docks_necromancer_base",
+    "name": "Mahoa docks necromancer base",
+    "description": "Steal the necromancer's cake",
+    "lodestone": [-4153, 74, -65],
+    "advancement_icon": "wither_skeleton_skull"
+  },
+  {
+    "id": "felora_beacon",
+    "name": "Felora beacon",
+    "description": "Survive the Jungle",
+    "lodestone": [-3805, 100, -63],
+    "advancement_icon": "jungle_leaves"
+  },
+  {
+    "id": "felora_parliament",
+    "name": "Felora parliament",
+    "description": "Reach Felora",
+    "lodestone": [-3771, 120, -42],
+    "advancement_icon": "jungle_leaves",
+    "todo" : "Felden flag"
+  },
+  {
+    "id": "ferndale_tavern",
+    "name": "Ferndale tavern",
+    "description": "todo",
+    "lodestone": [-3538, 101, 175],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "looma_watchtower",
+    "name": "Looma Watchtower",
+    "description": "Scale the Looma Watchtower",
+    "lodestone": [-3319, 159, -159],
+    "advancement_icon": "spyglass"
+  },
+  {
+    "id": "fort_zuka",
+    "name": "Fort Zuka",
+    "description": "Break through the Walls",
+    "lodestone": [-3416, 80, 385],
+    "advancement_icon": "bow"
+  },
+  {
+    "id": "riverstead_bell",
+    "name": "Riverstead Bell",
+    "description": "Smash that subscribe bell!",
+    "lodestone": [-3541, 91, 663],
+    "advancement_icon": "bell"
+  },
+  {
+    "id": "niika_tree_fort",
+    "name": "Niika's tree fort",
+    "description": "Burn it to the ground",
+    "lodestone": [-2960, 94, 478],
+    "advancement_icon": "oak_sapling"
+  },
+  {
+    "id": "basalt_mines",
+    "name": "Basalt Mines",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "basalt"
+  },
+  {
+    "id": "shimmering_valley",
+    "name": "Shimmering Valley",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "hamburville",
+    "name": "Hamburville",
+    "description": "Reach Hamburville",
+    "lodestone": [-2323, 86, 273],
+    "advancement_icon": "jungle_planks"
+  },
+  {
+    "id": "stonevale",
+    "name": "Stonevale",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "thralkeld",
+    "name": "Thrakeld",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "sullivan_house",
+    "name": "Sullivan's house",
+    "description": "todo",
+    "lodestone": [-634, 132, 497],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "crown_peak_throne",
+    "name": "Crown Peak throne",
+    "description": "Behold the Throne",
+    "lodestone": [-622, 115, 579],
+    "advancement_icon": "obsidian"
+  },
+  {
+    "id": "crown_peak_beacon",
+    "name": "Crown Peak beacon",
+    "description": "todo",
+    "lodestone": [-703, 97, 579],
+    "advancement_icon": "beacon"
+  },
+  {
+    "id": "crown_peak_cake_stand",
+    "name": "Crown Peak cake stand",
+    "description": "Let them eat cake",
+    "lodestone": [-772, 98, 574],
+    "advancement_icon": "cake"
+  },
+  {
+    "id": "crown_peak_railway_terminal",
+    "name": "Crown Peak railway terminal",
+    "description": "todo",
+    "lodestone": [-1082, 73, 607],
+    "advancement_icon": "rail"
+  },
+  {
+    "id": "vault",
+    "name": "The Vault",
+    "description": "Enter the chokepoint",
+    "lodestone": [-703, 82, -178],
+    "advancement_icon": "emerald"
+  },
+  {
+    "id": "cluckles_office",
+    "name": "Professor Cluckes' office",
+    "description": "Reach the Redstone Academy",
+    "lodestone": [-1376, 106, -254],
+    "advancement_icon": "redstone_repeater"
+  },
+  {
+    "id": "thrakatos_office",
+    "name": "Thrakatos' office",
+    "description": "Research unlimited power",
+    "lodestone": [-1360, 107, -243],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "redstone_academy_railway",
+    "name": "Redstone academy railway",
+    "description": "Fast travel to Crown Peak",
+    "lodestone": [-1376, 89, -240],
+    "advancement_icon": "rail"
+  },
+  {
+    "id": "redstone_academy_reactor",
+    "name": "Redstone academy reactor",
+    "description": "Pass University",
+    "lodestone": [-1376, 79, -186],
+    "advancement_icon": "redstone"
+  },
+  {
+    "id": "heart_of_ardonia_beacon",
+    "name": "Heart of Ardonia Beacon",
+    "description": "Reach the Heart of Ardonia",
+    "lodestone": [-2, 70, 0],
+    "advancement_icon": "beacon"
+  },
+  {
+    "id": "heart_of_ardonia_conduit",
+    "name": "Heart of Ardonia Conduit",
+    "description": "todo",
+    "lodestone": [-27, 15, 9],
+    "advancement_icon": "conduit"
+  },
+  {
+    "id": "mt_velgrin_portal",
+    "name": "Mount Velgrin Time Portal",
+    "description": "Scale Mount Velgrin",
+    "lodestone": [-21, 197, 894],
+    "advancement_icon": "carrot_on_a_stick",
+    "custom_model_data": 2
+  },
+  {
+    "id": "mt_velgrin_cave",
+    "name": "Mount Velgrin Cave",
+    "description": "Find the Voltaris",
+    "lodestone": [17, 199, 879],
+    "advancement_icon": "shield"
+  },
+  {
+    "id": "fort_throne_left",
+    "name": "Fort Throne (left)",
+    "description": "todo",
+    "lodestone": [327, 92, 544],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "fort_throne_right",
+    "name": "Fort Throne (right)",
+    "description": "todo",
+    "lodestone": [324, 92, 544],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "the_end",
+    "name": "The End Domain",
+    "description": "Avert your Gaze",
+    "dimension": "the_end",
+    "lodestone": [-1113, 53, -472],
+    "advancement_icon": "end_crystal"
+  },
+  {
+    "id": "nazgard_vault",
+    "name": "Nazgard Vault",
+    "description": "Break into the Vault",
+    "dimension": "the_nether",
+    "lodestone": [-376, 56, -1089],
+    "advancement_icon": "chiseled_nether_bricks"
+  },
+  {
+    "id": "nazgard_throne",
+    "name": "Nazgard Throne",
+    "description": "Usurp Pythus",
+    "dimension": "the_nether",
+    "lodestone": [-204, 81, -998],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "ataraxia_shrine",
+    "name": "Ataraxia Shrine",
+    "description": "Ascend the Islands",
+    "lodestone": [98, 168, -618],
+    "advancement_icon": "vine"
+  },
+  {
+    "id": "galleous_forge",
+    "name": "Galleous's Forge",
+    "description": "Swim in the lava",
+    "lodestone": [159, 130, -664],
+    "advancement_icon": "diamond_axe",
+    "custom_model_data": 1
+  },
+  {
+    "id": "allichier_house",
+    "name": "Allichier's house",
+    "description": "todo",
+    "lodestone": [208, 124, -645],
+    "advancement_icon": "iron_sword",
+    "custom_model_data": 1
+  },
+  {
+    "id": "incatasia",
+    "name": "Incatasia",
+    "description": "todo",
+    "lodestone": [-833, 95, 1326],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "fort_hacksaw_throne",
+    "name": "Fort Hacksaw Throne",
+    "description": "todo",
+    "lodestone": [-1154, 164, 1698],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "bhengorn_tavern",
+    "name": "Bhengorn Tavern",
+    "description": "todo",
+    "lodestone": [-638, 111, 2143],
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "bhengorn_meeting_room",
+    "name": "Bhengorn Meeting Room",
+    "description": "Reach Bhengorn",
+    "lodestone": [-650, 113, 2166],
+    "advancement_icon": "spruce_sapling"
+  },
+  {
+    "id": "camp_enher",
+    "name": "Camp Enher",
+    "description": "Reach Camp Enher",
+    "lodestone": [158, 90, 1488],
+    "advancement_icon": "pointed_dripstone"
+  },
+  {
+    "id": "ansdale",
+    "name": "Ansdale",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "markar",
+    "name": "Markar",
+    "description": "Inspect the fleet",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "tartarus_throne",
+    "name": "Tartarus Throne",
+    "description": "Successfully Execute Operation Pickaxe",
+    "lodestone": [-55, 49, 2470],
+    "advancement_icon": "diamond_ore"
+  },
+  {
+    "id": "tartarus_treasure_room",
+    "name": "Tartarus Treasure Room",
+    "description": "Successfully Execute Operation Pickaxe",
+    "lodestone": [-55, 48, 2453],
+    "advancement_icon": "emerald_block"
+  },
+  {
+    "id": "tartarus_beacon",
+    "name": "Tartarus Beacon",
+    "description": "MLG into Tartarus",
+    "lodestone": [-55, 31, 2453],
+    "advancement_icon": "nether_star"
+  },
+  {
+    "id": "tartarus_crypt",
+    "name": "Tartarus Crypt",
+    "description": "Explore the Crypt",
+    "lodestone": [-55, 10, 2518],
+    "advancement_icon": "skeleton_skull"
+  },
+  {
+    "id": "mt_kaelos",
+    "name": "Mount Kaelos",
+    "description": "Reach Mount Kaelos",
+    "lodestone": [217, 59, 2812],
+    "advancement_icon": "magma_block"
+  },
+  {
+    "id": "mt_igneous",
+    "name": "Mount Igneous",
+    "description": "Pay respects to a hero of K'arthen",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "karthen_wall",
+    "name": "K'arthen wall",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "phaethon",
+    "name": "Phaethon",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "cydonia_oasis",
+    "name": "Cydonia Oasis",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "cydonia_mines",
+    "name": "Cydonia Mines",
+    "description": "Descend the Mines",
+    "lodestone": [-159, 41, 3527],
+    "advancement_icon": "lapis_ore"
+  },
+  {
+    "id": "aridia_cliffs",
+    "name": "Aridia Cliffs",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "po_hatu",
+    "name": "Po'Hatu",
+    "description": "Go for a swim",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "kaeru",
+    "name": "Kaeru",
+    "description": "Defeat the Magnorites",
+    "lodestone": [727, 104, 3625],
+    "advancement_icon": "red_sandstone"
+  },
+  {
+    "id": "port_kazu",
+    "name": "Port Kazu",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "meridian_beacon",
+    "name": "Meridian Beacon",
+    "description": "Don't get Cydonia'd",
+    "lodestone": [61, 83, 4605],
+    "advancement_icon": "sand"
+  },
+  {
+    "id": "meridian_bridge",
+    "name": "Meridian Bridge",
+    "description": "Reach city limits",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "meridian_parliament",
+    "name": "Meridian Parliament",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "todo"
+  },
+  {
+    "id": "mt_tempus_necrobase",
+    "name": "Mount Tempus Necrobase",
+    "description": "Realize IT WASN'T IN MAHOA DOCKS",
+    "lodestone": [-3486, 27, 1272],
+    "advancement_icon": "carrot_on_a_stick",
+    "custom_model_data": 6
+  },
+  {
+    "id": "mt_tempus_surface",
+    "name": "Mount Tempus",
+    "description": "todo",
+    "lodestone": "todo",
+    "advancement_icon": "magma_block"
+  }
+]
