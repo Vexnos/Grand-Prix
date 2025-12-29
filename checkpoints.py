@@ -35,7 +35,10 @@ def import_course(path):
     return course
 
 def clear_folder(path):
-    shutil.rmtree(path)
+    try:
+        shutil.rmtree(path)
+    except FileNotFoundError:
+        pass
     os.makedirs(path)
 
 # Compile Advancements
@@ -218,6 +221,19 @@ def compile_setup_function(course):
         file.write("\n".join(setup))
     with open("data/race/function/setup/place_checkpoints.mcfunction", "w") as file:
         file.write("\n".join(place_checkpoints))
+
+    # Create Start Line
+    result = []
+    x, y, z = course["start_coordinates"]
+    result.append(f"tp @a {x} {y} {z}")
+    result.append(f"setworldspawn {x} {y} {z}")
+    result.append(f"spawnpoint @a {x} {y} {z}")
+    x, z = course["worldborder_center"]
+    result.append(f"worldborder center {x} {z}")
+    size = course["worldborder_size"]
+    result.append(f"worldborder set {size}")
+    with open("data/race/function/start/worldborder.mcfunction", "w") as file:
+        file.write("\n".join(result))
 
 #-------Constants-------
 # Paths

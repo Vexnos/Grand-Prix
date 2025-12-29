@@ -7,13 +7,6 @@ gamemode adventure @a
 # Time
 time set 0
 
-# TP all players
-tp @a -302 119 -4283
-
-# Spawn
-setworldspawn -302 119 -4283
-spawnpoint @a -302 119 -4283
-
 # Clear The Timer Schedule
 schedule clear race:timer
 
@@ -32,7 +25,7 @@ tag @a remove bodyguard
 tag @a remove horse_name
 
 # Reset Checkpoints
-function race:debug/resetcheckpoints
+function race:resetcheckpoints
 
 # Gamerules
 gamerule keepInventory true
@@ -48,6 +41,7 @@ gamerule doTraderSpawning false
 gamerule doPatrolSpawning false
 gamerule locatorBar false
 gamerule allowEnteringNetherUsingPortals false
+gamerule playersNetherPortalDefaultDelay 1200
 gamerule pvp false
 
 # Remove all XP
@@ -68,6 +62,5 @@ kill @e[type=skeleton_horse]
 # Kill rogue items
 kill @e[type=item]
 
-# Worldborder
-worldborder center -283 -4264
-worldborder set 100
+# Teleport Players and set Worldborder
+function race:start/worldborder

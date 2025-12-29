@@ -2,6 +2,8 @@
     "name": "Primary Grand Prix Course",
     "start_description": "First Ardoni Shrine",
     "start_coordinates": [-302, 119, -4283],
+    "worldborder_center": [-283, -4264],
+    "worldborder_size": 100,
     "initial_items": [],
     "checkpoints": [
         {
@@ -292,7 +294,8 @@
             "description": "Catch a Fish",
             "dimension": "overworld",
             "lodestone": [1569, 83, -3202],
-            "advancement_icon": "blue_orchid"
+            "advancement_icon": "diamond_sword",
+            "custom_model_data": 11
         },
         {
             "id": "gale_point",
