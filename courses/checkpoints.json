@@ -824,7 +824,6 @@
     "id": "bhengorn_meeting_room",
     "name": "Bhengorn Meeting Room",
     "description": "Reach Bhengorn",
-    "dimension": "overworld",
     "lodestone": [-650, 113, 2166],
     "advancement_icon": "spruce_sapling"
   },
