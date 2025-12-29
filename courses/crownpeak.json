@@ -10,12 +10,7 @@
             "id": "cluckles_office"
         },
         {
-            "id": "hamburville",
-            "name": "Hamburville",
-            "description": "Reach Hamburville",
-            "dimension": "overworld",
-            "lodestone": [-2323, 86, 273],
-            "advancement_icon": "jungle_planks"
+            "id": "hamburville"
         },
         {
             "id": "riverstead_bell"
