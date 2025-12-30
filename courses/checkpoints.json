@@ -546,7 +546,7 @@
         "id": "hyperia_parliament",
         "name": "Hyperia",
         "description": "Bribe the politicians",
-        "lodestone": [1905, 123, -289],
+        "lodestone": [1909, 122, -289],
         "advancement_icon": "gray_banner",
 		"banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
     },
@@ -959,7 +959,7 @@
         "id": "camp_enher",
         "name": "Camp Enher",
         "description": "Reach Camp Enher",
-        "lodestone": [158, 90, 1488],
+        "lodestone": [158, 91, 1488],
         "advancement_icon": "pointed_dripstone"
     },
     {
@@ -1011,6 +1011,13 @@
         "name": "Mount Kaelos",
         "description": "Reach Mount Kaelos",
         "lodestone": [217, 59, 2812],
+        "advancement_icon": "magma_block"
+    },
+    {
+        "id": "mt_kaelos_council",
+        "name": "Mount Kaelos",
+        "description": "Reach Mount Kaelos",
+        "lodestone": [292, 60, 2776],
         "advancement_icon": "magma_block"
     },
     {
