@@ -813,7 +813,7 @@
         "name": "Redstone Academy",
         "description": "Reach the Redstone Academy",
         "lodestone": [-1376, 106, -254],
-        "advancement_icon": "redstone_repeater"
+        "advancement_icon": "repeater"
     },
     {
         "id": "thrakatos_office",
