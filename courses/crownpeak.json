@@ -4,25 +4,58 @@
     "start_coordinates": [-704, 99, 580],
     "worldborder_center": [-704, 580],
     "worldborder_size": 40,
-    "initial_items": [],
+    "initial_items": [
+        "give @a cake 1"
+    ],
     "checkpoints": [
         {
-            "id": "cluckles_office"
+            "id": "cluckles_office",
+            "items": [
+                "item replace entity @a armor.head with leather_helmet",
+                "item replace entity @a armor.feet with leather_boots"
+            ]
         },
         {
-            "id": "stonevale"
+            "id": "stonevale",
+            "items": [
+                "give @a stone_sword",
+                "give @a stone_pickaxe",
+                "give @a stone_axe",
+                "give @a bucket"
+            ]
         },
         {
-            "id": "hamburville"
+            "id": "hamburville",
+            "items": [
+                "give @a cake 1"
+            ]
         },
         {
-            "id": "aerilon"
+            "id": "aerilon",
+            "items": [
+                "item replace entity @a armor.chest with leather_chestplate",
+                "item replace entity @a armor.legs with leather_leggings",
+                "give @a flint_and_steel"
+            ]
         },
         {
-            "id": "riverstead_bell"
+            "id": "riverstead_bell",
+            "items": [
+                "give @a fishing_rod"
+            ]
         },
         {
-            "id": "felora_parliament"
+            "id": "felora_parliament",
+            "items": [
+                "item replace entity @a armor.head with copper_helmet",
+                "item replace entity @a armor.chest with copper_chestplate",
+                "item replace entity @a armor.legs with copper_leggings",
+                "item replace entity @a armor.feet with copper_boots",
+                "give @a iron_sword",
+                "give @a bow",
+                "give @a arrow 32",
+                "give @a shield[banner_patterns=[{color:\"green\",pattern:\"minecraft:triangle_top\"},{color:\"green\",pattern:\"minecraft:stripe_center\"},{color:\"lime\",pattern:\"minecraft:flower\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"lime\",pattern:\"minecraft:circle\"}],base_color=\"black\"]"
+            ]
         },
         {
             "id": "fronchester"
@@ -31,7 +64,16 @@
             "id": "etherea_dragon_egg"
         },
         {
-            "id": "twin_pass"
+            "id": "twin_pass",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet",
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.legs with iron_leggings",
+                "item replace entity @a armor.feet with iron_boots",
+                "give @a iron_axe",
+                "give @a iron_pickaxe",
+                "give @a lava_bucket"
+            ]
         },
         {
             "id": "conchord_forestry"
@@ -43,7 +85,15 @@
             "id": "mendoria_shrine"
         },
         {
-            "id": "ardoni_council_chamber"
+            "id": "ardoni_council_chamber",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
+                "give @a diamond_sword",
+                "give @a bow[enchantments={power:2}]"
+            ]
         },
         {
             "id": "ardoni_arena_alternate"
@@ -58,19 +108,44 @@
             "id": "sendaria_communal_area"
         },
         {
-            "id": "hogtown"
+            "id": "hogtown",
+            "items": [
+                "give @a potion[potion_contents={potion:\"minecraft:strong_regeneration\"}]",
+                "give @a arrow 32"
+            ]
         },
         {
             "id": "galleous_forge"
         },
         {
-            "id": "hyperia_parliament"
+            "id": "hyperia_parliament",
+            "items": [
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2,blast_protection:2,respiration:3,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2,blast_protection:2,feather_falling:2,depth_strider:3}]",
+                "give @a diamond_sword[enchantments={sharpness:5,sweeping_edge:3,knockback:2,fire_aspect:2}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5,silk_touch:1}]",
+                "give @a diamond_axe[enchantments={sharpness:3,efficiency:5}]",
+                "give @a bow[enchantments={power:5,flame:1,punch:2}]",
+                "give @a end_crystal 16",
+                "give @a obsidian 32",
+                "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]"
+            ]
         },
         {
-            "id": "pinkolson_farm"
+            "id": "pinkolson_farm",
+            "items": [
+                "give @a cake 1"
+            ]
         },
         {
-            "id": "camp_enher"
+            "id": "camp_enher",
+            "items": [
+                "give @a splash_potion[potion_contents={potion:\"minecraft:long_weakness\"},max_stack_size=16] 3",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:long_poison\"},max_stack_size=16] 3",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"},max_stack_size=16] 3"
+            ]
         },
         {
             "id": "mt_kaelos_council"
@@ -79,7 +154,21 @@
             "id": "cydonia_mines"
         },
         {
-            "id": "tartarus_throne"
+            "id": "tartarus_throne",
+            "items": [
+                "item replace entity @a armor.head with netherite_helmet[trim={pattern:raiser,material:redstone},enchantments={protection:2,blast_protection:2,respiration:3,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with netherite_chestplate[trim={pattern:tide,material:redstone},enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.legs with netherite_leggings[trim={pattern:bolt,material:redstone},enchantments={protection:2,blast_protection:2,swift_sneak:3}]",
+                "item replace entity @a armor.feet with netherite_boots[trim={pattern:coast,material:redstone},enchantments={protection:2,blast_protection:2,feather_falling:2,depth_strider:3,soul_speed:3}]",
+                "give @a netherite_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,knockback:2,fire_aspect:2}]",
+                "give @a netherite_axe[enchantments={sharpness:3,efficiency:5}]",
+                "give @a mace[enchantments={density:3,wind_burst:2}]",
+                "give @a crossbow[enchantments={piercing:5,quick_charge:3}]",
+                "give @a firework_rocket[fireworks={explosions:[{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"}],flight_duration:1b}] 16",
+                "give @a trident[enchantments={riptide:3}]",
+                "give @a shield[banner_patterns=[{color:\"red\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:circle\"},{color:\"black\",pattern:\"minecraft:triangle_top\"},{color:\"black\",pattern:\"minecraft:triangle_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:curly_border\"},{color:\"black\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:rhombus\"}],base_color=\"red\"]",
+                "give @a golden_apple 3"
+            ]
         },
         {
             "id": "mt_velgrin_portal"
