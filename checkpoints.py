@@ -27,6 +27,10 @@ def import_course(path):
         "reverse": "courses/reverse.json",
         "crownpeak": "courses/crownpeak.json"
     }
+    # Check the user hasn't entered nothing
+    if len(path) == 0:
+        print("You have not specificed a path, quitting...")
+        return
     # Check if path is in presets dictionary
     if path in preset_courses:
         path = preset_courses[path]
@@ -296,6 +300,7 @@ if __name__ == "__main__":
     path = input("Please input the path to your course here (or select a preset: main, reverse, crownpeak): ").lower()
     course = import_course(path)
     
-    compile_advancements(course)
-    compile_setup_function(course)
-    compile_checkpoints(course)
+    if course is not None:
+        compile_advancements(course)
+        compile_setup_function(course)
+        compile_checkpoints(course)
