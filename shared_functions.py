@@ -12,7 +12,7 @@ def get_length(positions):
     distance = 0
     for checkpoint in remainder:
         new_location = checkpoint["coords"]
-        distance += get_distance(location, new_location)
+        distance += get_distance(location, new_location) + checkpoint["extra_distance"]
         location = new_location
     return distance
 
@@ -24,7 +24,7 @@ def pretty_print_route(positions):
     for checkpoint in remainder:
         new_location = checkpoint["coords"]
         new_name = checkpoint["id"]
-        leg_distance = get_distance(location, new_location)
+        leg_distance = get_distance(location, new_location) + checkpoint["extra_distance"]
         print(f"{checkpoint_name} -> {new_name} {leg_distance:.0f}m")
         distance += leg_distance
         location = new_location
@@ -36,10 +36,15 @@ def get_data(id, has_fire=False):
     checkpoint = {
         "id" : id,
         "coords" : place["lodestone"],
+        "extra_distance" : 0,
         "has_fire" : has_fire,
     }
     if "dimension" in place:
-        checkpoint["coords"] = PORTALS[place["dimension"]]["lodestone"]
+        dimension_data = PORTALS[place["dimension"]]
+        checkpoint["coords"] = dimension_data["lodestone"]
+        outgoing_leg = get_distance(dimension_data["entry_portal"], place["lodestone"])
+        return_leg = get_distance(place["lodestone"], dimension_data["exit_portal"])
+        checkpoint["extra_distance"] = outgoing_leg + return_leg
     return checkpoint
 
 # Import course from json
