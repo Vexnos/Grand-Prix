@@ -19,49 +19,49 @@
         "description": "Reach Hailstone's Beacon",
         "lodestone": [-735, 130, -4042],
         "advancement_icon": "light_blue_banner",
-		"banner_patterns": [
-			{
-				"color": "blue",
-				"pattern": "gradient"
-			},
-			{
-				"color": "white",
-				"pattern": "triangles_bottom"
-			},
-			{
-				"color": "light_blue",
-				"pattern": "triangles_top"
-			},
-			{
-				"color": "white",
-				"pattern": "flower"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "blue",
+                "pattern": "gradient"
+            },
+            {
+                "color": "white",
+                "pattern": "triangles_bottom"
+            },
+            {
+                "color": "light_blue",
+                "pattern": "triangles_top"
+            },
+            {
+                "color": "white",
+                "pattern": "flower"
+            }
+        ]
     },
-	{
+    {
         "id": "hailstone_keep",
         "name": "Hailstone",
         "description": "Reach Hailstone's Keep",
         "lodestone": [-829, 152, -4042],
         "advancement_icon": "light_blue_banner",
-		"banner_patterns": [
-			{
-				"color": "blue",
-				"pattern": "gradient"
-			},
-			{
-				"color": "white",
-				"pattern": "triangles_bottom"
-			},
-			{
-				"color": "light_blue",
-				"pattern": "triangles_top"
-			},
-			{
-				"color": "white",
-				"pattern": "flower"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "blue",
+                "pattern": "gradient"
+            },
+            {
+                "color": "white",
+                "pattern": "triangles_bottom"
+            },
+            {
+                "color": "light_blue",
+                "pattern": "triangles_top"
+            },
+            {
+                "color": "white",
+                "pattern": "flower"
+            }
+        ]
     },
     {
         "id": "walls_of_time_back",
@@ -300,24 +300,24 @@
         "description": "Reach Oakendale",
         "lodestone": [-1291, 88, -1302],
         "advancement_icon": "green_banner",
-		"banner_patterns": [
-			{
-				"color": "green",
-				"pattern": "stripe_downright"
-			},
-			{
-				"color": "brown",
-				"pattern": "triangle_bottom"
-			},
-			{
-				"color": "brown",
-				"pattern": "triangle_top"
-			},
-			{
-				"color": "white",
-				"pattern": "cross"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "green",
+                "pattern": "stripe_downright"
+            },
+            {
+                "color": "brown",
+                "pattern": "triangle_bottom"
+            },
+            {
+                "color": "brown",
+                "pattern": "triangle_top"
+            },
+            {
+                "color": "white",
+                "pattern": "cross"
+            }
+        ]
     },
     {
         "id": "oakendale_parliament",
@@ -325,24 +325,24 @@
         "description": "todo",
         "lodestone": "todo",
         "advancement_icon": "green_banner",
-		"banner_patterns": [
-			{
-				"color": "green",
-				"pattern": "stripe_downright"
-			},
-			{
-				"color": "brown",
-				"pattern": "triangle_bottom"
-			},
-			{
-				"color": "brown",
-				"pattern": "triangle_top"
-			},
-			{
-				"color": "white",
-				"pattern": "cross"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "green",
+                "pattern": "stripe_downright"
+            },
+            {
+                "color": "brown",
+                "pattern": "triangle_bottom"
+            },
+            {
+                "color": "brown",
+                "pattern": "triangle_top"
+            },
+            {
+                "color": "white",
+                "pattern": "cross"
+            }
+        ]
     },
     {
         "id": "conchord_forestry",
@@ -540,7 +540,7 @@
         "description": "Admire the Architecture",
         "lodestone": [1842, 107, -289],
         "advancement_icon": "gray_banner",
-		"banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
+        "banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
     },
     {
         "id": "hyperia_parliament",
@@ -548,7 +548,7 @@
         "description": "Bribe the politicians",
         "lodestone": [1909, 122, -289],
         "advancement_icon": "gray_banner",
-		"banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
+        "banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
     },
     {
         "id": "hyperia_port",
@@ -556,7 +556,7 @@
         "description": "todo",
         "lodestone": [1861, 98, -455],
         "advancement_icon": "gray_banner",
-		"banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
+        "banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
     },
     {
         "id": "isuma",
@@ -635,28 +635,28 @@
         "description": "Survive the Jungle",
         "lodestone": [-3805, 100, -63],
         "advancement_icon": "black_banner",
-		"banner_patterns": [
-			{
-				"color": "green",
-				"pattern": "triangle_top"
-			},
-			{
-				"color": "green",
-				"pattern": "stripe_center"
-			},
-			{
-				"color": "lime",
-				"pattern": "flower"
-			},
-			{
-				"color": "black",
-				"pattern": "rhombus"
-			},
-			{
-				"color": "lime",
-				"pattern": "circle"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "green",
+                "pattern": "triangle_top"
+            },
+            {
+                "color": "green",
+                "pattern": "stripe_center"
+            },
+            {
+                "color": "lime",
+                "pattern": "flower"
+            },
+            {
+                "color": "black",
+                "pattern": "rhombus"
+            },
+            {
+                "color": "lime",
+                "pattern": "circle"
+            }
+        ]
     },
     {
         "id": "felora_parliament",
@@ -664,28 +664,28 @@
         "description": "Reach Felora",
         "lodestone": [-3771, 120, -42],
         "advancement_icon": "black_banner",
-		"banner_patterns": [
-			{
-				"color": "green",
-				"pattern": "triangle_top"
-			},
-			{
-				"color": "green",
-				"pattern": "stripe_center"
-			},
-			{
-				"color": "lime",
-				"pattern": "flower"
-			},
-			{
-				"color": "black",
-				"pattern": "rhombus"
-			},
-			{
-				"color": "lime",
-				"pattern": "circle"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "green",
+                "pattern": "triangle_top"
+            },
+            {
+                "color": "green",
+                "pattern": "stripe_center"
+            },
+            {
+                "color": "lime",
+                "pattern": "flower"
+            },
+            {
+                "color": "black",
+                "pattern": "rhombus"
+            },
+            {
+                "color": "lime",
+                "pattern": "circle"
+            }
+        ]
     },
     {
         "id": "ferndale_tavern",
@@ -722,13 +722,13 @@
         "lodestone": [-2960, 94, 478],
         "advancement_icon": "flint_and_steel"
     },
-	{
-		"id": "aerilon",
-		"name": "Aerilon",
-		"description": "Dream of Snowmen",
-		"lodestone": [-2849, 79, 318],
-		"advancement_icon": "carved_pumpkin"
-	},
+    {
+        "id": "aerilon",
+        "name": "Aerilon",
+        "description": "Dream of Snowmen",
+        "lodestone": [-2849, 79, 318],
+        "advancement_icon": "carved_pumpkin"
+    },
     {
         "id": "basalt_mines",
         "name": "Basalt Mines",
@@ -777,7 +777,7 @@
         "description": "Behold the Throne",
         "lodestone": [-622, 115, 579],
         "advancement_icon": "gray_banner",
-		"banner_patterns": [{"color":"light_gray","pattern":"minecraft:bricks"},{"color":"purple","pattern":"minecraft:triangle_top"},{"color":"gray","pattern":"minecraft:border"},{"color":"white","pattern":"minecraft:straight_cross"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"white","pattern":"minecraft:circle"}]
+        "banner_patterns": [{"color":"light_gray","pattern":"minecraft:bricks"},{"color":"purple","pattern":"minecraft:triangle_top"},{"color":"gray","pattern":"minecraft:border"},{"color":"white","pattern":"minecraft:straight_cross"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"white","pattern":"minecraft:circle"}]
     },
     {
         "id": "crown_peak_beacon",
@@ -785,7 +785,7 @@
         "description": "Behold the Throne",
         "lodestone": [-703, 97, 579],
         "advancement_icon": "gray_banner",
-		"banner_patterns": [{"color":"light_gray","pattern":"minecraft:bricks"},{"color":"purple","pattern":"minecraft:triangle_top"},{"color":"gray","pattern":"minecraft:border"},{"color":"white","pattern":"minecraft:straight_cross"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"white","pattern":"minecraft:circle"}]
+        "banner_patterns": [{"color":"light_gray","pattern":"minecraft:bricks"},{"color":"purple","pattern":"minecraft:triangle_top"},{"color":"gray","pattern":"minecraft:border"},{"color":"white","pattern":"minecraft:straight_cross"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"white","pattern":"minecraft:circle"}]
     },
     {
         "id": "crown_peak_cake_stand",
@@ -902,7 +902,7 @@
         "dimension": "the_nether",
         "lodestone": [-204, 81, -998],
         "advancement_icon": "iron_axe",
-		"custom_model_data": 1
+        "custom_model_data": 1
     },
     {
         "id": "ataraxia_shrine",
@@ -982,7 +982,7 @@
         "description": "Successfully Execute Operation Pickaxe",
         "lodestone": [-55, 49, 2470],
         "advancement_icon": "red_banner",
-		"banner_patterns": [{"color":"red","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:circle"},{"color":"black","pattern":"minecraft:triangle_top"},{"color":"black","pattern":"minecraft:triangle_bottom"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:curly_border"},{"color":"black","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"black","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:rhombus"}]
+        "banner_patterns": [{"color":"red","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:circle"},{"color":"black","pattern":"minecraft:triangle_top"},{"color":"black","pattern":"minecraft:triangle_bottom"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:curly_border"},{"color":"black","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"black","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:rhombus"}]
     },
     {
         "id": "tartarus_treasure_room",
@@ -997,7 +997,7 @@
         "description": "MLG into Tartarus",
         "lodestone": [-55, 31, 2453],
         "advancement_icon": "red_banner",
-		"banner_patterns": [{"color":"red","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:circle"},{"color":"black","pattern":"minecraft:triangle_top"},{"color":"black","pattern":"minecraft:triangle_bottom"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:curly_border"},{"color":"black","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"black","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:rhombus"}]
+        "banner_patterns": [{"color":"red","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:circle"},{"color":"black","pattern":"minecraft:triangle_top"},{"color":"black","pattern":"minecraft:triangle_bottom"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_top"},{"color":"gray","pattern":"minecraft:triangles_bottom"},{"color":"gray","pattern":"minecraft:curly_border"},{"color":"black","pattern":"minecraft:curly_border"},{"color":"gray","pattern":"minecraft:rhombus"},{"color":"black","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:rhombus"}]
     },
     {
         "id": "tartarus_crypt",
@@ -1089,20 +1089,20 @@
         "description": "Don't get Cydonia'd",
         "lodestone": [61, 83, 4605],
         "advancement_icon": "white_banner",
-		"banner_patterns": [
-			{
-				"color": "gray",
-				"pattern": "half_horizontal"
-			},
-			{
-				"color": "orange",
-				"pattern": "stripe_middle"
-			},
-			{
-				"color": "orange",
-				"pattern": "rhombus"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "gray",
+                "pattern": "half_horizontal"
+            },
+            {
+                "color": "orange",
+                "pattern": "stripe_middle"
+            },
+            {
+                "color": "orange",
+                "pattern": "rhombus"
+            }
+        ]
     },
     {
         "id": "meridian_parliament",
@@ -1110,20 +1110,20 @@
         "description": "todo",
         "lodestone": "todo",
         "advancement_icon": "white_banner",
-		"banner_patterns": [
-			{
-				"color": "gray",
-				"pattern": "half_horizontal"
-			},
-			{
-				"color": "orange",
-				"pattern": "stripe_middle"
-			},
-			{
-				"color": "orange",
-				"pattern": "rhombus"
-			}
-		]
+        "banner_patterns": [
+            {
+                "color": "gray",
+                "pattern": "half_horizontal"
+            },
+            {
+                "color": "orange",
+                "pattern": "stripe_middle"
+            },
+            {
+                "color": "orange",
+                "pattern": "rhombus"
+            }
+        ]
     },
     {
         "id": "mt_tempus_necrobase",
