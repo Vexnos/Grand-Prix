@@ -11,6 +11,7 @@ import json
 import os
 import shutil
 from itertools import tee, islice, chain
+from shared_functions import PORTALS, import_course
 
 #-------Functions-------
 # Function to check previous iterable by nosklo
@@ -19,37 +20,6 @@ def previous_and_next(some_iterable):
     prevs = chain([None], prevs)
     nexts = chain(islice(nexts, 1, None), [None])
     return zip(prevs, items, nexts)
-
-# Import course from json
-def import_course(path):
-    preset_courses = {
-        "main": "courses/main.json",
-        "reverse": "courses/reverse.json",
-        "crownpeak": "courses/crownpeak.json"
-    }
-    # Check the user hasn't entered nothing
-    if len(path) == 0:
-        print("You have not specificed a path, quitting...")
-        return
-    # Check if path is in presets dictionary
-    if path in preset_courses:
-        path = preset_courses[path]
-    with open(path, "r") as file:
-        course = json.load(file)
-    with open("courses/checkpoints.json") as file:
-        checkpoint_data = json.load(file)
-    checkpoints = {}
-    for item in checkpoint_data:
-        checkpoints[item["id"]] = item
-    for checkpoint in course["checkpoints"]:
-        checkpoint_data = checkpoints[checkpoint["id"]]
-        for key in "name", "description", "advancement_icon", "lodestone":
-            checkpoint[key] = checkpoint_data[key]
-        checkpoint["dimension"] = checkpoint_data["dimension"] if "dimension" in checkpoint_data else "overworld"
-        for key in "custom_model_data", "potion_contents", "banner_patterns":
-            if key in checkpoint_data:
-                checkpoint[key] = checkpoint_data[key]
-    return course
 
 def clear_folder(path):
     try:
@@ -279,20 +249,6 @@ def compile_setup_function(course):
 # Paths
 ADVANCEMENTS_PATH = "data/race/advancement/checkpoints/"
 CHECKPOINTS_PATH = "data/race/function/checkpoints/"
-
-# Portals
-PORTALS = {
-    "the_nether": {
-        "name": "Nether Portal",
-        "color": "dark_red",
-        "lodestone": [-495, 101, -221]
-    },
-    "the_end": {
-        "name": "Stronghold",
-        "color": "dark_purple",
-        "lodestone": [-572, 77, 96]
-    }
-}
 
 #-------Main-Routine-------
 if __name__ == "__main__":
