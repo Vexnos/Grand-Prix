@@ -79,6 +79,6 @@ for checkpoint in remainder:
 
         print(f"{food_type} {food_quantity}")
 
-    print(f'{checkpoint["id"]}\n')
+    print(f'\n{checkpoint["id"]}')
 
     previous = checkpoint
