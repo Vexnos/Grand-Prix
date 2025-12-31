@@ -107,5 +107,5 @@ for distance in distances:
     total_distance += distance
 print("Total Distance: " + str(round(total_distance)) + "m")
 FOOD_POINT_RATIO = 47 # food points per km
-total_food = (FOOD_POINT_RATIO * (total_distance / 1000))
-print(f"Total Food Points: {total_food:.0f} Food Points")
+total_food = FOOD_POINT_RATIO * (total_distance / 1000)
+print(f"Total Food Points: {total_food:.0f}")
