@@ -80,7 +80,16 @@ for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
         distances.append(distance)
         continue
     if nxt is not None:
-        if nxt["dimension"] != "overworld":
+        if checkpoint["dimension"] != "overworld" and nxt["dimension"] != "overworld":
+            data = PORTALS[checkpoint["dimension"]]
+            x, y, z = data["lodestone"]
+            data = PORTALS[nxt["dimension"]]
+            x2, y2, z2 = data["lodestone"]
+            distance = calc_distance(x, y, z, x2, y2, z2)
+            print(f"{checkpoint['name']} --> {nxt['name']}: {distance:.0f}m")
+            distances.append(distance)
+            continue
+        elif nxt["dimension"] != "overworld":
             data = PORTALS[nxt["dimension"]]
             x, y, z = checkpoint["lodestone"]
             x2, y2, z2 = data["lodestone"]
@@ -88,7 +97,7 @@ for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
             print(f"{checkpoint['name']} --> {nxt['name']}: {distance:.0f}m")
             distances.append(distance)
             continue
-        if checkpoint["dimension"] != "overworld":
+        elif checkpoint["dimension"] != "overworld":
             data = PORTALS[checkpoint["dimension"]]
             x, y, z = data["lodestone"]
             x2, y2, z2 = nxt["lodestone"]
