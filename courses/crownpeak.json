@@ -1,6 +1,6 @@
 {
     "name": "Secondary Grand Prix Course",
-    "start_description": "Crown Peak Beacon",
+    "start_description": "Crown Peak",
     "start_coordinates": [-704, 99, 580],
     "worldborder_center": [-704, 580],
     "worldborder_size": 40,
