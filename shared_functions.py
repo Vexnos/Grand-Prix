@@ -36,16 +36,29 @@ def get_data(id, has_fire=False):
     checkpoint = {
         "id" : id,
         "coords" : place["lodestone"],
+        "dimension" : "overworld",
         "extra_distance" : 0,
         "has_fire" : has_fire,
     }
     if "dimension" in place:
+        checkpoint["dimension"] = place["dimension"]
         dimension_data = PORTALS[place["dimension"]]
         checkpoint["coords"] = dimension_data["lodestone"]
         outgoing_leg = get_distance(dimension_data["entry_portal"], place["lodestone"])
         return_leg = get_distance(place["lodestone"], dimension_data["exit_portal"])
         checkpoint["extra_distance"] = outgoing_leg + return_leg
     return checkpoint
+
+def get_checkpoint_locations(course):
+    checkpoint_locations = [{
+        "id" : "start",
+        "name" : course["start_description"],
+        "coords" : course["start_coordinates"],
+        "dimension" : "overworld",
+        "has_fire" : False,
+    }]
+    checkpoint_locations += [get_data(checkpoint["id"]) for checkpoint in course["checkpoints"]]
+    return checkpoint_locations
 
 # Import course from json
 def import_course(path):

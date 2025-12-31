@@ -1,0 +1,754 @@
+[
+    {
+        "name" : "apple",
+        "quality" : 6.4,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -3400,
+                "multiplier" : 0.15
+            },
+            {
+                "type" : "z_above",
+                "value" : 1500,
+                "multiplier" : 0.3
+            },
+            {
+                "type" : "z_above",
+                "value" : 2500,
+                "multiplier" : 0.3
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "baked_potato",
+        "quality" : 11,
+        "weight" : 0.4,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -2600,
+                "multiplier" : 8
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "beetroot",
+        "quality" : 2.2,
+        "weight" : 0.4,
+        "modifiers" : [
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "z_below",
+                        "value" : 2400
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : 700
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : -1100
+                    }
+                ],
+                "multiplier" : 8
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "beetroot_soup[max_stack_size=16]",
+        "quality" : 13.2,
+        "weight" : 0.2,
+        "modifiers" : [
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "z_below",
+                        "value" : 2400
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : 700
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : -1100
+                    }
+                ],
+                "multiplier" : 8
+            },
+            {
+                "type" : "z_below",
+                "value" : -3400,
+                "multiplier" : 3
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : 2150
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : 900
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 1500
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : 750
+                    }
+                ],
+                "multiplier" : 3
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "bread",
+        "quality" : 11,
+        "weight" : 3.2,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -2600,
+                "multiplier" : 0.125
+            },
+            {
+                "type" : "z_above",
+                "value" : 700,
+                "multiplier" : 0.125
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "carrot",
+        "quality" : 6.6,
+        "weight" : 3.2,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -1350,
+                "multiplier" : 0.125
+            },
+            {
+                "type" : "z_above",
+                "value" : 650,
+                "multiplier" : 0.125
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "chorus_fruit",
+        "quality" : 6.4,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "the_end",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "cooked_beef",
+        "quality" : 20.8,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "cooked_chicken",
+        "quality" : 13.2,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "cooked_cod",
+        "quality" : 11,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "cooked_mutton",
+        "quality" : 15.6,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "cooked_porkchop",
+        "quality" : 20.8,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_above",
+                        "value" : -2600
+                    },
+                    {
+                        "type" : "x_below",
+                        "value" : -2000
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 600
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : 0
+                    }
+                ],
+                "multiplier" : 4
+            }
+        ]
+    },
+    {
+        "name" : "cooked_rabbit",
+        "quality" : 11,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "cooked_salmon",
+        "quality" : 15.6,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={\"text\":\"Grandma\\'s Biscuit\",\"italic\":false}]",
+        "quality" : 6,
+        "weight" : 0.6,
+        "modifiers" : [
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : -2300
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -750
+                    }
+                ],
+                "multiplier" : 10
+            },
+            {
+                "type" : "z_below",
+                "value" : -2600,
+                "multiplier" : 0.25
+            },
+            {
+                "type" : "z_above",
+                "value" : 700,
+                "multiplier" : 0.25
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    
+    {
+        "name" : "glistering_melon_slice[custom_name={text:\"Glistening Melon Slice\",italic:false},food={nutrition:4,saturation:4.8,can_always_eat:false},consumable={consume_seconds:1.6,animation:\"eat\"}]",
+        "quality" : 8.8,
+        "weight" : 1,
+        "modifiers" : [
+            {
+                "type" : "not_dimension",
+                "value" : "the_nether",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "glow_berries[consumable={on_consume_effects:[{type:\"minecraft:apply_effects\",effects:[{id:\"minecraft:glowing\",amplifier:0,duration:100}]}]}]",
+        "todo" : "glowing",
+        "quality" : 2.4,
+        "weight" : 2,
+        "modifiers" : [
+            {
+                "type" : "y_above",
+                "value" : 60,
+                "multiplier" : 0
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "golden_carrot",
+        "quality" : 20.4,
+        "weight" : 0.5,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -1350,
+                "multiplier" : 0.5
+            },
+            {
+                "type" : "z_above",
+                "value" : 650,
+                "multiplier" : 0.5
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : -350
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : -3900
+                    }
+                ],
+                "multiplier" : 8
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_above",
+                        "value" : 1200
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 0
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -600
+                    }
+                ],
+                "multiplier" : 8
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_above",
+                        "value" : -1400
+                    },
+                    {
+                        "type" : "x_below",
+                        "value" : -100
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 850
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -300
+                    }
+                ],
+                "multiplier" : 8
+            },
+            {
+                "type" : "z_above",
+                "value" : 3600,
+                "multiplier" : 4
+            }
+        ]
+    },
+    {
+        "name" : "melon_slice",
+        "quality" : 3.2,
+        "weight" : 0.3,
+        "modifiers" : [
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_above",
+                        "value" : 700
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 700
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -800
+                    }
+                ],
+                "multiplier" : 10
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "mushroom_stew[max_stack_size=16]",
+        "quality" : 13.2,
+        "weight" : 0.3,
+        "modifiers" : [
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : -2400
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 1200
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -2000
+                    }
+                ],
+                "multiplier" : 10
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : -600
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : -900
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : -2000
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -2400
+                    }
+                ],
+                "multiplier" : 8
+            },
+
+            {
+                "type" : "z_below",
+                "value" : -3400,
+                "multiplier" : 5
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : 2150
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : 900
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 1500
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : 750
+                    }
+                ],
+                "multiplier" : 5
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+
+    {
+        "name" : "pumpkin_pie[item_model=pumpkin,consumable={animation:eat,consume_seconds:1.6},food={nutrition:4,saturation:2.4,can_always_eat:false}]",
+        "quality" : 6.4,
+        "weight" : 1.2,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -2200,
+                "multiplier" : 0.1
+            },
+            {
+                "type" : "z_above",
+                "value" : 550,
+                "multiplier" : 0.1
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : 950
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : -2850
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 550
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -1150
+                    }
+                ],
+                "multiplier" : 0.2
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "pumpkin_pie",
+        "quality" : 12.8,
+        "weight" : 2,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -2200,
+                "multiplier" : 0.15
+            },
+            {
+                "type" : "z_above",
+                "value" : 550,
+                "multiplier" : 0.15
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : 950
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : -2850
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 550
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -1150
+                    }
+                ],
+                "multiplier" : 0.15
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "rabbit_stew[max_stack_size=16]",
+        "quality" : 22,
+        "weight" : 0.5,
+        "modifiers" : [
+            {
+                "type" : "z_below",
+                "value" : -3400,
+                "multiplier" : 3
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : 2150
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : 900
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 1500
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : 750
+                    }
+                ],
+                "multiplier" : 3
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    },
+    {
+        "name" : "sweet_berries",
+        "quality" : 2.4,
+        "weight" : 0.3,
+        "modifiers" : [
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : -50
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : -1900
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : 2450
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : 900
+                    }
+                ],
+                "multiplier" : 10
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : -1000
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : -2400
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : -2650
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -3400
+                    }
+                ],
+                "multiplier" : 10
+            },
+            {
+                "type" : "all",
+                "value" : [
+                    {
+                        "type" : "x_below",
+                        "value" : 1700
+                    },
+                    {
+                        "type" : "x_above",
+                        "value" : 1200
+                    },
+                    {
+                        "type" : "z_below",
+                        "value" : -3000
+                    },
+                    {
+                        "type" : "z_above",
+                        "value" : -3400
+                    }
+                ],
+                "multiplier" : 10
+            },
+            {
+                "type" : "not_dimension",
+                "value" : "overworld",
+                "multiplier" : 0
+            }
+        ]
+    }
+]
