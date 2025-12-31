@@ -77,12 +77,16 @@ PORTALS = {
     "the_nether": {
         "name": "Nether Portal",
         "color": "dark_red",
-        "lodestone": [-495, 101, -221]
+        "lodestone": [-495, 101, -221],
+        "entry_portal": [-204, 77, -1143],
+        "exit_portal": [-204, 77, -1143]
     },
     "the_end": {
         "name": "Stronghold",
         "color": "dark_purple",
-        "lodestone": [-572, 77, 96]
+        "lodestone": [-572, 77, 96],
+        "entry_portal": [-1113, 59, -794],
+        "exit_portal": [-1083, 56, -524]
     }
 }
 
