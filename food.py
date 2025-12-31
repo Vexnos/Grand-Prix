@@ -77,7 +77,7 @@ for checkpoint in remainder:
         food_quantity = min(int(random.randint(100, 200) / quality), 64)
         food_balance += food_quantity * quality
 
-        print(f"{food_type} x{food_quantity}")
+        print(f"{food_type} {food_quantity}")
 
     print(checkpoint["id"])
 
