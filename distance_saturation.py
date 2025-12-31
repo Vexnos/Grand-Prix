@@ -7,14 +7,14 @@ Authors: Vexnos
 Comments: ONLY FOR TESTING
 ----------------------------------------
 '''
-'''
+
 foods = {
     "cookie": (2, 4, 32),
     "carrot": (3, 3.6, 32),
     "bread": (5, 6, 32),
     "cooked_salmon": (6, 9.6, 16),
-    "cooked_beef": (8, 12.8, 24),
-    "golden_apple": (4, 9.6, 3)
+    "cooked_beef": (8, 12.8, 24)
+    # "golden_apple": (4, 9.6, 3)
 }
 
 total = {
@@ -27,8 +27,9 @@ for food in foods:
     total["saturation"] += (foods[food][1] * foods[food][2])
 
 for i in total:
-    print(f"{total[i]}")
-'''
+    print(f"{total[i]:.0f}")
+total_food_points = total["nutrition"] + total["saturation"]
+print(f"{total_food_points:.0f}")
 
 import json
 from math import sqrt
@@ -49,7 +50,9 @@ def calc_distance(x, y, z, x2, y2, z2):
     distance = sqrt(distance**2 + abs(dy)**2)
     return distance
 
-with open("courses/crownpeak.json", "r") as file:
+path = input("Course File Path (from courses folder): ")
+
+with open(f"courses/{path}.json", "r") as file:
     course = json.load(file)
 
 with open("courses/checkpoints.json", "r") as file:
@@ -103,3 +106,6 @@ total_distance = 0
 for distance in distances:
     total_distance += distance
 print("Total Distance: " + str(round(total_distance)) + "m")
+FOOD_POINT_RATIO = 47 # food points per km
+total_food = (FOOD_POINT_RATIO * (total_distance / 1000))
+print(f"Total Food Points: {total_food:.0f} Food Points")
