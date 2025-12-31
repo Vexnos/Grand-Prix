@@ -3,7 +3,7 @@ import random
 from math import exp
 from shared_functions import import_course, get_length, get_checkpoint_locations, get_distance
 
-COST_PER_M = 0.042
+COST_PER_M = 0.048
 
 def matches(modifier, checkpoint):
     match modifier["type"]:
