@@ -580,7 +580,7 @@
         "advancement_icon": "todo"
     },
     {
-        "id": "amaria_checkpoint",
+        "id": "amaria",
         "name": "Amaria",
         "description": "Survive the Fall",
         "lodestone": [1569, 105, 1199],
@@ -588,7 +588,7 @@
         "potion_contents": "regeneration"
     },
     {
-        "id": "amaria_old_checkpoint",
+        "id": "amaria_legacy",
         "name": "Amaria",
         "description": "todo",
         "lodestone": [1579, 157, 1248],
