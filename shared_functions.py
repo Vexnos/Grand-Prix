@@ -3,7 +3,7 @@ from math import sqrt
 
 def get_distance(location, new_location):
     vertical = new_location[1] - location[1]
-    vertical = vertical / 2 if vertical < 0 else vertical * 3
+    vertical = -vertical / 2 if vertical < 0 else vertical * 3
     return sqrt((location[0] - new_location[0]) ** 2 + (location[2] - new_location[2]) ** 2) + vertical
 
 def get_length(positions):
