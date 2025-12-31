@@ -43,11 +43,11 @@ def previous_and_next(some_iterable):
     return zip(prevs, items, nexts)
 
 def calc_distance(x, y, z, x2, y2, z2):
-    dx = x - x2
-    dy = y - y2
-    dz = z - z2
-    distance = sqrt(abs(dx)**2 + abs(dz)**2)
-    distance = sqrt(distance**2 + abs(dy)**2)
+    dx = x2 - x
+    dy = y2 - y
+    dz = z2 - z
+    dy = -dy / 2 if dy < 0 else dy * 3
+    distance = sqrt(dx**2 + dz**2) + dy
     return distance
 
 path = input("Course File Path (from courses folder): ")
@@ -74,9 +74,14 @@ distances = []
 for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
     if previous is None:
         x, y, z = course["start_coordinates"]
-        x2, y2, z2 = nxt['lodestone']
+        x2, y2, z2 = checkpoint['lodestone']
         distance = calc_distance(x, y, z, x2, y2, z2)
         print(f"{course['start_description']} --> {checkpoint['name']}: {distance:.0f}m")
+        distances.append(distance)
+        x, y, z = checkpoint["lodestone"]
+        x2, y2, z2 = nxt["lodestone"]
+        distance = calc_distance(x, y, z, x2, y2, z2)
+        print(f"{checkpoint['name']} --> {nxt['name']}: {distance:.0f}m")
         distances.append(distance)
         continue
     if nxt is not None:
@@ -89,7 +94,7 @@ for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
             print(f"{checkpoint['name']} --> {nxt['name']}: {distance:.0f}m")
             distances.append(distance)
             continue
-        elif nxt["dimension"] != "overworld":
+        if nxt["dimension"] != "overworld":
             data = PORTALS[nxt["dimension"]]
             x, y, z = checkpoint["lodestone"]
             x2, y2, z2 = data["lodestone"]
@@ -97,7 +102,7 @@ for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
             print(f"{checkpoint['name']} --> {nxt['name']}: {distance:.0f}m")
             distances.append(distance)
             continue
-        elif checkpoint["dimension"] != "overworld":
+        if checkpoint["dimension"] != "overworld":
             data = PORTALS[checkpoint["dimension"]]
             x, y, z = data["lodestone"]
             x2, y2, z2 = nxt["lodestone"]
