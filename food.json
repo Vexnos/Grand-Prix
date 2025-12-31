@@ -175,7 +175,7 @@
         ]
     },
     {
-        "name" : "chorus_fruit",
+        "name" : "popped_chorus_fruit[food={nutrition:4,saturation:2.4},consumable={consume_seconds:1.6,animation:eat}]",
         "quality" : 6.4,
         "weight" : 1,
         "modifiers" : [
@@ -547,7 +547,7 @@
     },
 
     {
-        "name" : "pumpkin_pie[item_model=pumpkin,consumable={animation:eat,consume_seconds:1.6},food={nutrition:4,saturation:2.4,can_always_eat:false}]",
+        "name" : "pumpkin_pie[custom_name={text:\"Pumpkin\",italic:\"false\"},item_model=pumpkin,consumable={animation:eat,consume_seconds:1.6},food={nutrition:4,saturation:2.4,can_always_eat:false}]",
         "quality" : 6.4,
         "weight" : 1.2,
         "modifiers" : [
