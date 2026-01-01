@@ -1,0 +1,129 @@
+{
+    "name": "Legacy Grand Prix Course (GP #2)",
+    "start_description": "First Ardoni Shrine",
+    "start_coordinates": [-302, 119, -4283],
+    "worldborder_center": [-283, -4264],
+    "worldborder_size": 100,
+    "initial_items": [],
+    "checkpoints": [
+        {
+            "id": "hailstone_beacon",
+            "items": [
+                "item replace entity @a armor.feet with leather_boots",
+                "give @a cookie 32",
+                "give @a water_bucket"
+            ]
+        },
+        {
+            "id": "kaltaria_village",
+            "items": [
+                "item replace entity @a armor.head with leather_helmet",
+                "item replace entity @a armor.legs with leather_leggings",
+                "give @a stone_sword",
+                "give @a stone_axe",
+                "give @a carrot 32"
+            ]
+        },
+        {
+            "id": "sendaria_osivian_house"
+        },
+        {
+            "id": "oakendale_beacon",
+            "items": [
+                "item replace entity @a armor.chest with leather_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with leather_leggings[enchantments={protection:2}]",
+                "give @a bow",
+                "give @a arrow 64",
+                "give @a lava_bucket"
+            ]
+        },
+        {
+            "id": "etherea_tower"
+        },
+        {
+            "id": "felora_beacon",
+            "items": [
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.feet with iron_boots",
+                "give @a iron_sword",
+                "give @a bow",
+                "give @a arrow 64",
+                "give @a bread 16"
+            ]
+        },
+        {
+            "id": "crown_peak_beacon",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
+                "give @a diamond_sword[enchantments={sharpness:3}]",
+                "give @a bow[enchantments={power:1,punch:2}]",
+                "give @a spectral_arrow 64",
+                "give @a cooked_salmon 16",
+                "give @a shield"
+            ]
+        },
+        {
+            "id": "tartarus_beacon",
+            "items": [
+                "give @a shield",
+                "give @a cooked_porkchop 20",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"}] 2",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2"
+            ]
+        },
+        {
+            "id": "meridian_beacon",
+            "items": [
+                "item replace entity @a armor.head with diamond_helmet",
+                "item replace entity @a armor.chest with diamond_chestplate",
+                "item replace entity @a armor.legs with diamond_leggings",
+                "item replace entity @a armor.boot with diamond_boots",
+                "give @a diamond_sword[enchantments={sharpness:5}]",
+                "give @a bow[enchantments={power:3,punch:2,flame:1}]",
+                "give @a arrow 64",
+                "give @a spectral_arrow 64",
+                "give @a golden_carrot 10",
+                "give @a potion[potion_contents={potion:\"minecraft:leaping\"}]",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2",
+                "give @a potion[potion_contents={potion:\"minecraft:invisibility\"}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
+            ]
+        },
+        {
+            "id": "amaria_legacy"
+        },
+        {
+            "id": "hyperia_beacon",
+            "items": [
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:4,blast_protection:4}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:4,blast_protection:4}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:4,blast_protection:4}]",
+                "item replace entity @a armor.boot with diamond_boots[enchantments={protection:4,blast_protection:4}]",
+                "give @a diamond_sword[enchantments={sharpness:5,knockback:2,fire_aspect:2}]",
+                "give @a bow[enchantments={power:5,punch:2,flame:1}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5,unbreaking:3}]",
+                "give @a arrow 64",
+                "give @a obsidian 64",
+                "give @a end_crystal 5",
+                "give @a golden_apple 30",
+                "give @a enchanted_golden_apple",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:swiftness\"}]"
+            ]
+        },
+        {
+            "id": "ataraxia_shrine"
+        },
+        {
+            "id": "biggerton_bell"
+        },
+        {
+            "id": "nestoria_shrine"
+        },
+        {
+            "id": "gale_point"
+        }
+    ]
+}
