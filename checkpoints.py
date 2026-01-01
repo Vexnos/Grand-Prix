@@ -253,7 +253,7 @@ CHECKPOINTS_PATH = "data/race/function/checkpoints/"
 #-------Main-Routine-------
 if __name__ == "__main__":
     # Import course from json
-    path = input("Please input the path to your course here (or select a preset: main, reverse, crownpeak): ").lower()
+    path = input("Please input the path to your course here (or select a preset: main, reverse, crownpeak, legacy): ").lower()
     course = import_course(path)
     
     if course is not None:
