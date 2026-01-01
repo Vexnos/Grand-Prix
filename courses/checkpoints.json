@@ -753,8 +753,8 @@
     {
         "id": "stonevale",
         "name": "Stonevale",
-        "description": "Stonevale: Become Moth",
-        "lodestone": [-2115, 93, -211],
+        "description": "Reach Stonevale",
+        "lodestone": [-2119, 78, -211],
         "advancement_icon": "campfire"
     },
     {
