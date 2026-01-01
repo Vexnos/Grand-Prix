@@ -590,9 +590,10 @@
     {
         "id": "amaria_legacy",
         "name": "Amaria",
-        "description": "todo",
+        "description": "Survive the Fall",
         "lodestone": [1579, 157, 1248],
-        "advancement_icon": "todo"
+        "advancement_icon": "potion",
+        "potion_contents": "regeneration"
     },
     {
         "id": "waimiria_house",
