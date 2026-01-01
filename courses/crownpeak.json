@@ -5,7 +5,7 @@
     "worldborder_center": [-704, 580],
     "worldborder_size": 40,
     "initial_items": [
-        "give @a bread 17"
+        "give @a bread 15"
     ],
     "checkpoints": [
         {
@@ -38,8 +38,7 @@
         {
             "id": "riverstead_bell",
             "items": [
-                "give @a fishing_rod",
-                "give @a cooked_salmon 9"
+                "give @a fishing_rod"
             ]
         },
         {
@@ -52,17 +51,15 @@
                 "give @a iron_sword",
                 "give @a bow",
                 "give @a arrow 32",
-                "give @a shield[banner_patterns=[{color:\"green\",pattern:\"minecraft:triangle_top\"},{color:\"green\",pattern:\"minecraft:stripe_center\"},{color:\"lime\",pattern:\"minecraft:flower\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"lime\",pattern:\"minecraft:circle\"}],base_color=\"black\"]"
+                "give @a shield[banner_patterns=[{color:\"green\",pattern:\"minecraft:triangle_top\"},{color:\"green\",pattern:\"minecraft:stripe_center\"},{color:\"lime\",pattern:\"minecraft:flower\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"lime\",pattern:\"minecraft:circle\"}],base_color=\"black\"]",
+                "give @a pumpkin_pie 11"
             ]
         },
         {
             "id": "fronchester"
         },
         {
-            "id": "etherea_dragon_egg",
-            "items": [
-                "give @a cooked_mutton 12"
-            ]
+            "id": "etherea_dragon_egg"
         },
         {
             "id": "twin_pass",
@@ -73,7 +70,8 @@
                 "item replace entity @a armor.feet with iron_boots",
                 "give @a iron_axe",
                 "give @a iron_pickaxe",
-                "give @a lava_bucket"
+                "give @a lava_bucket",
+                "give @a cooked_cod 17"
             ]
         },
         {
@@ -83,10 +81,7 @@
             "id": "voltaria_shrine"
         },
         {
-            "id": "mendoria_shrine",
-            "items": [
-                "give @a melon_slice 53"
-            ]
+            "id": "mendoria_shrine"
         },
         {
             "id": "ardoni_council_chamber",
@@ -96,7 +91,8 @@
                 "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
                 "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
                 "give @a diamond_sword",
-                "give @a bow[enchantments={power:2}]"
+                "give @a bow[enchantments={power:2}]",
+                "give @a carrot 18"
             ]
         },
         {
@@ -108,7 +104,7 @@
         {
             "id": "nestoria_shrine",
             "items": [
-                "give @a pumpkin_pie 12"
+                "give @a sweet_berries 56"
             ]
         },
         {
@@ -119,7 +115,7 @@
             "items": [
                 "give @a potion[potion_contents={potion:\"minecraft:strong_regeneration\"}]",
                 "give @a arrow 32",
-                "give @a bread 13"
+                "give @a cooked_mutton 9"
             ]
         },
         {
@@ -139,7 +135,7 @@
                 "give @a end_crystal 16",
                 "give @a obsidian 32",
                 "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
-                "give @a bread 12"
+                "give @a pumpkin_pie 14"
             ]
         },
         {
@@ -150,8 +146,7 @@
             "items": [
                 "give @a splash_potion[potion_contents={potion:\"minecraft:long_weakness\"},max_stack_size=16] 3",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:long_poison\"},max_stack_size=16] 3",
-                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"},max_stack_size=16] 3",
-                "give @a cooked_salmon 7"
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"},max_stack_size=16] 3"
             ]
         },
         {
@@ -160,7 +155,7 @@
         {
             "id": "cydonia_mines",
             "items": [
-                "give @a bread 13"
+                "give @a golden_carrot 8"
             ]
         },
         {
@@ -184,7 +179,7 @@
         {
             "id": "mt_velgrin_portal",
             "items": [
-                "give @a beetroot 64"
+                "give @a beetroot_soup[max_stack_size=16] 9"
             ]
         },
         {
@@ -197,10 +192,7 @@
             "id": "vault"
         },
         {
-            "id": "the_end",
-            "items": [
-                "give @a popped_chorus_fruit[food={nutrition:4,saturation:2.4},consumable={consume_seconds:1.6,animation:eat}] 28"
-            ]
+            "id": "the_end"
         },
         {
             "id": "crown_peak_throne"
