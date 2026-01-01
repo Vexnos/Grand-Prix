@@ -9,10 +9,19 @@
     ],
     "checkpoints": [
         {
-            "id": "silverwatch_inn"
+            "id": "silverwatch_inn",
+            "items": [
+                "give @a leather_boots",
+                "give @a stone_sword"
+            ]
         },
         {
-            "id": "nestoria_shrine"
+            "id": "nestoria_shrine",
+            "items": [
+                "give @a stone_axe",
+                "give @a leather_helmet",
+                "give @a water_bucket"
+            ]
         },
         {
             "id": "ardoni_cemetery",
@@ -21,7 +30,12 @@
             ]
         },
         {
-            "id": "sendaria_osivian_shrine"
+            "id": "sendaria_osivian_shrine",
+            "items": [
+                "give @a leather_chestplate",
+                "give @a leather_leggings",
+                "give @a stone_pickaxe"
+            ]
         },
         {
             "id": "biggerton_bell",
@@ -33,7 +47,15 @@
             "id": "ataraxia_shrine"
         },
         {
-            "id": "hyperia_beacon"
+            "id": "hyperia_beacon",
+            "items": [
+                "give @a iron_chestplate",
+                "give @a iron_boots",
+                "give @a iron_sword",
+                "give @a bow",
+                "give @a arrow 32",
+                "give @a lava_bucket"
+            ]
         },
         {
             "id": "diamond_heights_mayor",
@@ -42,7 +64,15 @@
             ]
         },
         {
-            "id": "amaria"
+            "id": "amaria",
+            "items": [
+                "give @a iron_helmet",
+                "give @a iron_leggings",
+                "give @a iron_sword[enchantments={sharpness:2,unbreaking:2}]",
+                "give @a iron_axe",
+                "give @a iron_pickaxe",
+                "give @a bow[enchantments={power:1,unbreaking:2}]"
+            ]
         },
         {
             "id": "kaeru",
@@ -51,7 +81,17 @@
             ]
         },
         {
-            "id": "meridian_beacon"
+            "id": "meridian_beacon",
+            "items": [
+                "give @a iron_chestplate[enchantments={protection:2}]",
+                "give @a iron_helmet[enchantments={protection:2}]",
+                "give @a iron_leggings[enchantments={protection:2}]",
+                "give @a iron_boots[enchantments={protection:2}]",
+                "give @a shield",
+                "give @a diamond_sword[enchantments={sharpness:2,unbreaking:2}]",
+                "give @a bow[enchantments={power:3,unbreaking:2}]",
+                "give @a oak_log 16"
+            ]
         },
         {
             "id": "cydonia_mines"
@@ -59,7 +99,9 @@
         {
             "id": "tartarus_throne",
             "items": [
-                "give @a cooked_rabbit 13"
+                "give @a cooked_rabbit 13",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"}] 2",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2"
             ]
         },
         {
@@ -68,7 +110,17 @@
         {
             "id": "crown_peak_beacon",
             "items": [
-                "give @a bread 14"
+                "give @a bread 14",
+                "give @a diamond_helmet[enchantments={protection:2}]",
+                "give @a diamond_chestplate[enchantments={protection:2}]",
+                "give @a diamond_leggings[enchantments={protection:2}]",
+                "give @a diamond_boots[enchantments={protection:2}]",
+                "give @a diamond_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,unbreaking:3,fire_aspect:2}]",
+                "give @a bow[enchantments={power:5,unbreaking:3,flame:1}]",
+                "give @a spectral_arrow 32",
+                "give @a shield[enchantments={unbreaking:3},base_color=\"black\"]",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
             ]
         },
         {
@@ -95,7 +147,18 @@
         {
             "id": "felora_beacon",
             "items": [
-                "give @a cooked_cod 16"
+                "give @a cooked_cod 16",
+                "give @a diamond_helmet[enchantments={blast_protection:2,protection:2,respiration:3,aqua_affinity:1}]",
+                "give @a diamond_chestplate[enchantments={blast_protection:2,protection:2}]",
+                "give @a diamond_leggings[enchantments={blast_protection:2,protection:2}]",
+                "give @a diamond_boots[enchantments={blast_protection:2,protection:2,feather_falling:2,depth_strider:3}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5}]",
+                "give @a diamond_axe[enchantments={sharpness:3}]",
+                "give @a bow[enchantments={power:5,punch:2,flame:1,infinity:1,unbreaking:3}]",
+                "give @a golden_apple 3",
+                "give @a end_crystal 16",
+                "give @a obsidian 32",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
             ]
         },
         {
@@ -114,7 +177,11 @@
             "id": "kaltaria_village"
         },
         {
-            "id": "ardoni_arena"
+            "id": "ardoni_arena",
+            "items": [
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
+            ]
         },
         {
             "id": "northwind_pass",
