@@ -92,6 +92,7 @@
                 "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
                 "give @a diamond_sword",
                 "give @a bow[enchantments={power:2}]",
+                "give @a arrow 32",
                 "give @a carrot 18"
             ]
         },
