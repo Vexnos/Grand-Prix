@@ -293,7 +293,7 @@
         ]
     },
     {
-        "name" : "cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={\"text\":\"Grandma\\'s Biscuit\",\"italic\":false}]",
+        "name" : "cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={\"text\":\"Grandma's Biscuit\",\"italic\":false}]",
         "quality" : 6,
         "weight" : 0.6,
         "modifiers" : [
