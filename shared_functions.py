@@ -64,6 +64,7 @@ def get_checkpoint_locations(course):
 def import_course(path):
     preset_courses = {
         "main": "courses/main.json",
+        "legacy": "courses/main_legacy.json",
         "reverse": "courses/reverse.json",
         "crownpeak": "courses/crownpeak.json"
     }
