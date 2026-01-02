@@ -162,10 +162,10 @@
         {
             "id": "tartarus_throne",
             "items": [
-                "item replace entity @a armor.head with netherite_helmet[trim={pattern:raiser,material:redstone},enchantments={protection:2,blast_protection:2,respiration:3,aqua_affinity:1}]",
-                "item replace entity @a armor.chest with netherite_chestplate[trim={pattern:tide,material:redstone},enchantments={protection:2,blast_protection:2}]",
-                "item replace entity @a armor.legs with netherite_leggings[trim={pattern:bolt,material:redstone},enchantments={protection:2,blast_protection:2,swift_sneak:3}]",
-                "item replace entity @a armor.feet with netherite_boots[trim={pattern:coast,material:redstone},enchantments={protection:2,blast_protection:2,feather_falling:2,depth_strider:3,soul_speed:3}]",
+                "item replace entity @a armor.head with netherite_helmet[trim={pattern:raiser,material:diamond},enchantments={protection:2,respiration:3,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with netherite_chestplate[trim={pattern:tide,material:diamond},enchantments={protection:2}]",
+                "item replace entity @a armor.legs with netherite_leggings[trim={pattern:bolt,material:diamond},enchantments={protection:2,swift_sneak:3}]",
+                "item replace entity @a armor.feet with netherite_boots[trim={pattern:coast,material:diamond},enchantments={protection:2,feather_falling:2,depth_strider:3,soul_speed:3}]",
                 "give @a netherite_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,knockback:2,fire_aspect:2}]",
                 "give @a netherite_axe[enchantments={sharpness:3,efficiency:5}]",
                 "give @a mace[enchantments={density:3,wind_burst:2}]",
