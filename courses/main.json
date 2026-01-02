@@ -93,7 +93,7 @@
                 "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
                 "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
                 "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
-                "give @a shield",
+                "give @a shield[banner_patterns=[{color:\"light_gray\",pattern:\"minecraft:bricks\"},{color:\"purple\",pattern:\"minecraft:triangle_top\"},{color:\"gray\",pattern:\"minecraft:border\"},{color:\"white\",pattern:\"minecraft:straight_cross\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"white\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
                 "give @a diamond_sword[enchantments={sharpness:2,unbreaking:2}]",
                 "give @a bow[enchantments={power:3,unbreaking:2}]",
                 "give @a oak_log 16",
@@ -108,7 +108,8 @@
             "items": [
                 "give @a cooked_beef 8",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"}] 2",
-                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2"
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2",
+                "give @a shield[banner_patterns=[{color:\"red\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:circle\"},{color:\"black\",pattern:\"minecraft:triangle_top\"},{color:\"black\",pattern:\"minecraft:triangle_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:curly_border\"},{color:\"black\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:rhombus\"}],base_color=\"red\"]"
             ]
         },
         {
@@ -124,7 +125,7 @@
                 "give @a diamond_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,unbreaking:3,fire_aspect:2}]",
                 "give @a bow[enchantments={power:5,unbreaking:3,flame:1}]",
                 "give @a spectral_arrow 32",
-                "give @a shield[enchantments={unbreaking:3},base_color=\"black\"]",
+                "give @a shield[banner_patterns=[{color:\"gray\",pattern:\"minecraft:half_horizontal\"},{color:\"orange\",pattern:\"minecraft:stripe_middle\"},{color:\"orange\",pattern:\"minecraft:rhombus\"}],base_color=\"white\"]",
                 "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
                 "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
             ]
@@ -141,13 +142,20 @@
         {
             "id": "hyperia_beacon",
             "items": [
-                "item replace entity @a armor.head with diamond_helmet[enchantments={blast_protection:2,protection:2,respiration:3,aqua_affinity:1}]",
-                "item replace entity @a armor.chest with diamond_chestplate[enchantments={blast_protection:2,protection:2}]",
-                "item replace entity @a armor.legs with diamond_leggings[enchantments={blast_protection:2,protection:2}]",
-                "item replace entity @a armor.feet with diamond_boots[enchantments={blast_protection:2,protection:2,feather_falling:2,depth_strider:3}]",
+                "item replace entity @a armor.head with netherite_helmet[trim={pattern:\"minecraft:raiser\",material:\"minecraft:diamond\"},enchantments={protection:2,respiration:3,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with netherite_chestplate[trim={pattern:\"minecraft:tide\",material:\"minecraft:diamond\"},enchantments={protection:2}]",
+                "item replace entity @a armor.legs with netherite_leggings[trim={pattern:\"minecraft:bolt\",material:\"minecraft:diamond\"},enchantments={protection:2}]",
+                "item replace entity @a armor.feet with netherite_boots[trim={pattern:\"minecraft:coast\",material:\"minecraft:diamond\"},enchantments={protection:2,feather_falling:2,depth_strider:3}]",
+                "give @a netherite_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,unbreaking:3,fire_aspect:2}]",
+                "give @a mace[enchantments={density:3,wind_burst:2,unbreaking:3}]",
                 "give @a diamond_pickaxe[enchantments={efficiency:5}]",
                 "give @a diamond_axe[enchantments={sharpness:3}]",
                 "give @a bow[enchantments={power:5,punch:2,flame:1,infinity:1,unbreaking:3}]",
+                "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
+                "give @a crossbow[enchantments={piercing:5,quick_charge:3}]",
+                "give @a firework_rocket[fireworks={explosions:[{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"}],flight_duration:1b}] 16",
+                "give @a trident[enchantments={riptide:3,impaling:3}]",
+                "give @a wind_charge 32",
                 "give @a golden_apple 3",
                 "give @a end_crystal 16",
                 "give @a obsidian 32",
