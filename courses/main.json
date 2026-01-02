@@ -10,7 +10,7 @@
             "id": "hailstone_beacon",
             "items": [
                 "give @a cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={text:\"Grandma's Biscuit\",italic:false}] 32",
-                "give @a leather_boots",
+                "item replace entity @a armor.feet with leather_boots",
                 "give @a stone_sword"
             ]
         },
@@ -19,7 +19,7 @@
             "items": [
                 "give @a carrot 16",
                 "give @a stone_axe",
-                "give @a leather_helmet",
+                "item replace entity @a armor.head with leather_helmet",
                 "give @a water_bucket"
             ]
         },
@@ -30,8 +30,8 @@
             "id": "kaltaria_village",
             "items": [
                 "give @a carrot 16",
-                "give @a leather_chestplate",
-                "give @a leather_leggings",
+                "item replace entity @a armor.chest with leather_chestplate",
+                "item replace entity @a armor.legs with leather_leggings",
                 "give @a stone_pickaxe"
             ]
         },
@@ -41,8 +41,8 @@
         {
             "id": "oakendale_beacon",
             "items": [
-                "give @a iron_chestplate",
-                "give @a iron_boots",
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.feet with iron_boots",
                 "give @a iron_sword",
                 "give @a bow",
                 "give @a arrow 32",
@@ -56,8 +56,8 @@
         {
             "id": "felora_beacon",
             "items": [
-                "give @a iron_helmet",
-                "give @a iron_leggings",
+                "item replace entity @a armor.head with iron_helmet",
+                "item replace entity @a armor.legs with iron_leggings",
                 "give @a iron_sword[enchantments={sharpness:2,unbreaking:2}]",
                 "give @a iron_axe",
                 "give @a iron_pickaxe",
@@ -89,10 +89,10 @@
         {
             "id": "crown_peak_beacon",
             "items": [
-                "give @a iron_chestplate[enchantments={protection:2}]",
-                "give @a iron_helmet[enchantments={protection:2}]",
-                "give @a iron_leggings[enchantments={protection:2}]",
-                "give @a iron_boots[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
                 "give @a shield",
                 "give @a diamond_sword[enchantments={sharpness:2,unbreaking:2}]",
                 "give @a bow[enchantments={power:3,unbreaking:2}]",
@@ -117,10 +117,10 @@
         {
             "id": "meridian_beacon",
             "items": [
-                "give @a diamond_helmet[enchantments={protection:2}]",
-                "give @a diamond_chestplate[enchantments={protection:2}]",
-                "give @a diamond_leggings[enchantments={protection:2}]",
-                "give @a diamond_boots[enchantments={protection:2}]",
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2}]",
                 "give @a diamond_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,unbreaking:3,fire_aspect:2}]",
                 "give @a bow[enchantments={power:5,unbreaking:3,flame:1}]",
                 "give @a spectral_arrow 32",
@@ -141,10 +141,10 @@
         {
             "id": "hyperia_beacon",
             "items": [
-                "give @a diamond_helmet[enchantments={blast_protection:2,protection:2,respiration:3,aqua_affinity:1}]",
-                "give @a diamond_chestplate[enchantments={blast_protection:2,protection:2}]",
-                "give @a diamond_leggings[enchantments={blast_protection:2,protection:2}]",
-                "give @a diamond_boots[enchantments={blast_protection:2,protection:2,feather_falling:2,depth_strider:3}]",
+                "item replace entity @a armor.head with diamond_helmet[enchantments={blast_protection:2,protection:2,respiration:3,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={blast_protection:2,protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={blast_protection:2,protection:2}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={blast_protection:2,protection:2,feather_falling:2,depth_strider:3}]",
                 "give @a diamond_pickaxe[enchantments={efficiency:5}]",
                 "give @a diamond_axe[enchantments={sharpness:3}]",
                 "give @a bow[enchantments={power:5,punch:2,flame:1,infinity:1,unbreaking:3}]",
