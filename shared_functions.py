@@ -61,13 +61,16 @@ def get_checkpoint_locations(course):
     return checkpoint_locations
 
 # Import course from json
-def import_course(path):
+def import_course():
     preset_courses = {
         "main": "courses/main.json",
         "legacy": "courses/main_legacy.json",
         "reverse": "courses/reverse.json",
         "crownpeak": "courses/crownpeak.json"
     }
+    presets = ", ".join(preset_courses)
+    message = f"Please input the path to your course here (or select a preset: {presets}): "
+    path = input(message).lower()
     # Check the user hasn't entered nothing
     if len(path) == 0:
         print("You have not specificed a path, quitting...")
@@ -77,11 +80,6 @@ def import_course(path):
         path = preset_courses[path]
     with open(path, "r") as file:
         course = json.load(file)
-    with open("courses/checkpoints.json") as file:
-        checkpoint_data = json.load(file)
-    checkpoints = {}
-    for item in checkpoint_data:
-        checkpoints[item["id"]] = item
     for checkpoint in course["checkpoints"]:
         checkpoint_data = checkpoints[checkpoint["id"]]
         for key in "name", "description", "advancement_icon", "lodestone":

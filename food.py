@@ -29,9 +29,7 @@ def matches(modifier, checkpoint):
             print(f"Unknown modifier type: {unknown}")
             quit()
 
-name = input("Course file: ")
-
-course = import_course(name)
+course = import_course()
 
 checkpoint_locations = get_checkpoint_locations(course)
 total_distance = get_length(checkpoint_locations)
