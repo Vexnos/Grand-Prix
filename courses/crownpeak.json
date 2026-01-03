@@ -169,9 +169,6 @@
                 "give @a netherite_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,knockback:2,fire_aspect:2}]",
                 "give @a netherite_axe[enchantments={sharpness:3,efficiency:5}]",
                 "give @a mace[enchantments={density:3,wind_burst:2}]",
-                "give @a crossbow[enchantments={piercing:5,quick_charge:3}]",
-                "give @a firework_rocket[fireworks={explosions:[{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"},{colors:[11743532],shape:\"large_ball\"}],flight_duration:1b}] 16",
-                "give @a trident[enchantments={riptide:3}]",
                 "give @a shield[banner_patterns=[{color:\"red\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:circle\"},{color:\"black\",pattern:\"minecraft:triangle_top\"},{color:\"black\",pattern:\"minecraft:triangle_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:curly_border\"},{color:\"black\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:rhombus\"}],base_color=\"red\"]",
                 "give @a wind_charge 32",
                 "give @a golden_apple 3"
