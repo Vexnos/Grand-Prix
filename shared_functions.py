@@ -80,11 +80,6 @@ def import_course():
         path = preset_courses[path]
     with open(path, "r") as file:
         course = json.load(file)
-    with open("courses/checkpoints.json") as file:
-        checkpoint_data = json.load(file)
-    checkpoints = {}
-    for item in checkpoint_data:
-        checkpoints[item["id"]] = item
     for checkpoint in course["checkpoints"]:
         checkpoint_data = checkpoints[checkpoint["id"]]
         for key in "name", "description", "advancement_icon", "lodestone":
