@@ -91,8 +91,10 @@ def compile_checkpoints(course):
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/{checkpoint['id']}")
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/{checkpoint['id']}")
+            '''
             # Nautilus Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] run function race:checkpoints/{checkpoint['id']}")
+            '''
         elif nxt == None: # Finish Line needs special treatment
             # Normal Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
@@ -100,16 +102,20 @@ def compile_checkpoints(course):
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints < #max checkpoints run function race:notfinished")
+            '''
             # Nautilus Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] if score @s checkpoints < #max checkpoints run function race:notfinished")
+            '''
         else: # All checkpoints after the first checkpoint, but before Finish Line
             # Normal Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/verify/{checkpoint['id']}")
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/{checkpoint['id']}")
+            '''
             # Nautilus Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] run function race:checkpoints/verify/{checkpoint['id']}")
+            '''
     with open("data/race/function/checkpoints.mcfunction", "w") as file:
         file.write("\n".join(checkpoints_lines))
 
