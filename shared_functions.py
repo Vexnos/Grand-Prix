@@ -1,4 +1,5 @@
 import json
+import random
 import requests
 from math import sqrt
 
@@ -66,6 +67,7 @@ def import_course():
     preset_courses = {
         "main": "courses/main.json",
         "legacy": "courses/main_legacy.json",
+        "main_random": "courses/main_randomized.json",
         "reverse": "courses/reverse.json",
         "crownpeak": "courses/crownpeak.json"
     }
@@ -81,7 +83,12 @@ def import_course():
         path = preset_courses[path]
     with open(path, "r") as file:
         course = json.load(file)
+    with open("courses/destinations.json") as file:
+        destinations = json.load(file)
     for checkpoint in course["checkpoints"]:
+        if "type" in checkpoint and checkpoint["type"] == "random":
+            checkpoint_options = destinations[checkpoint["id"]]["checkpoints"]
+            checkpoint["id"] = random.choice(checkpoint_options)
         checkpoint_data = checkpoints[checkpoint["id"]]
         for key in "name", "description", "advancement_icon", "lodestone":
             checkpoint[key] = checkpoint_data[key]

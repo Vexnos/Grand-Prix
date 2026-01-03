@@ -1,0 +1,482 @@
+{
+    "hailstone" : {
+        "checkpoints": [
+            "hailstone_beacon",
+            "hailstone_keep"
+        ],
+        "has_fire": false
+    },
+    "first_shrine" : {
+        "checkpoints": ["first_shrine"],
+        "has_fire": false
+    },
+    "gale_point" : {
+        "checkpoints": ["gale_point"],
+        "has_fire": false
+    },
+    "walls_of_time" : {
+        "checkpoints": [
+            "walls_of_time_back",
+            "walls_of_time_undercroft"
+        ],
+        "has_fire": false
+    },
+    "frostburn" : {
+        "checkpoints": ["frostburn"],
+        "has_fire": false
+    },
+    "silverwatch" : {
+        "checkpoints": [
+            "silverwatch_castle",
+            "silverwatch_inn"
+        ],
+        "has_fire": false
+    },
+    "camp_salmore" : {
+        "checkpoints": ["camp_salmore"],
+        "has_fire": false
+    },
+    "northwind_pass" : {
+        "checkpoints": ["northwind_pass"],
+        "has_fire": false
+    },
+    "mendoria" : {
+        "checkpoints": ["mendoria_shrine"],
+        "has_fire": false
+    },
+    "kaltaria" : {
+        "checkpoints": [
+            "kaltaria_village",
+            "kaltaria_shrine"
+        ],
+        "has_fire": false
+    },
+    "ardoni_council_chamber" : {
+        "checkpoints": [
+            "ardoni_council_chamber"
+        ],
+        "has_fire": false
+    },
+    "voltaria" : {
+        "checkpoints": [
+            "voltaria_shrine",
+            "floating_tree"
+        ],
+        "has_fire": false
+    },
+    "sendaria_osivian_village" : {
+        "checkpoints": [
+            "sendaria_osivian_shrine",
+            "sendaria_osivian_house"
+        ],
+        "has_fire": false
+    },
+    "sendaria_master_village" : {
+        "checkpoints": [
+            "sendaria_master_shrine",
+            "sendaria_communal_area"
+        ],
+        "has_fire": false
+    },
+    "nestoria" : {
+        "checkpoints": [
+            "aechelos_house",
+            "nestoria_shrine"
+        ],
+        "has_fire": false
+    },
+    "ardoni_arena" : {
+        "checkpoints": [
+            "ardoni_arena_shrine",
+            "ardoni_arena_alternate",
+            "ardoni_arena"
+        ],
+        "has_fire": false
+    },
+    "ardoni_cemetery" : {
+        "checkpoints": ["ardoni_cemetery"],
+        "has_fire": false
+    },
+    "west_port" : {
+        "checkpoints": ["west_port_fountain"],
+        "has_fire": false
+    },
+    "marshline" : {
+        "checkpoints": ["marshline"],
+        "has_fire": false
+    },
+    "deeproot" : {
+        "checkpoints": ["deeproot"],
+        "has_fire": false
+    },
+    "ireden" : {
+        "checkpoints": ["ireden_windmill"],
+        "has_fire": false
+    },
+    "underwood" : {
+        "checkpoints": ["underwood"],
+        "has_fire": false
+    },
+    "leewa" : {
+        "checkpoints": ["leewa_well"],
+        "has_fire": false
+    },
+    "etherea" : {
+        "checkpoints": [
+            "etherea_tower",
+            "etherea_dragon_egg"
+        ],
+        "has_fire": false
+    },
+    "oakendale" : {
+        "checkpoints": [
+            "oakendale_beacon",
+            "oakendale_parliament"
+        ],
+        "has_fire": false
+    },
+    "conchord" : {
+        "checkpoints": ["conchord_forestry"],
+        "has_fire": false
+    },
+    "biggerton" : {
+        "checkpoints": [
+            "biggerton_bell",
+            "clementine_house"
+        ],
+        "has_fire": false
+    },
+    "hogtown" : {
+        "checkpoints": ["hogtown"],
+        "has_fire": false
+    },
+    "twin_pass" : {
+        "checkpoints": ["twin_pass"],
+        "has_fire": false
+    },
+    "tabora_crags" : {
+        "checkpoints": ["tabora_crags"],
+        "has_fire": false
+    },
+    "badlands" : {
+        "checkpoints": ["badlands"],
+        "has_fire": false
+    },
+    "koa_base" : {
+        "checkpoints": ["koa_base"],
+        "has_fire": false
+    },
+    "forson" : {
+        "checkpoints": [
+            "claudia_house",
+            "forson_main_hall"
+        ],
+        "has_fire": false
+    },
+    "solkad_north" : {
+        "checkpoints": [
+            "solkad_north_inn",
+            "solkad_north_port",
+            "solkad_north_church",
+            "solkad_north_windmill"
+        ],
+        "has_fire": false
+    },
+    "solkad" : {
+        "checkpoints": ["solkad"],
+        "has_fire": false
+    },
+    "solkad_west" : {
+        "checkpoints": ["solkad_west"],
+        "has_fire": false
+    },
+    "dalhurst" : {
+        "checkpoints": ["dalhurst"],
+        "has_fire": false
+    },
+    "havenshire" : {
+        "checkpoints": [
+            "havenshire_port",
+            "sandford_house"
+        ],
+        "has_fire": false
+    },
+    "derna" : {
+        "checkpoints": ["derna"],
+        "has_fire": false
+    },
+    "hydraphel_mines" : {
+        "checkpoints": ["hydraphel_mines"],
+        "has_fire": false
+    },
+    "devalon" : {
+        "checkpoints": ["devalon"],
+        "has_fire": false
+    },
+    "diamond_heights" : {
+        "checkpoints": [
+            "diamond_heights_mayor",
+            "tobias_house",
+            "diamond_heights_inn",
+            "diamond_heights_bank"
+        ],
+        "has_fire": false
+    },
+    "hyperia" : {
+        "checkpoints": [
+            "galvim_house",
+            "hyperia_beacon",
+            "hyperia_parliament",
+            "hyperia_port"
+        ],
+        "has_fire": false
+    },
+    "isuma" : {
+        "checkpoints": ["isuma"],
+        "has_fire": false
+    },
+    "pinkolson_farm" : {
+        "checkpoints": ["pinkolson_farm"],
+        "has_fire": false
+    },
+    "belestar" : {
+        "checkpoints": ["belestar_jetty"],
+        "has_fire": false
+    },
+    "amaria" : {
+        "checkpoints": [
+            "amaria",
+            "amaria_legacy"
+        ],
+        "has_fire": false
+    },
+    "waimiria" : {
+        "checkpoints": ["waimiria_house"],
+        "has_fire": false
+    },
+    "fort_bravmin" : {
+        "checkpoints": ["fort_bravmin"],
+        "has_fire": false
+    },
+    "fronchester" : {
+        "checkpoints": ["fronchester"],
+        "has_fire": false
+    },
+    "mahoa_docks" : {
+        "checkpoints": [
+            "mahoa_docks_ship",
+            "mahoa_docks_necromancer_base"
+        ],
+        "has_fire": false
+    },
+    "felora" : {
+        "checkpoints": [
+            "felora_beacon",
+            "felora_parliament"
+        ],
+        "has_fire": false
+    },
+    "ferndale" : {
+        "checkpoints": ["ferndale_tavern"],
+        "has_fire": false
+    },
+    "looma" : {
+        "checkpoints": ["looma_watchtower"],
+        "has_fire": false
+    },
+    "fort_zuka" : {
+        "checkpoints": ["fort_zuka"],
+        "has_fire": false
+    },
+    "riverstead" : {
+        "checkpoints": ["riverstead_bell"],
+        "has_fire": false
+    },
+    "niika_tree_fort" : {
+        "checkpoints": ["niika_tree_fort"],
+        "has_fire": false
+    },
+    "basalt_mines" : {
+        "checkpoints": ["basalt_mines"],
+        "has_fire": false
+    },
+    "shimmering_valley" : {
+        "checkpoints": ["shimmering_valley"],
+        "has_fire": false
+    },
+    "hamburville" : {
+        "checkpoints": ["hamburville"],
+        "has_fire": false
+    },
+    "aerlion" : {
+        "checkpoints": ["aerilon"],
+        "has_fire": false
+    },
+    "stonevale" : {
+        "checkpoints": ["stonevale"],
+        "has_fire": false
+    },
+    "thralkeld" : {
+        "checkpoints": ["thralkeld"],
+        "has_fire": false
+    },
+    "crown_peak" : {
+        "checkpoints": [
+            "sulliman_house",
+            "crown_peak_throne",
+            "crown_peak_beacon",
+            "crown_peak_cake_stand"
+        ],
+        "has_fire": false
+    },
+    "vault" : {
+        "checkpoints": ["vault"],
+        "has_fire": false
+    },
+    "redstone_academy" : {
+        "checkpoints": [
+            "cluckles_office",
+            "thrakatos_office",
+            "redstone_academy_railway",
+            "redstone_academy_reactor"
+        ],
+        "has_fire": false
+    },
+    "heart_of_ardonia" : {
+        "checkpoints": [
+            "heart_of_ardonia_beacon",
+            "heart_of_ardonia_conduit"
+        ],
+        "has_fire": false
+    },
+    "mt_velgrin" : {
+        "checkpoints": [
+            "mt_velgrin_portal",
+            "mt_velgrin_cave"
+        ],
+        "has_fire": false
+    },
+    "fort" : {
+        "checkpoints": [
+            "fort_throne_left",
+            "fort_throne_right"
+        ],
+        "has_fire": false
+    },
+    "the_end" : {
+        "checkpoints": ["the_end"],
+        "has_fire": false
+    },
+    "nazgard" : {
+        "checkpoints": [
+            "nazgard_vault",
+            "nazgard_throne"
+        ],
+        "has_fire": true
+    },
+    "ataraxia" : {
+        "checkpoints": [
+            "ataraxia_shrine",
+            "galleous_forge",
+            "allichier_house"
+        ],
+        "has_fire": false
+    },
+    "crown_peak_railway" : {
+        "checkpoints": ["crown_peak_railway_terminal"],
+        "has_fire": false
+    },
+    "incatasia" : {
+        "checkpoints": ["incatasia"],
+        "has_fire": false
+    },
+    "fort_hacksaw" : {
+        "checkpoints": ["fort_hacksaw_throne"],
+        "has_fire": false
+    },
+    "bhengorn" : {
+        "checkpoints": [
+            "bhengorn_tavern",
+            "bhengorn_meeting_room"
+        ],
+        "has_fire": false
+    },
+    "camp_enher" : {
+        "checkpoints": ["camp_enher"],
+        "has_fire": false
+    },
+    "ansdale" : {
+        "checkpoints": ["ansdale"],
+        "has_fire": false
+    },
+    "markar" : {
+        "checkpoints": ["markar"],
+        "has_fire": false
+    },
+    "tartarus" : {
+        "checkpoints": [
+            "tartarus_beacon",
+            "tartarus_crypt",
+            "tartarus_throne",
+            "tartarus_treasure_room"
+        ],
+        "has_fire": false
+    },
+    "mt_kaelos" : {
+        "checkpoints": [
+            "mt_kaelos",
+            "mt_kaelos_council"
+        ],
+        "has_fire": true
+    },
+    "mt_igneous" : {
+        "checkpoints": ["mt_igneous"],
+        "has_fire": false
+    },
+    "karthen_wall" : {
+        "checkpoints": ["karthen_wall"],
+        "has_fire": false
+    },
+    "phaethon" : {
+        "checkpoints": ["phaethon"],
+        "has_fire": false
+    },
+    "cydonia_oasis" : {
+        "checkpoints": ["cydonia_oasis"],
+        "has_fire": false
+    },
+    "cydonia_mines" : {
+        "checkpoints": ["cydonia_mines"],
+        "has_fire": false
+    },
+    "aridia_cliffs" : {
+        "checkpoints": ["aridia_cliffs"],
+        "has_fire": false
+    },
+    "po_hatu" : {
+        "checkpoints": ["po_hatu"],
+        "has_fire": false
+    },
+    "kaeru" : {
+        "checkpoints": ["kaeru"],
+        "has_fire": false
+    },
+    "port_kazu" : {
+        "checkpoints": ["port_kazu"],
+        "has_fire": false
+    },
+    "meridian" : {
+        "checkpoints": [
+            "meridian_beacon",
+            "meridian_parliament"
+        ],
+        "has_fire": false
+    },
+    "mt_tempus" : {
+        "checkpoints": [
+            "mt_tempus_necrobase",
+            "mt_tempus_surface"
+        ],
+        "has_fire": true
+    }
+}

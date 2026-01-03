@@ -1,0 +1,218 @@
+{
+    "name": "Primary Grand Prix Course (pseudo-random checkpoints)",
+    "start_description": "First Ardoni Shrine",
+    "start_coordinates": [-302, 119, -4283],
+    "worldborder_center": [-283, -4264],
+    "worldborder_size": 100,
+    "initial_items": [],
+    "checkpoints": [
+        {
+            "id": "hailstone",
+            "type": "random",
+            "items": [
+                "give @a cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={text:\"Grandma's Biscuit\",italic:false}] 32",
+                "item replace entity @a armor.feet with leather_boots",
+                "give @a stone_sword"
+            ]
+        },
+        {
+            "id": "northwind_pass",
+            "type": "random",
+            "items": [
+                "give @a carrot 16",
+                "give @a stone_axe",
+                "item replace entity @a armor.head with leather_helmet",
+                "give @a water_bucket"
+            ]
+        },
+        {
+            "id": "ardoni_arena",
+            "type": "random"
+        },
+        {
+            "id": "kaltaria",
+            "type": "random",
+            "items": [
+                "give @a carrot 16",
+                "item replace entity @a armor.chest with leather_chestplate",
+                "item replace entity @a armor.legs with leather_leggings",
+                "give @a stone_pickaxe"
+            ]
+        },
+        {
+            "id": "voltaria",
+            "type": "random"
+        },
+        {
+            "id": "oakendale",
+            "type": "random",
+            "items": [
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.feet with iron_boots",
+                "give @a iron_sword",
+                "give @a bow",
+                "give @a arrow 32",
+                "give @a bread 16",
+                "give @a lava_bucket"
+            ]
+        },
+        {
+            "id": "etherea",
+            "type": "random"
+        },
+        {
+            "id": "felora",
+            "type": "random",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet",
+                "item replace entity @a armor.legs with iron_leggings",
+                "give @a iron_sword[enchantments={sharpness:2,unbreaking:2}]",
+                "give @a iron_axe",
+                "give @a iron_pickaxe",
+                "give @a bow[enchantments={power:1,unbreaking:2}]",
+                "give @a bread 16"
+            ]
+        },
+        {
+            "id": "fort_zuka",
+            "type": "random"
+        },
+        {
+            "id": "mt_tempus",
+            "type": "random"
+        },
+        {
+            "id": "redstone_academy",
+            "type": "random"
+        },
+        {
+            "id": "vault",
+            "type": "random"
+        },
+        {
+            "id": "nazgard",
+            "type": "random",
+            "items": [
+                "give @a potion[potion_contents={potion:\"minecraft:fire_resistance\"}]"
+            ]
+        },
+        {
+            "id": "the_end",
+            "type": "random"
+        },
+        {
+            "id": "crown_peak",
+            "type": "random",
+            "items": [
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
+                "give @a shield[banner_patterns=[{color:\"light_gray\",pattern:\"minecraft:bricks\"},{color:\"purple\",pattern:\"minecraft:triangle_top\"},{color:\"gray\",pattern:\"minecraft:border\"},{color:\"white\",pattern:\"minecraft:straight_cross\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"white\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
+                "give @a diamond_sword[enchantments={sharpness:2,unbreaking:2}]",
+                "give @a bow[enchantments={power:3,unbreaking:2}]",
+                "give @a oak_log 16",
+                "give @a cooked_salmon 16"
+            ]
+        },
+        {
+            "id": "mt_velgrin",
+            "type": "random"
+        },
+        {
+            "id": "tartarus",
+            "type": "random",
+            "items": [
+                "give @a cooked_beef 8",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"}] 2",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2",
+                "give @a shield[banner_patterns=[{color:\"red\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:circle\"},{color:\"black\",pattern:\"minecraft:triangle_top\"},{color:\"black\",pattern:\"minecraft:triangle_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:curly_border\"},{color:\"black\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:rhombus\"}],base_color=\"red\"]"
+            ]
+        },
+        {
+            "id": "cydonia_mines",
+            "type": "random"
+        },
+        {
+            "id": "meridian",
+            "type": "random",
+            "items": [
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2}]",
+                "give @a diamond_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,unbreaking:3,fire_aspect:2}]",
+                "give @a bow[enchantments={power:5,unbreaking:3,flame:1}]",
+                "give @a spectral_arrow 32",
+                "give @a shield[banner_patterns=[{color:\"gray\",pattern:\"minecraft:half_horizontal\"},{color:\"orange\",pattern:\"minecraft:stripe_middle\"},{color:\"orange\",pattern:\"minecraft:rhombus\"}],base_color=\"white\"]",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
+            ]
+        },
+        {
+            "id": "kaeru",
+            "type": "random"
+        },
+        {
+            "id": "amaria",
+            "type": "random"
+        },
+        {
+            "id": "diamond_heights",
+            "type": "random"
+        },
+        {
+            "id": "hyperia",
+            "type": "random",
+            "items": [
+                "item replace entity @a armor.head with netherite_helmet[trim={pattern:\"minecraft:raiser\",material:\"minecraft:diamond\"},enchantments={protection:2,respiration:3,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with netherite_chestplate[trim={pattern:\"minecraft:tide\",material:\"minecraft:diamond\"},enchantments={protection:2}]",
+                "item replace entity @a armor.legs with netherite_leggings[trim={pattern:\"minecraft:bolt\",material:\"minecraft:diamond\"},enchantments={protection:2}]",
+                "item replace entity @a armor.feet with netherite_boots[trim={pattern:\"minecraft:coast\",material:\"minecraft:diamond\"},enchantments={protection:2,feather_falling:2,depth_strider:3}]",
+                "give @a netherite_sword[enchantments={sharpness:5,sweeping_edge:3,looting:3,unbreaking:3,fire_aspect:2}]",
+                "give @a mace[enchantments={density:3,wind_burst:2,unbreaking:3}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5}]",
+                "give @a diamond_axe[enchantments={sharpness:3}]",
+                "give @a bow[enchantments={power:5,punch:2,flame:1,infinity:1,unbreaking:3}]",
+                "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
+                "give @a wind_charge 32",
+                "give @a golden_apple 3",
+                "give @a end_crystal 16",
+                "give @a obsidian 32",
+                "give @a cooked_beef 16",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
+            ]
+        },
+        {
+            "id": "ataraxia",
+            "type": "random"
+        },
+        {
+            "id": "biggerton",
+            "type": "random"
+        },
+        {
+            "id": "sendaria_osivian_village",
+            "type": "random"
+        },
+        {
+            "id": "ardoni_cemetery",
+            "type": "random",
+            "items": [
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
+            ]
+        },
+        {
+            "id": "nestoria",
+            "type": "random"
+        },
+        {
+            "id": "silverwatch",
+            "type": "random"
+        },
+        {
+            "id": "gale_point"
+        }
+    ]
+}

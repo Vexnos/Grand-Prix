@@ -260,24 +260,24 @@
         "advancement_icon": "todo"
     },
     {
-        "id": "ireden",
+        "id": "ireden_windmill",
         "name": "Ireden",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [-1608, 102, -1936],
         "advancement_icon": "todo"
     },
     {
         "id": "underwood",
         "name": "Underwood",
         "description": "Harvest the sugar cane",
-        "lodestone": "todo",
+        "lodestone": [-1984, 96, -1363],
         "advancement_icon": "iron_hoe"
     },
     {
-        "id": "leewa",
+        "id": "leewa_well",
         "name": "Leewa",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [-2714, 91, -1185],
         "advancement_icon": "todo"
     },
     {
@@ -323,7 +323,7 @@
         "id": "oakendale_parliament",
         "name": "Oakendale",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [-1272, 89, -1266],
         "advancement_icon": "green_banner",
         "banner_patterns": [
             {
@@ -384,7 +384,7 @@
         "id": "tabora_crags",
         "name": "Tabora Crags",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [-1442, 19, -798],
         "advancement_icon": "todo"
     },
     {
@@ -397,7 +397,7 @@
     {
         "id": "koa_base",
         "name": "Knights of Ardonia Base",
-        "description": "todo",
+        "description": "Defeat the Nether",
         "lodestone": [-207, 73, -1006],
         "advancement_icon": "todo"
     },
@@ -406,7 +406,7 @@
         "name": "Forson",
         "description": "Accuse the accountant of being a Bandit",
         "lodestone": [1811, 79, -1994],
-        "advancement_icon": "todo"
+        "advancement_icon": "paper"
     },
     {
         "id": "forson_main_hall",
