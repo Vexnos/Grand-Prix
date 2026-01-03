@@ -2,12 +2,12 @@
 gamemode survival @a
 
 # Gamerules
-gamerule spawn_mobs true
-gamerule spawn_monsters true
-gamerule advance_time true
-execute unless score #mode gamemode matches 3 run gamerule fall_damage true
-gamerule spawn_wandering_traders true
-gamerule spawn_patrols true
+gamerule doMobSpawning true
+gamerule spawnMonsters true
+gamerule doDaylightCycle true
+execute unless score #mode gamemode matches 3 run gamerule fallDamage true
+gamerule doTraderSpawning true
+gamerule doPatrolSpawning true
 gamerule pvp true
 
 # Worldborder
@@ -21,7 +21,7 @@ effect clear @a
 clear @a
 function race:start/firstcompass
 execute if score #mode gamemode matches 2 run give @a nether_star[custom_name={text:"Teleport Horse",italic:false,color:"light_purple"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:"teleport_horse"},max_stack_size=2,custom_data={teleporter:yes}]
-execute if score #mode gamemode matches 3 run give @a nautilus_shell[custom_name={text:"Teleport Nautilus",italic:false,color:"aqua"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:"teleport_horse"},max_stack_size=2,custom_data={teleporter:yes}]
+# execute if score #mode gamemode matches 3 run give @a nautilus_shell[custom_name={text:"Teleport Nautilus",italic:false,color:"aqua"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:"teleport_horse"},max_stack_size=2,custom_data={teleporter:yes}]
 
 # Titles
 title @a title {"text":"GO!","color":"green","bold":true}

@@ -311,7 +311,7 @@ CHECKPOINTS_PATH = "data/race/function/checkpoints/"
 #-------Main-Routine-------
 if __name__ == "__main__":
     # Get player UUIDs
-    players = import_players()
+    # players = import_players()
     
     # Import course from json
     course = import_course()
@@ -321,6 +321,8 @@ if __name__ == "__main__":
         compile_advancements(course)
         compile_setup_function(course)
         compile_checkpoints(course)
+    '''
     # Generate Nautilus Functions
     if players is not None:
         compile_nautilus(players)
+    '''
