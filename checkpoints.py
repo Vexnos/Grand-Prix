@@ -321,4 +321,6 @@ if __name__ == "__main__":
         compile_advancements(course)
         compile_setup_function(course)
         compile_checkpoints(course)
-    compile_nautilus(players)
+    # Generate Nautilus Functions
+    if players is not None:
+        compile_nautilus(players)
