@@ -280,12 +280,6 @@ if __name__ == "__main__":
     # Get player UUIDs
     players = import_players()
     print(players)
-
-    '''
-    uuids = {}
-    assert len(players) <= 8 # Maximum of 8 players
-    for player in players:
-        uuids[player] = get_uuid(player)
     
     # Import course from json
     course = import_course()
@@ -295,4 +289,3 @@ if __name__ == "__main__":
         compile_advancements(course)
         compile_setup_function(course)
         compile_checkpoints(course)
-    '''
