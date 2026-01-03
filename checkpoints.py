@@ -293,9 +293,9 @@ def compile_nautilus(players):
     spawn_lines = []
     teleport_lines = ["advancement revoke @s only race:mount/nautilus_teleport"]
     for name, uuid in converted_uuids.items():
-        spawn_lines.append(f"execute at {name} run summon nautilus ~ ~ ~ " + "{Invulnerable:1b,Owner:[I;" + ",".join(str(id) for id in uuid) + "],equipment:{saddle:{id:\"minecraft:saddle\",count:1}},attributes:[{id:\"minecraft:movement_speed\",base:10}]}")
+        spawn_lines.append(f"execute at {name} run summon nautilus ~ ~ ~ " + "{CustomName:{text:\"" + name + "'s Nautilus\"},Invulnerable:1b,Owner:[I;" + ",".join(str(id) for id in uuid) + "],equipment:{saddle:{id:\"minecraft:saddle\",count:1}},attributes:[{id:\"minecraft:movement_speed\",base:10}]}")
         teleport_lines.append(f"execute if entity @s[name={name}] run kill @e[type=nautilus,nbt=" + "{Owner:[I;" + ",".join(str(id) for id in uuid) + "]}]")
-        teleport_lines.append(f"execute if entity @s[name={name}] run summon nautilus ~ ~ ~ " + "{Invulnerable:1b,Owner:[I;" + ",".join(str(id) for id in uuid) + "],equipment:{saddle:{id:\"minecraft:saddle\",count:1}},attributes:[{id:\"minecraft:movement_speed\",base:10}]}")
+        teleport_lines.append(f"execute if entity @s[name={name}] run summon nautilus ~ ~ ~ " + "{CustomName:{text:\"" + name + "'s Nautilus\"},Invulnerable:1b,Owner:[I;" + ",".join(str(id) for id in uuid) + "],equipment:{saddle:{id:\"minecraft:saddle\",count:1}},attributes:[{id:\"minecraft:movement_speed\",base:10}]}")
     teleport_lines.append("\ngive @s nautilus_shell[custom_name={text:\"Teleport Nautilus\",italic:false,color:\"aqua\"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:\"teleport_nautilus\"},max_stack_size=2,custom_data={teleporter:yes}]")
     teleport_lines.append("\nexecute as @s at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 0")
     with open("data/race/function/start/spawn_nautili.mcfunction", "w") as file:
