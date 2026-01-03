@@ -7,3 +7,4 @@ amaria_volume.txt
 /data/race/function/start/worldborder.mcfunction
 /data/race/function/start/firstcompass.mcfunction
 __pycache__
+players.json

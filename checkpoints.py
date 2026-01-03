@@ -10,8 +10,9 @@ Authors: Vexnos, Mathmagician8191
 import json
 import os
 import shutil
+import requests
 from itertools import tee, islice, chain
-from shared_functions import PORTALS, import_course
+from shared_functions import PORTALS, import_course, get_uuid
 
 #-------Functions-------
 # Function to check previous iterable by nosklo
@@ -245,6 +246,30 @@ def compile_setup_function(course):
     with open("data/race/function/start/firstcompass.mcfunction", "w") as file:
         file.write("\n".join(result))
 
+def import_players(path="players.json"):
+    try:
+        with open(path, "r") as file:
+            players = json.load(file)
+    except FileNotFoundError:
+        print("Error: players.json doesn't exist. Please create a players.json")
+        return
+
+    dirty = False
+
+    if players is not None:
+        for player in players:
+            if "uuid" not in player or player["uuid"] is None:
+                player_data = get_uuid(player["name"])
+                player["uuid"] = player_data
+                dirty = True
+        if dirty:
+            with open(path, "w") as file:
+                json.dump(players, file, indent=4)
+        return players
+
+def compile_nautilus():
+    pass
+
 #-------Constants-------
 # Paths
 ADVANCEMENTS_PATH = "data/race/advancement/checkpoints/"
@@ -252,10 +277,22 @@ CHECKPOINTS_PATH = "data/race/function/checkpoints/"
 
 #-------Main-Routine-------
 if __name__ == "__main__":
+    # Get player UUIDs
+    players = import_players()
+    print(players)
+
+    '''
+    uuids = {}
+    assert len(players) <= 8 # Maximum of 8 players
+    for player in players:
+        uuids[player] = get_uuid(player)
+    
     # Import course from json
     course = import_course()
     
+    # Generate Course
     if course is not None:
         compile_advancements(course)
         compile_setup_function(course)
         compile_checkpoints(course)
+    '''
