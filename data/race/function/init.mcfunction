@@ -55,7 +55,6 @@ scoreboard objectives add countdown dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add timer dummy
 scoreboard objectives add gamemode dummy
-scoreboard objectives add players dummy
 scoreboard objectives add start trigger
 scoreboard objectives add phase dummy
 scoreboard objectives setdisplay below_name health
