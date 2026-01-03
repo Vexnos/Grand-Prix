@@ -252,7 +252,7 @@ def import_players(path="players.json"):
         with open(path, "r") as file:
             players = json.load(file)
     except FileNotFoundError: # if players.json doesn't exist, give up
-        print("Error: players.json doesn't exist. Please create a players.json")
+        print("Error: players.json doesn't exist. Please create a players.json according to the README")
         return
 
     dirty = False # False = no changes
