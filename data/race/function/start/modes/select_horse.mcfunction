@@ -1,4 +1,4 @@
-# Select Normal Mode
+# Select Horse Mode
 scoreboard players set #mode gamemode 2
 execute as @a at @s run playsound minecraft:block.end_portal.spawn master @s
 tellraw @a [{text:"Horse Mode",color:"red"},{text:" Selected",color:"white"}]

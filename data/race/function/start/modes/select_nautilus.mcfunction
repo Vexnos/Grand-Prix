@@ -1,4 +1,4 @@
-# Select Normal Mode
+# Select Nautilus Mode
 scoreboard players set #mode gamemode 3
 execute as @a at @s run playsound minecraft:entity.nautilus.dash master @s
 tellraw @a [{text:"Nautilus Mode",color:"aqua"},{text:" Selected",color:"white"}]
