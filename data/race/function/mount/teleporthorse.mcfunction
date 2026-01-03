@@ -1,4 +1,4 @@
-advancement revoke @s only race:horse/horse_teleport
+advancement revoke @s only race:mount/horse_teleport
 execute if entity @s[team=1] as @s run function race:horsespawning/1
 execute if entity @s[team=2] as @s run function race:horsespawning/2
 execute if entity @s[team=3] as @s run function race:horsespawning/3

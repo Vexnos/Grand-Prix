@@ -15,6 +15,6 @@
         }
     },
     "rewards": {
-        "function": "race:teleporthorse"
+        "function": "race:mount/teleporthorse"
     }
 }
