@@ -5,7 +5,7 @@ gamemode survival @a
 gamerule spawn_mobs true
 gamerule spawn_monsters true
 gamerule advance_time true
-gamerule fall_damage true
+execute unless score #mode gamemode matches 3 run gamerule fall_damage true
 gamerule spawn_wandering_traders true
 gamerule spawn_patrols true
 gamerule pvp true
