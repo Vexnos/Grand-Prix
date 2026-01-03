@@ -247,21 +247,22 @@ def compile_setup_function(course):
         file.write("\n".join(result))
 
 def import_players(path="players.json"):
+    # Try to open players.json if it exists
     try:
         with open(path, "r") as file:
             players = json.load(file)
-    except FileNotFoundError:
+    except FileNotFoundError: # if players.json doesn't exist, give up
         print("Error: players.json doesn't exist. Please create a players.json")
         return
 
-    dirty = False
+    dirty = False # False = no changes
 
-    if players is not None:
+    if players is not None: # check players isn't empty
         for player in players:
-            if "uuid" not in player or player["uuid"] is None:
-                player_data = get_uuid(player["name"])
+            if "uuid" not in player or player["uuid"] is None: # Check if the UUID key is populated
+                player_data = get_uuid(player["name"]) # Get player UUID
                 player["uuid"] = player_data
-                dirty = True
+                dirty = True # True = file changes
         if dirty:
             with open(path, "w") as file:
                 json.dump(players, file, indent=4)
