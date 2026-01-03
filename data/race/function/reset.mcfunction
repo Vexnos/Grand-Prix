@@ -28,20 +28,20 @@ tag @a remove horse_name
 function race:resetcheckpoints
 
 # Gamerules
-gamerule keepInventory true
-gamerule doImmediateRespawn true
-gamerule randomTickSpeed 0
-gamerule doMobSpawning false
-gamerule spawnMonsters false
-gamerule doDaylightCycle false
-gamerule doWeatherCycle false
-gamerule mobGriefing false
-gamerule fallDamage false
-gamerule doTraderSpawning false
-gamerule doPatrolSpawning false
-gamerule locatorBar false
-gamerule allowEnteringNetherUsingPortals false
-gamerule playersNetherPortalDefaultDelay 1200
+gamerule keep_inventory true
+gamerule immediate_respawn true
+gamerule random_tick_speed 0
+gamerule spawn_mobs false
+gamerule spawn_monsters false
+gamerule advance_time false
+gamerule advance_weather false
+gamerule mob_griefing false
+gamerule fall_damage false
+gamerule spawn_wandering_traders false
+gamerule spawn_patrols false
+gamerule locator_bar false
+gamerule allow_entering_nether_using_portals false
+gamerule players_nether_portal_default_delay 1200
 gamerule pvp false
 
 # Remove all XP

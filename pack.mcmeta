@@ -1,12 +1,8 @@
 {
     "pack": {
-        "pack_format": 81,
-        "min_format": 81,
-        "max_format": 88,
-        "supported_formats": {
-            "min_inclusive": 81,
-            "max_inclusive": 88
-        },
-        "description": ""
+        "pack_format": 94,
+        "min_format": [94, 1],
+        "max_format": [94, 1],
+        "description": "Version: 1.21.11"
     }
 }

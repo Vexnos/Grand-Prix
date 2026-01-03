@@ -2,12 +2,12 @@
 gamemode survival @a
 
 # Gamerules
-gamerule doMobSpawning true
-gamerule spawnMonsters true
-gamerule doDaylightCycle true
-gamerule fallDamage true
-gamerule doTraderSpawning true
-gamerule doPatrolSpawning true
+gamerule spawn_mobs true
+gamerule spawn_monsters true
+gamerule advance_time true
+gamerule fall_damage true
+gamerule spawn_wandering_traders true
+gamerule spawn_patrols true
 gamerule pvp true
 
 # Worldborder
