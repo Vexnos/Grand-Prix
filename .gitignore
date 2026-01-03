@@ -6,5 +6,7 @@ amaria_volume.txt
 /data/race/function/checkpoints/*
 /data/race/function/start/worldborder.mcfunction
 /data/race/function/start/firstcompass.mcfunction
+/data/race/function/start/spawn_nautili.mcfunction
+/data/race/function/mount/teleportnautilus.mcfunction
 __pycache__
 players.json

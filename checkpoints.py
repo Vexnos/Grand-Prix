@@ -91,6 +91,8 @@ def compile_checkpoints(course):
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/{checkpoint['id']}")
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/{checkpoint['id']}")
+            # Nautilus Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] run function race:checkpoints/{checkpoint['id']}")
         elif nxt == None: # Finish Line needs special treatment
             # Normal Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
@@ -98,11 +100,16 @@ def compile_checkpoints(course):
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints < #max checkpoints run function race:notfinished")
+            # Nautilus Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] if score @s checkpoints < #max checkpoints run function race:notfinished")
         else: # All checkpoints after the first checkpoint, but before Finish Line
             # Normal Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/verify/{checkpoint['id']}")
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/{checkpoint['id']}")
+            # Nautilus Mode
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] run function race:checkpoints/verify/{checkpoint['id']}")
     with open("data/race/function/checkpoints.mcfunction", "w") as file:
         file.write("\n".join(checkpoints_lines))
 
@@ -268,8 +275,33 @@ def import_players(path="players.json"):
                 json.dump(players, file, indent=4)
         return players
 
-def compile_nautilus():
-    pass
+def convert_hex_to_decimal(uuid):
+    sections = []
+    for x in range(0, 32, 8): # Iterate from 0 to 32 in steps of 8
+        section = uuid[x:x+8] # Split the uuid into four 8 sized strings
+        section = int(section, 16) # Convert Hexadecimal to Decimal
+        if section >= 2 ** 31: # Sign integers
+            section -= 2 ** 32
+        sections.append(section) # Append results and return
+    return sections
+
+def compile_nautilus(players):
+    converted_uuids = {}
+    for player in players:
+        sections = convert_hex_to_decimal(player["uuid"])
+        converted_uuids[player["name"]] = sections
+    spawn_lines = []
+    teleport_lines = ["advancement revoke @s only race:mount/nautilus_teleport"]
+    for name, uuid in converted_uuids.items():
+        spawn_lines.append(f"execute at {name} run summon nautilus ~ ~ ~ " + "{Invulnerable:1b,Owner:[I;" + ",".join(str(id) for id in uuid) + "],equipment:{saddle:{id:\"minecraft:saddle\",count:1}},attributes:[{id:\"minecraft:movement_speed\",base:10}]}")
+        teleport_lines.append(f"execute if entity @s[name={name}] run kill @e[type=nautilus,nbt=" + "{Owner:[I;" + ",".join(str(id) for id in uuid) + "]}]")
+        teleport_lines.append(f"execute if entity @s[name={name}] run summon nautilus ~ ~ ~ " + "{Invulnerable:1b,Owner:[I;" + ",".join(str(id) for id in uuid) + "],equipment:{saddle:{id:\"minecraft:saddle\",count:1}},attributes:[{id:\"minecraft:movement_speed\",base:10}]}")
+    teleport_lines.append("\ngive @s nautilus_shell[custom_name={text:\"Teleport Nautilus\",italic:false,color:\"aqua\"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:\"teleport_nautilus\"},max_stack_size=2,custom_data={teleporter:yes}]")
+    teleport_lines.append("\nexecute as @s at @s run playsound minecraft:entity.enderman.teleport master @s ~ ~ ~ 100 0")
+    with open("data/race/function/start/spawn_nautili.mcfunction", "w") as file:
+        file.write("\n".join(spawn_lines))
+    with open("data/race/function/mount/teleportnautilus.mcfunction", "w") as file:
+        file.write("\n".join(teleport_lines))
 
 #-------Constants-------
 # Paths
@@ -280,7 +312,6 @@ CHECKPOINTS_PATH = "data/race/function/checkpoints/"
 if __name__ == "__main__":
     # Get player UUIDs
     players = import_players()
-    print(players)
     
     # Import course from json
     course = import_course()
@@ -290,3 +321,4 @@ if __name__ == "__main__":
         compile_advancements(course)
         compile_setup_function(course)
         compile_checkpoints(course)
+    compile_nautilus(players)
