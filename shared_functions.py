@@ -61,13 +61,16 @@ def get_checkpoint_locations(course):
     return checkpoint_locations
 
 # Import course from json
-def import_course(path):
+def import_course():
     preset_courses = {
         "main": "courses/main.json",
         "legacy": "courses/main_legacy.json",
         "reverse": "courses/reverse.json",
         "crownpeak": "courses/crownpeak.json"
     }
+    presets = ", ".join(preset_courses)
+    message = f"Please input the path to your course here (or select a preset: {presets}): "
+    path = input(message).lower()
     # Check the user hasn't entered nothing
     if len(path) == 0:
         print("You have not specificed a path, quitting...")
