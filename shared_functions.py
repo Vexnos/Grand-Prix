@@ -1,4 +1,5 @@
 import json
+import requests
 from math import sqrt
 
 def get_distance(location, new_location):
@@ -89,6 +90,18 @@ def import_course():
             if key in checkpoint_data:
                 checkpoint[key] = checkpoint_data[key]
     return course
+
+# Retrieve player UUID
+def get_uuid(profile):
+    mojang_api = f"https://api.mojang.com/users/profiles/minecraft/{profile}"
+    uuid = requests.get(mojang_api)
+
+    # Check for valid uuid retrieval and return if successful
+    if uuid.status_code == 200:
+        player_data = uuid.json()
+        return player_data['id']
+    else:
+        print(f"Could not find user {profile}. Status code: {uuid.status_code}")
 
 PORTALS = {
     "the_nether": {
