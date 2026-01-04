@@ -133,6 +133,7 @@
                 "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2}]",
                 "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2}]",
                 "give @a diamond_sword[enchantments={sharpness:3,fire_aspect:2,knockback:2}]",
+                "give @a bow[enchantments={power:3,flame:1}]",
                 "give @a diamond_axe[enchantments={sharpness:3}]",
                 "give @a shield[banner_patterns=[{color:\"gray\",pattern:\"minecraft:half_horizontal\"},{color:\"orange\",pattern:\"minecraft:stripe_middle\"},{color:\"orange\",pattern:\"minecraft:rhombus\"}],base_color=\"white\"]",
                 "give @a potion[potion_contents={potion:\"minecraft:long_swiftness"
