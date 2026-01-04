@@ -1,0 +1,91 @@
+{
+    "name": "The First Grand Prix Course",
+    "start_description": "First Ardoni Shrine",
+    "start_coordinates": [-302, 119, -4283],
+    "worldborder_center": [-283, -4264],
+    "worldborder_size": 100,
+    "initial_items": [],
+    "checkpoints": [
+        {
+            "id": "hailstone_beacon"
+        },
+        {
+            "id": "northwind_ice_spikes"
+        },
+        {
+            "id": "northwind_cave"
+        },
+        {
+            "id": "northwind_pass"
+        },
+        {
+            "id": "kaltaria_village"
+        },
+        {
+            "id": "mendoria_shrine"
+        },
+        {
+            "id": "sendaria_osivian_house"
+        },
+        {
+            "id": "conchord_forestry"
+        },
+        {
+            "id": "oakendale_beacon"
+        },
+        {
+            "id": "underwood"
+        },
+        {
+            "id": "leewa_well"
+        },
+        {
+            "id": "fronchester"
+        },
+        {
+            "id": "felora_beacon"
+        },
+        {
+            "id": "fort_zuka"
+        },
+        {
+            "id": "riverstead_bell"
+        },
+        {
+            "id": "aerilon"
+        },
+        {
+            "id": "hamburville"
+        },
+        {
+            "id": "crown_peak_beacon"
+        },
+        {
+            "id": "tartarus_beacon"
+        },
+        {
+            "id": "meridian_beacon"
+        },
+        {
+            "id": "amaria_legacy"
+        },
+        {
+            "id": "hyperia_beacon"
+        },
+        {
+            "id": "havenshire_monument"
+        },
+        {
+            "id": "solkad_north_church"
+        },
+        {
+            "id": "nestoria_shrine"
+        },
+        {
+            "id": "silverwatch_inn"
+        },
+        {
+            "id": "gale_point"
+        }
+    ]
+}

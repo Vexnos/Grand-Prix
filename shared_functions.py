@@ -67,6 +67,7 @@ def import_course():
     preset_courses = {
         "main": "courses/main.json",
         "legacy": "courses/main_legacy.json",
+        "original": "courses/original.json",
         "main_random": "courses/main_randomized.json",
         "reverse": "courses/reverse.json",
         "crownpeak": "courses/crownpeak.json"
