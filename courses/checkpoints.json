@@ -99,6 +99,13 @@
         "advancement_icon": "snowball"
     },
     {
+        "id" :"vasteras_spire",
+        "name": "Vasteras Spire",
+        "description": "Ascend the Spire",
+        "lodestone": [1093, 191, -3760],
+        "advancement_icon": "spyglass"
+    },
+    {
         "id": "camp_salmore",
         "name": "Camp Salmore",
         "description": "Hide from Allarak",
@@ -910,8 +917,16 @@
         "advancement_icon": "end_crystal"
     },
     {
+        "id": "the_end_trials",
+        "name": "The End Domain",
+        "description": "Complete the Trials",
+        "dimension": "the_end",
+        "lodestone": [-935, 95, -613],
+        "advancement_icon": "ender_pearl"
+    },
+    {
         "id": "nazgard_vault",
-        "name": "Nazgard Vault",
+        "name": "Nazgard",
         "description": "Break into the Vault",
         "dimension": "the_nether",
         "lodestone": [-376, 56, -1089],
@@ -925,6 +940,23 @@
         "lodestone": [-204, 81, -998],
         "advancement_icon": "iron_axe",
         "custom_model_data": 1
+    },
+    {
+        "id": "nazgard_mordor",
+        "name": "Nazgard",
+        "description": "Taste the Nether Wart",
+        "dimension": "the_nether",
+        "lodestone": [-217, 97, -963],
+        "advancement_icon": "potion",
+        "potion_contents": "nether_wart"
+    },
+    {
+        "id": "nazgard_door",
+        "name": "Nazgard",
+        "description": "Removed Herobrine...?",
+        "dimension": "the_nether",
+        "lodestone": [75, 65, -1099],
+        "advancement_icon": "iron_door"
     },
     {
         "id": "ataraxia_shrine",

@@ -28,7 +28,8 @@
     "silverwatch" : {
         "checkpoints": [
             "silverwatch_castle",
-            "silverwatch_inn"
+            "silverwatch_inn",
+            "vasteras_spire"
         ],
         "has_fire": false
     },
@@ -373,13 +374,18 @@
         "has_fire": false
     },
     "the_end" : {
-        "checkpoints": ["the_end"],
+        "checkpoints": [
+            "the_end",
+            "the_end_trials"
+        ],
         "has_fire": false
     },
     "nazgard" : {
         "checkpoints": [
             "nazgard_vault",
-            "nazgard_throne"
+            "nazgard_throne",
+            "nazgard_mordor",
+            "nazgard_door"
         ],
         "has_fire": true
     },
