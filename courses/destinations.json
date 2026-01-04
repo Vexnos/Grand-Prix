@@ -40,6 +40,14 @@
         "checkpoints": ["northwind_pass"],
         "has_fire": false
     },
+    "northwind_ice_spikes": {
+        "checkpoints": ["northwind_ice_spikes"],
+        "has_fire": false
+    },
+    "northwind_cave": {
+        "checkpoints": ["northwind_cave"],
+        "has_fire": false
+    },
     "mendoria" : {
         "checkpoints": ["mendoria_shrine"],
         "has_fire": false
@@ -197,7 +205,8 @@
     "havenshire" : {
         "checkpoints": [
             "havenshire_port",
-            "sandford_house"
+            "sandford_house",
+            "havenshire_monument"
         ],
         "has_fire": false
     },

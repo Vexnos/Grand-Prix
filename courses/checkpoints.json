@@ -113,6 +113,20 @@
         "advancement_icon": "snow_block"
     },
     {
+        "id": "northwind_ice_spikes",
+        "name": "Northwind Ice Spikes",
+        "description": "Ascend the Spike",
+        "lodestone": [-1176, 112, -4098],
+        "advancement_icon": "packed_ice"
+    },
+    {
+        "id": "northwind_cave",
+        "name": "Northwind Cave",
+        "description": "Enter the Cave",
+        "lodestone": [-1181, 129, -3766],
+        "advancement_icon": "sea_lantern"
+    },
+    {
         "id": "mendoria_shrine",
         "name": "Mendoria",
         "description": "Farm in Peace",
@@ -276,9 +290,9 @@
     {
         "id": "leewa_well",
         "name": "Leewa",
-        "description": "todo",
+        "description": "Reach Leewa",
         "lodestone": [-2714, 91, -1185],
-        "advancement_icon": "todo"
+        "advancement_icon": "dark_oak_sapling"
     },
     {
         "id": "etherea_tower",
@@ -432,9 +446,9 @@
     {
         "id": "solkad_north_church",
         "name": "Solkad North",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Reach Solkad North",
+        "lodestone": [1561, 75, -2238],
+        "advancement_icon": "bookshelf"
     },
     {
         "id": "solkad_north_windmill",
@@ -470,6 +484,13 @@
         "description": "Find the Unyielding Legion",
         "lodestone": "todo",
         "advancement_icon": "todo"
+    },
+    {
+        "id": "havenshire_monument",
+        "name": "Havenshire",
+        "description": "Respect the Founder",
+        "lodestone": [1271, 85, -1760],
+        "advancement_icon": "chiseled_stone_bricks"
     },
     {
         "id": "sandford_house",
