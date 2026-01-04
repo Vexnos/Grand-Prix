@@ -1,6 +1,8 @@
 function race:checkpoints
 execute if score #mode gamemode matches 1 run function race:deaths/president
 execute if score #mode gamemode matches 1 run function race:deaths/bodyguard
+execute if score #mode gamemode matches 4 run function race:deaths/president
+execute if score #mode gamemode matches 4 run function race:deaths/bodyguard
 
 # Enable start trigger
 scoreboard players enable @a[tag=admin] start
@@ -12,3 +14,4 @@ function race:portals
 # Give speed to every horse for their rider having the luck effect
 execute if score #mode gamemode matches 2 as @a[predicate=race:has_luck] at @s run effect give @e[type=skeleton_horse,sort=nearest,limit=1] speed 1 0 false
 # execute if score #mode gamemode matches 3 as @a[predicate=race:has_luck] at @s run effect give @e[type=nautilus,sort=nearest,limit=1] speed 1 0 false
+execute if score #mode gamemode matches 4 as @a[predicate=race:has_luck] at @s run effect give @e[type=camel,sort=nearest,limit=1] speed 1 0 false

@@ -22,6 +22,7 @@ clear @a
 function race:start/firstcompass
 execute if score #mode gamemode matches 2 run give @a nether_star[custom_name={text:"Teleport Horse",italic:false,color:"light_purple"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:"teleport_horse"},max_stack_size=2,custom_data={teleporter:yes}]
 # execute if score #mode gamemode matches 3 run give @a nautilus_shell[custom_name={text:"Teleport Nautilus",italic:false,color:"aqua"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:"teleport_horse"},max_stack_size=2,custom_data={teleporter:yes}]
+execute if score #mode gamemode matches 4 run give @a[tag=president] rabbit_hide[item_model="minecraft:nether_star",custom_name={text:"Teleport Camel",italic:false,color:"yellow"},enchantment_glint_override=true,consumable={consume_seconds:0.05,animation:none,has_consume_particles:false},use_cooldown={seconds:1,cooldown_group:"teleport_camel"},max_stack_size=2,custom_data={teleporter:yes}]
 
 # Titles
 title @a title {"text":"GO!","color":"green","bold":true}

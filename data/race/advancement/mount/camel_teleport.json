@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:rabbit_hide",
+                    "components": {
+                        "minecraft:custom_data": {
+                            "teleporter": "yes"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "race:mount/teleportcamel"
+    }
+}

@@ -58,6 +58,7 @@ clear @a
 # Kill skeleton horses
 kill @e[type=skeleton_horse]
 # kill @e[type=nautilus]
+kill @e[type=camel]
 
 # Kill rogue items
 kill @e[type=item]
