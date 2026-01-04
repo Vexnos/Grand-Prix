@@ -25,7 +25,8 @@
             "id": "northwind_cave",
             "items": [
                 "give @a stone_sword",
-                "give @a stone_axe"
+                "give @a stone_axe",
+                "give @a stone_pickaxe"
             ]
         },
         {
@@ -42,7 +43,11 @@
         {
             "id": "mendoria_shrine",
             "items": [
-                "give @a apple 21"
+                "give @a apple 21",
+                "item replace entity @a armor.head with copper_helmet",
+                "item replace entity @a armor.chest with copper_chestplate",
+                "item replace entity @a armor.legs with copper_leggings",
+                "item replace entity @a armor.feet with copper_boots"
             ]
         },
         {
@@ -54,7 +59,13 @@
         {
             "id": "oakendale_beacon",
             "items": [
-                "give @a pumpkin_pie 10"
+                "give @a pumpkin_pie 10",
+                "item replace entity @a armor.head with iron_helmet",
+                "item replace entity @a armor.legs with iron_leggings",
+                "give @a iron_sword",
+                "give @a bow",
+                "give @a arrow 32",
+                "give @a lava_bucket"
             ]
         },
         {
@@ -67,12 +78,20 @@
             "id": "fronchester"
         },
         {
-            "id": "felora_beacon"
+            "id": "felora_beacon",
+            "items": [
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.feet with iron_boots",
+                "give @a iron_axe",
+                "give @a iron_pickaxe",
+                "give @a shield[banner_patterns=[{color:\"green\",pattern:\"minecraft:triangle_top\"},{color:\"green\",pattern:\"minecraft:stripe_center\"},{color:\"lime\",pattern:\"minecraft:flower\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"lime\",pattern:\"minecraft:circle\"}],base_color=\"black\"]"
+            ]
         },
         {
             "id": "fort_zuka",
             "items": [
-                "give @a mushroom_stew[max_stack_size=16] 15"
+                "give @a mushroom_stew[max_stack_size=16] 15",
+                "give @a arrow 16"
             ]
         },
         {
@@ -87,26 +106,65 @@
         {
             "id": "crown_peak_beacon",
             "items": [
-                "give @a golden_carrot 9"
+                "give @a golden_carrot 9",
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
+                "give @a diamond_sword",
+                "give @a shield[banner_patterns=[{color:\"light_gray\",pattern:\"minecraft:bricks\"},{color:\"purple\",pattern:\"minecraft:triangle_top\"},{color:\"gray\",pattern:\"minecraft:border\"},{color:\"white\",pattern:\"minecraft:straight_cross\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"white\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]"
             ]
         },
         {
-            "id": "tartarus_beacon"
+            "id": "tartarus_beacon",
+            "items": [
+                "give @a diamond_axe",
+                "give @a diamond_pickaxe",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
+                "give @a shield[banner_patterns=[{color:\"red\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:circle\"},{color:\"black\",pattern:\"minecraft:triangle_top\"},{color:\"black\",pattern:\"minecraft:triangle_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_top\"},{color:\"gray\",pattern:\"minecraft:triangles_bottom\"},{color:\"gray\",pattern:\"minecraft:curly_border\"},{color:\"black\",pattern:\"minecraft:curly_border\"},{color:\"gray\",pattern:\"minecraft:rhombus\"},{color:\"black\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:rhombus\"}],base_color=\"red\"]"
+            ]
         },
         {
             "id": "meridian_beacon",
             "items": [
-                "give @a cooked_salmon 9"
+                "give @a cooked_salmon 9",
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2}]",
+                "give @a diamond_sword[enchantments={sharpness:3,fire_aspect:2,knockback:2}]",
+                "give @a diamond_axe[enchantments={sharpness:3}]",
+                "give @a shield[banner_patterns=[{color:\"gray\",pattern:\"minecraft:half_horizontal\"},{color:\"orange\",pattern:\"minecraft:stripe_middle\"},{color:\"orange\",pattern:\"minecraft:rhombus\"}],base_color=\"white\"]",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness"
             ]
         },
         {
             "id": "amaria_legacy",
             "items": [
-                "give @a cooked_cod 18"
+                "give @a cooked_cod 18",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"}] 2",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_strength\"}]"
             ]
         },
         {
-            "id": "hyperia_beacon"
+            "id": "hyperia_beacon",
+            "items": [
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:4,aqua_affinity:1,respiration:3}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:4}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:4,swift_sneak:3}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:4,feather_falling:2,depth_strider:3,soul_speed:3}]",
+                "give @a diamond_sword[enchantments={sharpness:5,fire_aspect:2,sweeping_edge:3,looting:3,knockback:2}]",
+                "give @a bow[enchantments={power:5,punch:2,flame:1}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5,silk_touch:1}]",
+                "give @a diamond_axe[enchantments={sharpness:5,efficiency:5,silk_touch:1}]",
+                "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
+                "give @a obsidian 32",
+                "give @a end_crystal 16",
+                "give @a golden_apple 3",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
+            ]
         },
         {
             "id": "havenshire_monument"
