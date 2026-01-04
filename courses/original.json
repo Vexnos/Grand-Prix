@@ -136,7 +136,7 @@
                 "give @a bow[enchantments={power:3,flame:1}]",
                 "give @a diamond_axe[enchantments={sharpness:3}]",
                 "give @a shield[banner_patterns=[{color:\"gray\",pattern:\"minecraft:half_horizontal\"},{color:\"orange\",pattern:\"minecraft:stripe_middle\"},{color:\"orange\",pattern:\"minecraft:rhombus\"}],base_color=\"white\"]",
-                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness"
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]"
             ]
         },
         {
