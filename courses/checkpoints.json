@@ -420,7 +420,7 @@
         "name": "Forson",
         "description": "Accuse the accountant of being a Bandit",
         "lodestone": [1811, 79, -1994],
-        "advancement_icon": "paper"
+        "advancement_icon": "book"
     },
     {
         "id": "forson_main_hall",
@@ -546,7 +546,7 @@
         "name": "Diamond Heights",
         "description": "todo",
         "lodestone": "todo",
-        "advancement_icon": "todo"
+        "advancement_icon": "diamond"
     },
     {
         "id": "galvim_house",
