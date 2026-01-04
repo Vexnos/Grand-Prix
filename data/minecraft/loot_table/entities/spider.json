@@ -7,7 +7,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:enderman_spawn_egg"
+                    "name": "minecraft:spider_spawn_egg"
                 }
             ],
             "conditions": [
@@ -23,17 +23,11 @@
                         "per_level_above_first": 0.05
                     },
                     "enchantment": "minecraft:looting"
-                },
-                {
-                    "condition": "minecraft:location_check",
-                    "predicate": {
-                        "dimension": "minecraft:overworld"
-                    }
                 }
             ]
         },
         {
-            "bonus_rolls": 1,
+            "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
@@ -42,7 +36,7 @@
                             "add": false,
                             "count": {
                                 "type": "minecraft:uniform",
-                                "max": 1,
+                                "max": 2,
                                 "min": 0
                             },
                             "function": "minecraft:set_count"
@@ -54,23 +48,49 @@
                                 "min": 0
                             },
                             "enchantment": "minecraft:looting",
-                            "function": "minecraft:enchanted_count_increase",
-                            "conditions": []
+                            "function": "minecraft:enchanted_count_increase"
                         }
                     ],
-                    "name": "minecraft:ender_pearl"
+                    "name": "minecraft:string"
                 }
             ],
-            "rolls": 1,
+            "rolls": 1
+        },
+        {
+            "bonus_rolls": 0,
             "conditions": [
                 {
-                    "condition": "minecraft:location_check",
-                    "predicate": {
-                        "dimension": "minecraft:overworld"
-                    }
+                    "condition": "minecraft:killed_by_player"
                 }
-            ]
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 1,
+                                "min": -1
+                            },
+                            "function": "minecraft:set_count"
+                        },
+                        {
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 1,
+                                "min": 0
+                            },
+                            "enchantment": "minecraft:looting",
+                            "function": "minecraft:enchanted_count_increase"
+                        }
+                    ],
+                    "name": "minecraft:spider_eye"
+                }
+            ],
+            "rolls": 1
         }
     ],
-    "random_sequence": "minecraft:entities/enderman"
+    "random_sequence": "minecraft:entities/spider"
 }
