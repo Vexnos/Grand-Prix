@@ -179,6 +179,8 @@ def compile_checkpoints(course):
             checkpoints_lines.append("# Catchup Mechanic")
             checkpoints_lines.append(f"execute unless score #mode gamemode matches 2 run effect give @a[tag=!{checkpoint['id']}] speed 40 1 false")
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 run effect give @a[tag=!{checkpoint['id']}] luck 20 0 true")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 4 run effect give @a[tag=!{checkpoint['id']},tag=president] luck 20 0 true")
+            checkpoints_lines.append(f"execute if score #mode gamemode matches 4 run effect give @a[tag=!{checkpoint['id']},tag=bodyguard] speed 40 1 true")
         with open(f"{CHECKPOINTS_PATH}{checkpoint['id']}.mcfunction", "w") as file:
             file.write("\n".join(checkpoints_lines))
 
