@@ -68,7 +68,7 @@
         "name": "Walls of Time",
         "description": "Peruse the Walls of Time",
         "lodestone": [-401, 120, -4232],
-        "advancement_icon": "oak_shelf"
+        "advancement_icon": "stone_brick_wall"
     },
     {
         "id": "walls_of_time_undercroft",
