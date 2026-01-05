@@ -15,3 +15,5 @@ for item in data.values():
 for checkpoint in checkpoints:
   if checkpoint not in seen:
     print(checkpoint)
+
+assert len(seen) == len(checkpoints)
