@@ -22,6 +22,7 @@ scoreboard players set #startline phase 1
 tag @a remove president
 tag @a remove bodyguard
 tag @a remove horse_name
+tag @a remove dead
 
 # Reset Checkpoints
 function race:resetcheckpoints
@@ -42,6 +43,7 @@ gamerule locatorBar false
 gamerule allowEnteringNetherUsingPortals false
 gamerule playersNetherPortalDefaultDelay 1200
 gamerule pvp false
+gamerule naturalRegeneration true
 
 # Remove all XP
 xp set @a 0 levels
@@ -54,6 +56,9 @@ effect give @a regeneration infinite 1 true
 
 # Clear Inventories
 clear @a
+
+# Attributes
+execute as @a run attribute @s max_health base set 20
 
 # Kill skeleton horses
 kill @e[type=skeleton_horse]

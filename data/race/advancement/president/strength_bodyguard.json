@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:nether_star",
+                    "components": {
+                        "minecraft:custom_data": {
+                            "strength": "yes"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "race:president/strength_bodyguard"
+    }
+}

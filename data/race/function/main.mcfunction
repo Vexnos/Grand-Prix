@@ -1,8 +1,6 @@
 function race:checkpoints
-execute if score #mode gamemode matches 1 run function race:deaths/president
-execute if score #mode gamemode matches 1 run function race:deaths/bodyguard
-execute if score #mode gamemode matches 4 run function race:deaths/president
-execute if score #mode gamemode matches 4 run function race:deaths/bodyguard
+execute if score #mode gamemode matches 1 run function race:deaths/death
+execute if score #mode gamemode matches 4 run function race:deaths/death
 
 # Enable start trigger
 scoreboard players enable @a[tag=admin] start
