@@ -1,0 +1,2 @@
+execute as @e[type=camel,predicate=race:passenger_is_player] run attribute @s minecraft:movement_speed base set 0.2
+execute as @e[type=camel,predicate=!race:passenger_is_player] run attribute @s minecraft:movement_speed base set 0.09
