@@ -28,8 +28,7 @@
     "silverwatch" : {
         "checkpoints": [
             "silverwatch_castle",
-            "silverwatch_inn",
-            "vasteras_spire"
+            "silverwatch_inn"
         ],
         "has_fire": false
     },
