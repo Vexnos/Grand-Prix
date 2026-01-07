@@ -99,13 +99,6 @@
         "advancement_icon": "snowball"
     },
     {
-        "id" :"vasteras_spire",
-        "name": "Vasteras Spire",
-        "description": "Ascend the Spire",
-        "lodestone": [1096, 191, -3760],
-        "advancement_icon": "spyglass"
-    },
-    {
         "id": "camp_salmore",
         "name": "Camp Salmore",
         "description": "Hide from Allarak",
