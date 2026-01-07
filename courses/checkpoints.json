@@ -102,7 +102,7 @@
         "id" :"vasteras_spire",
         "name": "Vasteras Spire",
         "description": "Ascend the Spire",
-        "lodestone": [1093, 191, -3760],
+        "lodestone": [1096, 191, -3760],
         "advancement_icon": "spyglass"
     },
     {
