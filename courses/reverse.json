@@ -5,7 +5,7 @@
     "worldborder_center": [-16, -4704],
     "worldborder_size": 50,
     "initial_items": [
-        "give @a cooked_rabbit 15"
+        "give @a cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={text:\"Grandma's Biscuit\",italic:false}] 29"
     ],
     "checkpoints": [
         {
@@ -24,24 +24,19 @@
             ]
         },
         {
-            "id": "ardoni_cemetery",
-            "items": [
-                "give @a cookie[consumable={consume_seconds:1},food={nutrition:2,saturation:4},custom_name={\"text\":\"Grandma's Biscuit\",\"italic\":false}] 19"
-            ]
+            "id": "ardoni_cemetery"
         },
         {
             "id": "sendaria_osivian_shrine",
             "items": [
                 "give @a leather_chestplate",
                 "give @a leather_leggings",
-                "give @a stone_pickaxe"
+                "give @a stone_pickaxe",
+                "give @a cooked_salmon 10"
             ]
         },
         {
-            "id": "biggerton_bell",
-            "items": [
-                "give @a pumpkin_pie 14"
-            ]
+            "id": "biggerton_bell"
         },
         {
             "id": "ataraxia_shrine"
@@ -54,13 +49,8 @@
                 "give @a iron_sword",
                 "give @a bow",
                 "give @a arrow 32",
-                "give @a lava_bucket"
-            ]
-        },
-        {
-            "id": "diamond_heights_mayor",
-            "items": [
-                "give @a beetroot 64"
+                "give @a lava_bucket",
+                "give @a carrot 18"
             ]
         },
         {
@@ -71,13 +61,8 @@
                 "give @a iron_sword[enchantments={sharpness:2,unbreaking:2}]",
                 "give @a iron_axe",
                 "give @a iron_pickaxe",
-                "give @a bow[enchantments={power:1,unbreaking:2}]"
-            ]
-        },
-        {
-            "id": "kaeru",
-            "items": [
-                "give @a melon_slice 53"
+                "give @a bow[enchantments={power:1,unbreaking:2}]",
+                "give @a beetroot 64"
             ]
         },
         {
@@ -90,16 +75,13 @@
                 "give @a shield",
                 "give @a diamond_sword[enchantments={sharpness:2,unbreaking:2}]",
                 "give @a bow[enchantments={power:3,unbreaking:2}]",
-                "give @a oak_log 16"
+                "give @a oak_log 16",
+                "give @a baked_potato 16"
             ]
-        },
-        {
-            "id": "cydonia_mines"
         },
         {
             "id": "tartarus_throne",
             "items": [
-                "give @a cooked_rabbit 13",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"}] 2",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"}] 2"
             ]
@@ -110,7 +92,6 @@
         {
             "id": "crown_peak_beacon",
             "items": [
-                "give @a bread 14",
                 "give @a diamond_helmet[enchantments={protection:2}]",
                 "give @a diamond_chestplate[enchantments={protection:2}]",
                 "give @a diamond_leggings[enchantments={protection:2}]",
@@ -120,7 +101,8 @@
                 "give @a spectral_arrow 32",
                 "give @a shield[enchantments={unbreaking:3},base_color=\"black\"]",
                 "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
-                "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]"
+                "give @a potion[potion_contents={potion:\"minecraft:strong_leaping\"}]",
+                "give @a cooked_mutton 9"
             ]
         },
         {
@@ -135,7 +117,7 @@
         {
             "id": "redstone_academy_reactor",
             "items": [
-                "give @a beetroot_soup[max_stack_size=16] 13"
+                "give @a cooked_porkchop 7"
             ]
         },
         {
@@ -147,7 +129,6 @@
         {
             "id": "felora_beacon",
             "items": [
-                "give @a cooked_cod 16",
                 "give @a diamond_helmet[enchantments={blast_protection:2,protection:2,respiration:3,aqua_affinity:1}]",
                 "give @a diamond_chestplate[enchantments={blast_protection:2,protection:2}]",
                 "give @a diamond_leggings[enchantments={blast_protection:2,protection:2}]",
@@ -158,23 +139,24 @@
                 "give @a golden_apple 3",
                 "give @a end_crystal 16",
                 "give @a obsidian 32",
-                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]",
+                "give @a cooked_mutton 7"
             ]
         },
         {
             "id": "etherea_tower"
         },
         {
-            "id": "oakendale_beacon",
-            "items": [
-                "give @a cooked_chicken 9"
-            ]
+            "id": "oakendale_beacon"
         },
         {
             "id": "voltaria_shrine"
         },
         {
-            "id": "kaltaria_village"
+            "id": "kaltaria_village",
+            "items": [
+                "give @a cooked_chicken 11"
+            ]
         },
         {
             "id": "ardoni_arena",
@@ -184,10 +166,7 @@
             ]
         },
         {
-            "id": "northwind_pass",
-            "items": [
-                "give @a cooked_cod 10"
-            ]
+            "id": "northwind_pass"
         },
         {
             "id": "hailstone_beacon"
