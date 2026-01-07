@@ -18,35 +18,27 @@ team modify green color green
 # Horse Teams (Up to 8 Players)
 team add 1
 team modify 1 friendlyFire false
-team modify 1 color blue
 
 team add 2
 team modify 2 friendlyFire false
-team modify 2 color red
 
 team add 3
 team modify 3 friendlyFire false
-team modify 3 color yellow
 
 team add 4
 team modify 4 friendlyFire false
-team modify 4 color green
 
 team add 5
 team modify 5 friendlyFire false
-team modify 5 color gold
 
 team add 6
 team modify 6 friendlyFire false
-team modify 6 color aqua
 
 team add 7
 team modify 7 friendlyFire false
-team modify 7 color black
 
 team add 8
 team modify 8 friendlyFire false
-team modify 8 color light_purple
 
 # Scoreboards
 scoreboard objectives add checkpoints dummy
