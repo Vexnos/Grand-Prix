@@ -113,9 +113,6 @@
             ]
         },
         {
-            "id": "cydonia_mines"
-        },
-        {
             "id": "meridian_beacon",
             "items": [
                 "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2}]",
@@ -131,13 +128,7 @@
             ]
         },
         {
-            "id": "kaeru"
-        },
-        {
             "id": "amaria"
-        },
-        {
-            "id": "diamond_heights_mayor"
         },
         {
             "id": "hyperia_beacon",
