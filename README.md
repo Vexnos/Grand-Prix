@@ -22,7 +22,7 @@ This datapack was developed to automate the backend of the Ardonia Grand Prix, r
 
 `"worldborder_size"` : Size of worldborder used to keep players from escaping before the race.
 
-`"initial items"` : A list of items to be given to players at the start of the race, any command can be entered here so long as it's valid in Minecraft.
+`"initial_items"` : A list of items to be given to players at the start of the race, any command can be entered here so long as it's valid in Minecraft.
 
 `"checkpoints"` : A list of dictionaries storing the checkpoint id (check `courses/checkpoints.json` to see pre-defined checkpoint ids to enter here, only those ids are valid) and any items you want to give to players at that checkpoint. Your final checkpoint will be the finish line.
 ```
