@@ -12,7 +12,7 @@ This datapack was developed to automate the backend of the Ardonia Grand Prix, r
 8. With all players online, run `/trigger start` to select the mode you want to play, when you select a mode, the race will start in 30 seconds.
 
 ### Course Template
-`"name"` : An optional field, but helpful to for organisation.
+`"name"` : An optional field, but helpful for organisation.
 
 `"start_description"` : Required for the name of the location of your start line.
 
@@ -20,7 +20,7 @@ This datapack was developed to automate the backend of the Ardonia Grand Prix, r
 
 `"worldborder_center"` : Is only used before the race starts, it is simply to stop players escaping the start line before the race.
 
-`"worldborder_size"` : Size of worldborder used to keep players from escaping before the race.
+`"worldborder_size"` : Size of worldborder in blocks (diameter) used to keep players from escaping before the race.
 
 `"initial_items"` : A list of items to be given to players at the start of the race, any command can be entered here so long as it's valid in Minecraft.
 
