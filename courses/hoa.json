@@ -63,7 +63,8 @@
                 "give @a arrow 32",
                 "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"},max_stack_size=16] 2",
-                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"},max_stack_size=16] 2"
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"},max_stack_size=16] 2",
+                "give @a shield[banner_patterns=[{color:\"blue\",pattern:\"minecraft:gradient\"},{color:\"white\",pattern:\"minecraft:triangles_bottom\"},{color:\"light_blue\",pattern:\"minecraft:triangles_top\"},{color:\"white\",pattern:\"minecraft:flower\"}],base_color=\"light_blue\"]"
             ]
         },
         {
@@ -89,7 +90,8 @@
                 "give @a diamond_axe",
                 "give @a bow[enchantments={power:3,flame:1}]",
                 "give @a spectral_arrow 32",
-                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]"
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
+                "give @a shield[banner_patterns=[{color:\"green\",pattern:\"minecraft:stripe_downright\"},{color:\"brown\",pattern:\"minecraft:triangle_top\"},{color:\"brown\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:cross\"}],base_color=\"green\"]"
             ]
         },
         {
