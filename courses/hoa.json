@@ -2,8 +2,8 @@
     "name": "HOA Course",
     "start_description": "Heart of Ardonia",
     "start_coordinates": [-2, 72, 0],
-    "worldborder_center": [-2, 0],
-    "worldborder_size": 20,
+    "worldborder_center": [0, 0],
+    "worldborder_size": 13,
     "initial_items": [],
     "checkpoints": [
         {
@@ -12,7 +12,8 @@
                 "give @a baked_potato 12",
                 "give @a wooden_sword",
                 "give @a wooden_pickaxe",
-                "item replace entity @a armor.feet with leather_boots"
+                "item replace entity @a armor.feet with leather_boots",
+                "give @a bucket"
             ]
         },
         {
