@@ -1,0 +1,138 @@
+{
+    "name": "HOA Course",
+    "start_description": "Heart of Ardonia",
+    "start_coordinates": [-2, 72, 0],
+    "worldborder_center": [-2, 0],
+    "worldborder_size": 20,
+    "initial_items": [],
+    "checkpoints": [
+        {
+            "id": "pinkolson_farm",
+            "items": [
+                "give @a baked_potato 12",
+                "give @a wooden_sword",
+                "give @a wooden_pickaxe",
+                "item replace entity @a armor.feet with leather_boots"
+            ]
+        },
+        {
+            "id": "hyperia_parliament",
+            "items": [
+                "item replace entity @a armor.head with leather_helmet",
+                "give @a stone_sword",
+                "give @a stone_axe",
+                "give @a stone_pickaxe"
+            ]
+        },
+        {
+            "id": "derna",
+            "items": [
+                "give @a bread 13",
+                "item replace entity @a armor.chest with leather_chestplate",
+                "item replace entity @a armor.legs with leather_leggings"
+            ]
+        },
+        {
+            "id": "havenshire_monument",
+            "items": [
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.feet with iron_boots",
+                "give @a iron_sword",
+                "give @a bow",
+                "give @a arrow 32"
+            ]
+        },
+        {
+            "id": "sendaria_communal_area"
+        },
+        {
+            "id": "northwind_pass",
+            "items": [
+                "give @a baked_potato 14",
+                "give @a iron_axe",
+                "give @a iron_pickaxe"
+            ]
+        },
+        {
+            "id": "hailstone_keep",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet",
+                "item replace entity @a armor.legs with iron_leggings",
+                "give @a diamond_sword",
+                "give @a arrow 32",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"},max_stack_size=16] 2",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"},max_stack_size=16] 2"
+            ]
+        },
+        {
+            "id": "ardoni_arena_alternate"
+        },
+        {
+            "id": "kaltaria_village"
+        },
+        {
+            "id": "sendaria_osivian_house",
+            "items": [
+                "give @a bread 11"
+            ]
+        },
+        {
+            "id": "oakendale_beacon",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
+                "give @a diamond_sword[enchantments={sharpness:2,fire_aspect:2,knockback:2}]",
+                "give @a diamond_axe",
+                "give @a bow[enchantments={power:3,flame:1}]",
+                "give @a spectral_arrow 32",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]"
+            ]
+        },
+        {
+            "id": "etherea_dragon_egg",
+            "items": [
+                "give @a cooked_salmon 12",
+                "item replace entity @a armor.chest with diamond_chestplate",
+                "item replace entity @a armor.legs with diamond_leggings"
+            ]
+        },
+        {
+            "id": "twin_pass"
+        },
+        {
+            "id": "vault",
+            "items": [
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2,blast_protection:2}]",
+                "give @a diamond_sword[enchantments={sharpness:5,looting:3,fire_aspect:2,knockback:2,sweeping_edge:3}]",
+                "give @a diamond_axe[enchantments={sharpness:3,efficiency:5,silk_touch:1}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5,silk_touch:1}]",
+                "give @a spectral_arrow 32",
+                "give @a potion[potion_contents={potion:\"minecraft:strength\"}]"
+            ]
+        },
+        {
+            "id": "nazgard_door"
+        },
+        {
+            "id": "the_end_trials",
+            "items": [
+                "give @a golden_apple 3"
+            ]
+        },
+        {
+            "id": "redstone_academy_reactor",
+            "items": [
+                "give @a golden_carrot 9"
+            ]
+        },
+        {
+            "id": "crown_peak_throne"
+        }
+    ]
+}
