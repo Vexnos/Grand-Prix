@@ -108,10 +108,10 @@
         {
             "id": "vault",
             "items": [
-                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2,blast_protection:2,respiration:3,aqua_affinity:1}]",
                 "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2,blast_protection:2}]",
-                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2,blast_protection:2}]",
-                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2,blast_protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2,blast_protection:2,swift_sneak:3}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2,blast_protection:2,feather_falling:2,depth_strider:3,soul_speed:3}]",
                 "give @a diamond_sword[enchantments={sharpness:5,looting:3,fire_aspect:2,knockback:2,sweeping_edge:3}]",
                 "give @a diamond_axe[enchantments={sharpness:3,efficiency:5,silk_touch:1}]",
                 "give @a diamond_pickaxe[enchantments={efficiency:5,silk_touch:1}]",
