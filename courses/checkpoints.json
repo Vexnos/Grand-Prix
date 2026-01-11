@@ -502,9 +502,9 @@
     {
         "id": "derna",
         "name": "Derna",
-        "description": "todo",
+        "description": "Reach Derna",
         "lodestone": [1050, 85, -803],
-        "advancement_icon": "todo"
+        "advancement_icon": "spruce_planks"
     },
     {
         "id": "hydraphel_mines",
