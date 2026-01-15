@@ -1105,9 +1105,9 @@
     {
         "id": "aridia_cliffs",
         "name": "Aridia Cliffs",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Reach Aridia Cliffs",
+        "lodestone": [119, 92, 3722],
+        "advancement_icon": "sandstone"
     },
     {
         "id": "po_hatu",
