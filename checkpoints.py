@@ -166,7 +166,7 @@ def compile_checkpoints(course):
             checkpoints_lines.append("scoreboard players add @s checkpoints 1\n")
             if "items" in checkpoint:
                 checkpoints_lines.append("# Items")
-                checkpoints_lines.append(f"execute unless score #{checkpoint['id']} checkpoints matches 1.. run function race:checkpoints/items/{checkpoint['id']}")
+                checkpoints_lines.append(f"execute unless score #{checkpoint['id']} checkpoints matches 1.. run function race:checkpoints/items/{checkpoint['id']}\n")
                 result = "\n".join(checkpoint["items"])
                 with open(f"{CHECKPOINTS_PATH}items/{checkpoint['id']}.mcfunction", "w") as file:
                     file.write(result)
