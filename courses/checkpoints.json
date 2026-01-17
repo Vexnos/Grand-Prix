@@ -264,7 +264,7 @@
         "name": "Marshline",
         "description": "todo",
         "lodestone": [-2467, 74, -2630],
-        "advancement_icon": "todo"
+        "advancement_icon": "brown_mushroom"
     },
     {
         "id": "deeproot",
@@ -433,14 +433,14 @@
         "id": "solkad_north_inn",
         "name": "Solkad North",
         "description": "Burn down the inn",
-        "lodestone": "todo",
+        "lodestone": [1535, 76, -2276],
         "advancement_icon": "todo"
     },
     {
         "id": "solkad_north_port",
         "name": "Solkad North",
         "description": "Catch some bandits",
-        "lodestone": "todo",
+        "lodestone": [1583, 75, -2230],
         "advancement_icon": "todo"
     },
     {
@@ -454,7 +454,7 @@
         "id": "solkad_north_windmill",
         "name": "Solkad North",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [1534, 80, -2205],
         "advancement_icon": "todo"
     },
     {
@@ -482,7 +482,7 @@
         "id": "havenshire_port",
         "name": "Havenshire",
         "description": "Find the Unyielding Legion",
-        "lodestone": "todo",
+        "lodestone": [1221, 75, -1911],
         "advancement_icon": "todo"
     },
     {
@@ -495,9 +495,9 @@
     {
         "id": "sandford_house",
         "name": "Havenshire",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "RIP Tiberius Sendaris",
+        "lodestone": [1249, 84, -1790],
+        "advancement_icon": "poppy"
     },
     {
         "id": "derna",
@@ -1155,7 +1155,7 @@
         "id": "meridian_parliament",
         "name": "Meridian",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [101, 81, 4584],
         "advancement_icon": "white_banner",
         "banner_patterns": [
             {
@@ -1182,8 +1182,8 @@
     {
         "id": "mt_tempus_surface",
         "name": "Mount Tempus",
-        "description": "todo",
-        "lodestone": "todo",
+        "description": "Chicken out before confronting the necromancers",
+        "lodestone": [-3462, 75, 1128],
         "advancement_icon": "magma_block"
     }
 ]
