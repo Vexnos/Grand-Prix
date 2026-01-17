@@ -225,8 +225,8 @@
     "diamond_heights" : {
         "checkpoints": [
             "diamond_heights_mayor",
-            "tobias_house",
-            "diamond_heights_inn",
+            "hamilton_house",
+            "diamond_heights_bakery",
             "diamond_heights_bank"
         ],
         "has_fire": false

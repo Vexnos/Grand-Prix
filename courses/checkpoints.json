@@ -475,7 +475,7 @@
         "id": "dalhurst",
         "name": "Dalhurst",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [660, 76, -1524],
         "advancement_icon": "todo"
     },
     {
@@ -517,7 +517,7 @@
         "id": "devalon",
         "name": "Devalon",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [1092, 78, -343],
         "advancement_icon": "stripped_oak_log"
     },
     {
@@ -528,24 +528,24 @@
         "advancement_icon": "diamond_block"
     },
     {
-        "id": "tobias_house",
+        "id": "hamilton_house",
         "name": "Diamond Heights",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Let them eat cake",
+        "lodestone": [1243, 109, -57],
+        "advancement_icon": "cake"
     },
     {
-        "id": "diamond_heights_inn",
+        "id": "diamond_heights_bakery",
         "name": "Diamond Heights",
-        "description": "todo",
-        "lodestone": "todo",
+        "description": "Inherit money",
+        "lodestone": [1271, 95, -138],
         "advancement_icon": "todo"
     },
     {
         "id": "diamond_heights_bank",
         "name": "Diamond Heights",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [1200, 109, -71],
         "advancement_icon": "diamond"
     },
     {
@@ -762,8 +762,8 @@
         "id": "shimmering_valley",
         "name": "Shimmering Valley",
         "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "lodestone": [-2290, 79, 1148],
+        "advancement_icon": "enchanting_table"
     },
     {
         "id": "hamburville",
