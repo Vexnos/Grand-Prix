@@ -1,0 +1,167 @@
+{
+    "name": "Equator to Pole",
+    "start_description": "Meridian",
+    "start_coordinates": [61, 85, 4607],
+    "worldborder_center": [61, 4606],
+    "worldborder_size": 29,
+    "initial_items": [
+        "give @a pumpkin_pie 8"
+    ],
+    "checkpoints": [
+        {
+            "id": "aridia_cliffs",
+            "items": [
+                "give @a stone_sword",
+                "item replace entity @a armor.head with leather_helmet"
+            ]
+        },
+        {
+            "id": "cydonia_mines",
+            "items": [
+                "item replace entity @a armor.legs with leather_leggings",
+                "give @a stone_axe",
+                "give @a stone_pickaxe"
+            ]
+        },
+        {
+            "id": "phaethon"
+        },
+        {
+            "id": "tartarus_throne",
+            "items": [
+                "give @a cooked_mutton 9",
+                "item replace entity @a armor.chest with leather_chestplate",
+                "item replace entity @a armor.feet with leather_boots"
+            ]
+        },
+        {
+            "id": "bhengorn_meeting_room"
+        },
+        {
+            "id": "incatasia"
+        },
+        {
+            "id": "crown_peak_beacon",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet",
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.legs with iron_leggings",
+                "item replace entity @a armor.feet with iron_boots",
+                "give @a iron_sword"
+            ]
+        },
+        {
+            "id": "the_end"
+        },
+        {
+            "id": "vault",
+            "items": [
+                "give @a baked_potato 12"
+            ]
+        },
+        {
+            "id": "twin_pass",
+            "items": [
+                "give @a iron_pickaxe",
+                "give @a iron_axe",
+                "give @a shield[banner_patterns=[{color:\"green\",pattern:\"minecraft:stripe_downright\"},{color:\"brown\",pattern:\"minecraft:triangle_top\"},{color:\"brown\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:cross\"}],base_color=\"green\"]"
+            ]
+        },
+        {
+            "id": "conchord_forestry"
+        },
+        {
+            "id": "sendaria_osivian_house",
+            "items": [
+                "give @a cooked_rabbit 9"
+            ]
+        },
+        {
+            "id": "kaltaria_village"
+        },
+        {
+            "id": "ardoni_arena_alternate",
+            "items": [
+                "give @a glow_berries[consumable={on_consume_effects:[{type:\"minecraft:apply_effects\",effects:[{id:\"minecraft:glowing\",amplifier:0,duration:100}]}]}] 64"
+            ]
+        },
+        {
+            "id": "hailstone_keep",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2}]",
+                "give @a diamond_sword",
+                "give @a iron_pickaxe[enchantments={efficiency:3}]",
+                "give @a iron_axe[enchantments={efficiency:3}]",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]"
+            ]
+        },
+        {
+            "id": "walls_of_time_undercroft"
+        },
+        {
+            "id": "camp_salmore",
+            "items": [
+                "give @a cooked_mutton 7",
+                "give @a potion[potion_contents={potion:\"minecraft:strength\"}]"
+            ]
+        },
+        {
+            "id": "solkad_north_church"
+        },
+        {
+            "id": "derna",
+            "items": [
+                "give @a cooked_chicken 9",
+                "give @a splash_potion[potion_contents={potion:\"strong_harming\"}] 2",
+                "give @a splash_potion[potion_contents={potion:\"strong_healing\"}] 2"
+            ]
+        },
+        {
+            "id": "hyperia_parliament",
+            "items": [
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2,respiration:3,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with diamond_leggings[enchantments={protection:2,swift_sneak:3}]",
+                "item replace entity @a armor.feet with diamond_boots[enchantments={protection:2,feather_falling:2,soul_speed:3,depth_strider:3}]",
+                "give @a diamond_sword[enchantments={sharpness:5,looting:3,sweeping_edge:3,fire_aspect:2,knockback:2}]",
+                "give @a diamond_axe[enchantments={sharpness:3,efficiency:5,silk_touch:1}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5,fortune:3}]",
+                "give @a diamond_shovel[enchantments={efficiency:5,fortune:3}]",
+                "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
+                "give @a golden_apple 3",
+                "give @a obsidian 64",
+                "give @a end_crystal 16",
+                "give @a wind_charge 32",
+                "give @a spectral_arrow 32",
+                "give @a potion[potion_contents={potion:\"minecraft:long_swiftness\"}]"
+            ]
+        },
+        {
+            "id": "pinkolson_farm",
+            "items": [
+                "give @a carrot 16"
+            ]
+        },
+        {
+            "id": "mt_velgrin_portal"
+        },
+        {
+            "id": "camp_enher"
+        },
+        {
+            "id": "mt_kaelos_council",
+            "items": [
+                "give @a cooked_salmon 9"
+            ]
+        },
+        {
+            "id": "kaeru"
+        },
+        {
+            "id": "meridian_beacon"
+        }
+    ]
+}
