@@ -103,7 +103,7 @@
         "name": "Camp Salmore",
         "description": "Hide from Allarak",
         "lodestone": [479, 153, -3561],
-        "advancement_icon": "raw_cod"
+        "advancement_icon": "cod"
     },
     {
         "id": "northwind_pass",
