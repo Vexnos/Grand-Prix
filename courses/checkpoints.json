@@ -755,7 +755,7 @@
         "id": "basalt_mines",
         "name": "Basalt Mines",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [-3302, 79, 889],
         "advancement_icon": "basalt"
     },
     {
@@ -782,9 +782,9 @@
     {
         "id": "thralkeld",
         "name": "Thrakeld",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Explore the Town H ll",
+        "lodestone": [-2552, 118, -99],
+        "advancement_icon": "tripwire_hook"
     },
     {
         "id": "sulliman_house",
@@ -819,7 +819,7 @@
     {
         "id": "crown_peak_railway_terminal",
         "name": "Crown Peak Railway Terminal",
-        "description": "todo",
+        "description": "Fast travel to the Redstone Academy",
         "lodestone": [-1082, 73, 607],
         "advancement_icon": "rail"
     },
@@ -1013,14 +1013,14 @@
         "id": "ansdale",
         "name": "Ansdale",
         "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "lodestone": [851, 76, 1841],
+        "advancement_icon": "red_glazed_terracotta"
     },
     {
         "id": "markar",
         "name": "Markar",
         "description": "Inspect the fleet",
-        "lodestone": "todo",
+        "lodestone": [-635, 76, 2583],
         "advancement_icon": "todo"
     },
     {
@@ -1071,29 +1071,29 @@
         "id": "mt_igneous",
         "name": "Mount Igneous",
         "description": "Pay Respects to a Hero of K'arthen",
-        "lodestone": "todo",
+        "lodestone": [-73, 171, 3071],
         "advancement_icon": "todo"
     },
     {
         "id": "karthen_wall",
         "name": "K'arthen Wall",
         "description": "todo",
-        "lodestone": "todo",
+        "lodestone": [699, 83, 3040],
         "advancement_icon": "todo"
     },
     {
         "id": "phaethon",
         "name": "Phaethon",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Start a war",
+        "lodestone": [-138, 85, 3254],
+        "advancement_icon": "tnt"
     },
     {
         "id": "cydonia_oasis",
         "name": "Cydonia Oasis",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Go for a swim",
+        "lodestone": [116, 72, 3312],
+        "advancement_icon": "lilypad"
     },
     {
         "id": "cydonia_mines",
@@ -1112,8 +1112,8 @@
     {
         "id": "po_hatu",
         "name": "Po'Hatu",
-        "description": "Go for a swim",
-        "lodestone": "todo",
+        "description": "Go to the beach",
+        "lodestone": [-168, 74, 4268],
         "advancement_icon": "todo"
     },
     {
@@ -1126,8 +1126,8 @@
     {
         "id": "port_kazu",
         "name": "Port Kazu",
-        "description": "todo",
-        "lodestone": "todo",
+        "description": "Operate the crane",
+        "lodestone": [1154, 87, 3662],
         "advancement_icon": "todo"
     },
     {
