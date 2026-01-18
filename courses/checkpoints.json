@@ -257,28 +257,28 @@
         "name": "West Port Fountain",
         "description": "Make a Wish!",
         "lodestone": [-3162, 78, -2084],
-        "advancement_icon": "todo"
+        "advancement_icon": "sunflower"
     },
     {
         "id": "marshline",
         "name": "Marshline",
-        "description": "todo",
+        "description": "Reach Marshline",
         "lodestone": [-2467, 74, -2630],
         "advancement_icon": "brown_mushroom"
     },
     {
         "id": "deeproot",
         "name": "Deeproot",
-        "description": "todo",
-        "lodestone": [-2053, 99, -2155],
-        "advancement_icon": "todo"
+        "description": "Reach Deeproot",
+        "lodestone": [-2046, 87, -2170],
+        "advancement_icon": "slime_ball"
     },
     {
         "id": "ireden_windmill",
         "name": "Ireden",
-        "description": "todo",
+        "description": "Reach Ireden",
         "lodestone": [-1608, 102, -1936],
-        "advancement_icon": "todo"
+        "advancement_icon": "carrot"
     },
     {
         "id": "underwood",
@@ -336,7 +336,7 @@
     {
         "id": "oakendale_parliament",
         "name": "Oakendale",
-        "description": "todo",
+        "description": "Reach Oakendale",
         "lodestone": [-1272, 89, -1266],
         "advancement_icon": "green_banner",
         "banner_patterns": [
@@ -376,8 +376,8 @@
         "id": "clementine_house",
         "name": "Biggerton",
         "description": "Get attacked by bandits",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "lodestone": [-379, 78, -1315],
+        "advancement_icon": "flint_and_steel"
     },
     {
         "id": "hogtown",
@@ -397,14 +397,15 @@
     {
         "id": "tabora_crags",
         "name": "Tabora Crags",
-        "description": "todo",
-        "lodestone": [-1442, 19, -798],
-        "advancement_icon": "todo"
+        "description": "Make Bad Deals",
+        "lodestone": [-1463, 19, -804],
+        "advancement_icon": "carrot_on_a_stick",
+        "custom_model_data": 2
     },
     {
         "id": "badlands",
         "name": "Badlands",
-        "description": "todo",
+        "description": "Survive the Badlands",
         "lodestone": [-762, 89, -2222],
         "advancement_icon": "dead_bush"
     },
@@ -413,7 +414,8 @@
         "name": "Knights of Ardonia Base",
         "description": "Defeat the Nether",
         "lodestone": [-207, 73, -1006],
-        "advancement_icon": "todo"
+        "advancement_icon": "iron_sword",
+        "custom_model_data": 11
     },
     {
         "id": "claudia_house",
@@ -425,65 +427,65 @@
     {
         "id": "forson_main_hall",
         "name": "Forson",
-        "description": "todo",
+        "description": "Reach Forson",
         "lodestone": [1856, 81, -1959],
-        "advancement_icon": "todo"
+        "advancement_icon": "dark_oak_planks"
     },
     {
         "id": "solkad_north_inn",
         "name": "Solkad North",
-        "description": "Burn down the inn",
-        "lodestone": [1535, 76, -2276],
-        "advancement_icon": "todo"
+        "description": "Burn down the Inn",
+        "lodestone": [1535, 76, -2278],
+        "advancement_icon": "flint_and_steel"
     },
     {
         "id": "solkad_north_port",
         "name": "Solkad North",
         "description": "Catch some bandits",
         "lodestone": [1583, 75, -2230],
-        "advancement_icon": "todo"
+        "advancement_icon": "crafting_table"
     },
     {
         "id": "solkad_north_church",
         "name": "Solkad North",
         "description": "Reach Solkad North",
         "lodestone": [1561, 75, -2238],
-        "advancement_icon": "bookshelf"
+        "advancement_icon": "lectern"
     },
     {
         "id": "solkad_north_windmill",
         "name": "Solkad North",
-        "description": "todo",
+        "description": "Reach Solkad North",
         "lodestone": [1534, 80, -2205],
-        "advancement_icon": "todo"
+        "advancement_icon": "hay_block"
     },
     {
         "id": "solkad",
         "name": "Solkad",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Reach Solkad",
+        "lodestone": [1342, 79, -2233],
+        "advancement_icon": "gravel"
     },
     {
         "id": "solkad_west",
         "name": "Solkad West",
-        "description": "todo",
-        "lodestone": "todo",
-        "advancement_icon": "todo"
+        "description": "Reach Solkad West",
+        "lodestone": [960, 82, -2008],
+        "advancement_icon": "short_grass"
     },
     {
         "id": "dalhurst",
         "name": "Dalhurst",
-        "description": "todo",
+        "description": "Reach Dalhurst",
         "lodestone": [660, 76, -1524],
-        "advancement_icon": "todo"
+        "advancement_icon": "saddle"
     },
     {
         "id": "havenshire_port",
         "name": "Havenshire",
         "description": "Find the Unyielding Legion",
         "lodestone": [1221, 75, -1911],
-        "advancement_icon": "todo"
+        "advancement_icon": "ender_eye"
     },
     {
         "id": "havenshire_monument",
@@ -509,14 +511,14 @@
     {
         "id": "hydraphel_mines",
         "name": "Hydraphel Mines",
-        "description": "todo",
+        "description": "Brothers of the Mine Rejoice!",
         "lodestone": [1212, 29, -641],
         "advancement_icon": "iron_ore"
     },
     {
         "id": "devalon",
         "name": "Devalon",
-        "description": "todo",
+        "description": "Reach Devalon",
         "lodestone": [1092, 78, -343],
         "advancement_icon": "stripped_oak_log"
     },
@@ -539,12 +541,12 @@
         "name": "Diamond Heights",
         "description": "Inherit money",
         "lodestone": [1271, 95, -138],
-        "advancement_icon": "todo"
+        "advancement_icon": "cake"
     },
     {
         "id": "diamond_heights_bank",
         "name": "Diamond Heights",
-        "description": "todo",
+        "description": "Reach Diamond Heights",
         "lodestone": [1200, 109, -71],
         "advancement_icon": "diamond"
     },
@@ -574,7 +576,7 @@
     {
         "id": "hyperia_port",
         "name": "Hyperia",
-        "description": "todo",
+        "description": "Reach Hyperia",
         "lodestone": [1861, 98, -455],
         "advancement_icon": "gray_banner",
         "banner_patterns": [{"color":"cyan","pattern":"minecraft:triangle_top"},{"color":"white","pattern":"minecraft:flower"},{"color":"white","pattern":"minecraft:cross"},{"color":"cyan","pattern":"minecraft:triangle_bottom"},{"color":"white","pattern":"minecraft:rhombus"},{"color":"gray","pattern":"minecraft:circle"}]
@@ -582,9 +584,9 @@
     {
         "id": "isuma",
         "name": "Isuma",
-        "description": "todo",
+        "description": "Reach Isuma",
         "lodestone": [2195, 165, 434],
-        "advancement_icon": "todo"
+        "advancement_icon": "oak_boat"
     },
     {
         "id": "pinkolson_farm",
@@ -596,9 +598,9 @@
     {
         "id": "belestar_jetty",
         "name": "Belestar",
-        "description": "todo",
+        "description": "Reach Belestar",
         "lodestone": [936, 88, 530],
-        "advancement_icon": "todo"
+        "advancement_icon": "cocoa_beans"
     },
     {
         "id": "amaria",
@@ -619,16 +621,16 @@
     {
         "id": "waimiria_house",
         "name": "Waimiria's House",
-        "description": "todo",
+        "description": "Reach Waimiria's House",
         "lodestone": [1473, 90, 712],
-        "advancement_icon": "todo"
+        "advancement_icon": "green_wool"
     },
     {
         "id": "fort_bravmin",
         "name": "Fort Bravmin",
-        "description": "todo",
+        "description": "Reach Fort Bravmin",
         "lodestone": [-3669, 103, -1158],
-        "advancement_icon": "todo"
+        "advancement_icon": "bone_block"
     },
     {
         "id": "fronchester",
@@ -638,11 +640,11 @@
         "advancement_icon": "oak_wood"
     },
     {
-        "id": "mahoa_docks_ship",
+        "id": "mahoa_docks",
         "name": "Mahoa Docks",
-        "description": "Stow Away",
-        "lodestone": [-4197, 76, -76],
-        "advancement_icon": "todo"
+        "description": "Reach Mahoa Docks",
+        "lodestone": [-4185, 78, -89],
+        "advancement_icon": "melon"
     },
     {
         "id": "mahoa_docks_necromancer_base",
@@ -712,9 +714,9 @@
     {
         "id": "ferndale_tavern",
         "name": "Ferndale",
-        "description": "todo",
+        "description": "Reach Ferndale",
         "lodestone": [-3538, 101, 175],
-        "advancement_icon": "todo"
+        "advancement_icon": "jungle_wood"
     },
     {
         "id": "looma_watchtower",
@@ -754,14 +756,21 @@
     {
         "id": "basalt_mines",
         "name": "Basalt Mines",
-        "description": "todo",
-        "lodestone": [-3302, 79, 889],
+        "description": "Descend the Basalt Mines",
+        "lodestone": [-3164, 35, 929],
         "advancement_icon": "basalt"
+    },
+    {
+        "id": "basalt_mines_coast",
+        "name": "Basalt Mines",
+        "description": "Reach the Basalt Mines",
+        "lodestone": [-3302, 79, 889],
+        "advancement_icon": "smooth_basalt"
     },
     {
         "id": "shimmering_valley",
         "name": "Shimmering Valley",
-        "description": "todo",
+        "description": "Reach the Shimmering Valley",
         "lodestone": [-2290, 79, 1148],
         "advancement_icon": "enchanting_table"
     },
@@ -890,16 +899,16 @@
     {
         "id": "fort_throne_left",
         "name": "Fort Throne (left)",
-        "description": "todo",
+        "description": "Reach the Fort",
         "lodestone": [327, 92, 544],
-        "advancement_icon": "todo"
+        "advancement_icon": "lime_wool"
     },
     {
         "id": "fort_throne_right",
         "name": "Fort Throne (right)",
-        "description": "todo",
+        "description": "Reach the Fort",
         "lodestone": [324, 92, 544],
-        "advancement_icon": "todo"
+        "advancement_icon": "lime_wool"
     },
     {
         "id": "the_end",
@@ -969,7 +978,7 @@
     {
         "id": "allichier_house",
         "name": "Ataraxia",
-        "description": "todo",
+        "description": "Reach Allichier's House",
         "lodestone": [208, 124, -645],
         "advancement_icon": "iron_sword",
         "custom_model_data": 1
@@ -977,23 +986,23 @@
     {
         "id": "incatasia",
         "name": "Incatasia",
-        "description": "todo",
+        "description": "Reach Incatasia",
         "lodestone": [-833, 95, 1326],
-        "advancement_icon": "cracked_stone_bricks"
+        "advancement_icon": "skeleton_skull"
     },
     {
         "id": "fort_hacksaw_throne",
         "name": "Fort Hacksaw",
-        "description": "todo",
+        "description": "Reach Fort Hacksaw",
         "lodestone": [-1154, 164, 1698],
-        "advancement_icon": "todo"
+        "advancement_icon": "stonecutter"
     },
     {
         "id": "bhengorn_tavern",
         "name": "Bhengorn",
-        "description": "todo",
+        "description": "Reach Bhengorn",
         "lodestone": [-638, 111, 2143],
-        "advancement_icon": "todo"
+        "advancement_icon": "beetroot"
     },
     {
         "id": "bhengorn_meeting_room",
@@ -1012,16 +1021,16 @@
     {
         "id": "ansdale",
         "name": "Ansdale",
-        "description": "todo",
-        "lodestone": [851, 76, 1841],
-        "advancement_icon": "red_glazed_terracotta"
+        "description": "Reach Ansdale",
+        "lodestone": [843, 85, 1831],
+        "advancement_icon": "red_sand"
     },
     {
         "id": "markar",
         "name": "Markar",
         "description": "Inspect the fleet",
         "lodestone": [-635, 76, 2583],
-        "advancement_icon": "todo"
+        "advancement_icon": "lava_cauldron"
     },
     {
         "id": "tartarus_throne",
@@ -1068,20 +1077,6 @@
         "advancement_icon": "magma_block"
     },
     {
-        "id": "mt_igneous",
-        "name": "Mount Igneous",
-        "description": "Pay Respects to a Hero of K'arthen",
-        "lodestone": [-73, 171, 3071],
-        "advancement_icon": "todo"
-    },
-    {
-        "id": "karthen_wall",
-        "name": "K'arthen Wall",
-        "description": "todo",
-        "lodestone": [699, 83, 3040],
-        "advancement_icon": "todo"
-    },
-    {
         "id": "phaethon",
         "name": "Phaethon",
         "description": "Start a war",
@@ -1114,7 +1109,7 @@
         "name": "Po'Hatu",
         "description": "Go to the beach",
         "lodestone": [-168, 74, 4268],
-        "advancement_icon": "todo"
+        "advancement_icon": "chiseled_red_sandstone"
     },
     {
         "id": "kaeru",
@@ -1126,9 +1121,9 @@
     {
         "id": "port_kazu",
         "name": "Port Kazu",
-        "description": "Operate the crane",
-        "lodestone": [1154, 87, 3662],
-        "advancement_icon": "todo"
+        "description": "Reach Port Kazu",
+        "lodestone": [1075, 76, 3728],
+        "advancement_icon": "polished_diorite"
     },
     {
         "id": "meridian_beacon",
@@ -1154,7 +1149,7 @@
     {
         "id": "meridian_parliament",
         "name": "Meridian",
-        "description": "todo",
+        "description": "Reach Meridian",
         "lodestone": [101, 81, 4584],
         "advancement_icon": "white_banner",
         "banner_patterns": [

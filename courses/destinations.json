@@ -273,7 +273,7 @@
     },
     "mahoa_docks" : {
         "checkpoints": [
-            "mahoa_docks_ship",
+            "mahoa_docks",
             "mahoa_docks_necromancer_base"
         ],
         "has_fire": false
@@ -306,7 +306,10 @@
         "has_fire": false
     },
     "basalt_mines" : {
-        "checkpoints": ["basalt_mines"],
+        "checkpoints": [
+            "basalt_mines",
+            "basalt_mines_coast"
+        ],
         "has_fire": false
     },
     "shimmering_valley" : {
@@ -442,14 +445,6 @@
             "mt_kaelos_council"
         ],
         "has_fire": true
-    },
-    "mt_igneous" : {
-        "checkpoints": ["mt_igneous"],
-        "has_fire": false
-    },
-    "karthen_wall" : {
-        "checkpoints": ["karthen_wall"],
-        "has_fire": false
     },
     "phaethon" : {
         "checkpoints": ["phaethon"],
