@@ -20,7 +20,8 @@
             "items": [
                 "item replace entity @a armor.legs with leather_leggings",
                 "give @a stone_axe",
-                "give @a stone_pickaxe"
+                "give @a stone_pickaxe",
+                "give @a bucket"
             ]
         },
         {
@@ -51,7 +52,10 @@
             ]
         },
         {
-            "id": "the_end"
+            "id": "the_end",
+            "items": [
+                "give @a ender_pearl 3"
+            ]
         },
         {
             "id": "vault",
@@ -68,7 +72,10 @@
             ]
         },
         {
-            "id": "conchord_forestry"
+            "id": "conchord_forestry",
+            "items": [
+                "give @a oak_log 16"
+            ]
         },
         {
             "id": "sendaria_osivian_house",
