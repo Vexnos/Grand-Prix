@@ -4,7 +4,9 @@ execute if score #mode gamemode matches 4 run function race:deaths/death
 
 # Enable start trigger
 scoreboard players enable @a[tag=admin] start
+scoreboard players enable @a[tag=admin] reset
 execute as @a[tag=admin,scores={start=1..}] run function race:start/start_trigger
+execute as @a[tag=admin,scores={reset=1..}] run function race:start/reset_trigger
 
 # Portals
 function race:portals
