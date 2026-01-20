@@ -377,7 +377,7 @@
         "name": "Biggerton",
         "description": "Get attacked by bandits",
         "lodestone": [-379, 78, -1315],
-        "advancement_icon": "flint_and_steel"
+        "advancement_icon": "crossbow"
     },
     {
         "id": "hogtown",
