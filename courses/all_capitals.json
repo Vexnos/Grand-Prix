@@ -3,7 +3,7 @@
     "start_description": "Mahoa Docks",
     "start_coordinates": [-4185, 80, -89],
     "worldborder_center": [-4185, -89],
-    "worldborder_size": 100,
+    "worldborder_size": 7,
     "initial_items": [],
     "checkpoints": [
         {
