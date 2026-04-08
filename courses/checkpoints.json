@@ -791,7 +791,7 @@
     {
         "id": "thralkeld",
         "name": "Thrakeld",
-        "description": "Explore the Town H ll",
+        "description": "Explore the Town Hall",
         "lodestone": [-2552, 118, -99],
         "advancement_icon": "tripwire_hook"
     },
