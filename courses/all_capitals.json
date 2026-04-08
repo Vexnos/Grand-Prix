@@ -82,7 +82,15 @@
             "id": "camp_enher"
         },
         {
-            "id": "mt_kaelos"
+            "id": "mt_kaelos",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2,feather_falling:1}]",
+                "give @a iron_sword[enchantments={sharpness:2}]",
+                "give @a bow[enchantments={power:2,punch:1}]"
+            ]
         },
         {
             "id": "kaeru",
