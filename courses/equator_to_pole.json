@@ -68,6 +68,8 @@
             "items": [
                 "give @a iron_pickaxe",
                 "give @a iron_axe",
+                "give @a bow",
+                "give @a arrow 32",
                 "give @a shield[banner_patterns=[{color:\"green\",pattern:\"minecraft:stripe_downright\"},{color:\"brown\",pattern:\"minecraft:triangle_top\"},{color:\"brown\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:cross\"}],base_color=\"green\"]"
             ]
         },
