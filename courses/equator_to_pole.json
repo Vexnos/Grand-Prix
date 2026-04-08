@@ -137,6 +137,7 @@
                 "give @a diamond_axe[enchantments={sharpness:3,efficiency:5,silk_touch:1}]",
                 "give @a diamond_pickaxe[enchantments={efficiency:5,fortune:3}]",
                 "give @a diamond_shovel[enchantments={efficiency:5,fortune:3}]",
+                "give @a bow[enchantments={power:5,punch:2,flame:1}]",
                 "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]",
                 "give @a golden_apple 3",
                 "give @a obsidian 64",
