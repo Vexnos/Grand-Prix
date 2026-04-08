@@ -72,8 +72,7 @@
             "id": "floating_tree",
             "items": [
                 "give @a ender_pearl 1",
-                "give @a wind_charge 16",
-                "give @a written_book_content={pages:[[[\"Hi, Vexnos here.\\\n\\\nSorry I made you climb that tree...\\\n\\\nI felt so bad, that I decided to give you an Ender Pearl to get back down! :D\"]]],title:\"I'm Sorry\",author:Vexnos,generation:0}"
+                "give @a wind_charge 16"
             ]
         },
         {
