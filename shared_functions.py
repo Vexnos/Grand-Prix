@@ -72,7 +72,8 @@ def import_course():
         "reverse": "courses/reverse.json",
         "crownpeak": "courses/crownpeak.json",
         "hoa": "courses/hoa.json",
-        "equator": "courses/equator_to_pole.json"
+        "equator": "courses/equator_to_pole.json",
+        "all_capitals": "courses/all_capitals.json"
     }
     presets = ", ".join(preset_courses)
     message = f"Please input the path to your course here (or select a preset: {presets}): "

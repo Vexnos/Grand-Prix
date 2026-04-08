@@ -1,0 +1,145 @@
+{
+    "name": "All Capitals",
+    "start_description": "Mahoa Docks",
+    "start_coordinates": [-4185, 80, -89],
+    "worldborder_center": [-4185, -89],
+    "worldborder_size": 100,
+    "initial_items": [],
+    "checkpoints": [
+        {
+            "id": "felora_parliament",
+            "items": [
+                "give @a carrot 25"
+            ]
+        },
+        {
+            "id": "looma_watchtower"
+        },
+        {
+            "id": "thralkeld"
+        },
+        {
+            "id": "stonevale"
+        },
+        {
+            "id": "etherea_tower"
+        },
+        {
+            "id": "underwood",
+            "items": [
+                "give @a bread 15"
+            ]
+        },
+        {
+            "id": "oakendale_parliament"
+        },
+        {
+            "id": "ireden_windmill"
+        },
+        {
+            "id": "floating_tree"
+        },
+        {
+            "id": "voltaria_shrine"
+        },
+        {
+            "id": "kaltaria_village"
+        },
+        {
+            "id": "ardoni_council_chamber",
+            "items": [
+                "give @a rabbit_stew[max_stack_size=16] 7"
+            ]
+        },
+        {
+            "id": "hailstone_beacon"
+        },
+        {
+            "id": "northwind_pass"
+        },
+        {
+            "id": "sendaria_communal_area"
+        },
+        {
+            "id": "hogtown",
+            "items": [
+                "give @a bread 12"
+            ]
+        },
+        {
+            "id": "derna"
+        },
+        {
+            "id": "hyperia_parliament"
+        },
+        {
+            "id": "belestar_jetty",
+            "items": [
+                "give @a baked_potato 17"
+            ]
+        },
+        {
+            "id": "camp_enher"
+        },
+        {
+            "id": "mt_kaelos"
+        },
+        {
+            "id": "kaeru",
+            "items": [
+                "give @a cooked_porkchop 8"
+            ]
+        },
+        {
+            "id": "meridian_parliament"
+        },
+        {
+            "id": "cydonia_mines"
+        },
+        {
+            "id": "tartarus_throne",
+            "items": [
+                "give @a cooked_mutton 6",
+                "item replace entity @a armor.head with diamond_helmet[enchantments={protection:2,aqua_affinity:1,respiration:3}]",
+                "item replace entity @a armor.chest with diamond_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with diamond_helmet[enchantments={protection:2,swift_sneak:3}]",
+                "item replace entity @a armor.feet with diamond_helmet[enchantments={protection:2,feather_falling:2,depth_strider:3,soul_speed:3}]",
+                "give @a diamond_sword[enchantments={sharpness:5,knockback:2,fire_aspect:2,looting:3,sweeping_edge:3}]",
+                "give @a diamond_axe[enchantments={sharpness:3,efficiency:5,silk_touch:1}]",
+                "give @a diamond_pickaxe[enchantments={efficiency:5,silk_touch:1}]",
+                "give @a bow[enchantments={power:5,punch:2,flame:1}]",
+                "give @a spectral_arrows 32",
+                "give @a mace[damage=499,enchantments={density:5,wind_burst:2}]",
+                "give @a wind_charge 16",
+                "give @a golden_apple 3",
+                "give @a obsidian 64",
+                "give @a end_crystal 16"
+            ]
+        },
+        {
+            "id": "mt_velgrin_portal"
+        },
+        {
+            "id": "heart_of_ardonia_beacon",
+            "items": [
+                "give @a cooked_mutton 9",
+                "give @a trident[damage=249,enchantments={riptide:3}]"
+            ]
+        },
+        {
+            "id": "nazgard_throne",
+            "items": [
+                "give @a potion[potion_contents={potion:\"minecraft:long_fire_resistance\"}]"
+            ]
+        },
+        {
+            "id": "the_end_trials",
+            "items": [
+                "give @a ender_pearl 3"
+            ]
+        },
+        {
+            "id": "crown_peak_throne"
+        }
+    ]
+}
