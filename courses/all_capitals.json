@@ -9,20 +9,44 @@
         {
             "id": "felora_parliament",
             "items": [
-                "give @a carrot 25"
+                "give @a carrot 25",
+                "give @a fishing_rod 1"
             ]
         },
         {
-            "id": "looma_watchtower"
+            "id": "looma_watchtower",
+            "items": [
+                "item replace entity @a armor.head with leather_helmet",
+                "give @a stone_sword",
+                "give @a stone_pickaxe",
+                "give @a bucket",
+                "give @a oak_log 16"
+            ]
         },
         {
-            "id": "thralkeld"
+            "id": "thralkeld",
+            "items": [
+                "item replace entity @a armor.legs with leather_leggings",
+                "give @a stone_axe",
+                "give @a bucket"
+            ]
         },
         {
-            "id": "stonevale"
+            "id": "stonevale",
+            "items": [
+                "item replace entity @a armor.feet with leather_boots",
+                "item replace entity @a armor.chest with leather_chestplate",
+                "give @a cobblestone 32"
+            ]
         },
         {
-            "id": "etherea_tower"
+            "id": "etherea_tower",
+            "items": [
+                "item replace entity @a armor.chest with iron_chestplate",
+                "item replace entity @a armor.feet with iron_boots",
+                "give @a bow",
+                "give @a arrow 16"
+            ]
         },
         {
             "id": "underwood",
@@ -31,13 +55,26 @@
             ]
         },
         {
-            "id": "oakendale_parliament"
+            "id": "oakendale_parliament",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet",
+                "item replace entity @a armor.legs with iron_leggings",
+                "give @a iron_sword 1",
+                "give @a iron_pickaxe 1",
+                "give @a iron_axe 1",
+                "give @a arrow 16"
+            ]
         },
         {
             "id": "ireden_windmill"
         },
         {
-            "id": "floating_tree"
+            "id": "floating_tree",
+            "items": [
+                "give @a ender_pearl 1",
+                "give @a wind_charge 16",
+                "give @a written_book_content={pages:[[[\"Hi, Vexnos here.\\\n\\\nSorry I made you climb that tree...\\\n\\\nI felt so bad, that I decided to give you an Ender Pearl to get back down! :D\"]]],title:\"I'm Sorry\",author:Vexnos,generation:0}"
+            ]
         },
         {
             "id": "voltaria_shrine"
@@ -52,7 +89,17 @@
             ]
         },
         {
-            "id": "hailstone_beacon"
+            "id": "hailstone_beacon",
+            "items": [
+                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2,aqua_affinity:1}]",
+                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
+                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2,feather_falling:1}]",
+                "give @a diamond_sword[enchantments={sharpness:2}]",
+                "give @a bow[enchantments={power:2,punch:1}]",
+                "give @a spectral_arrow 16",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
+            ]
         },
         {
             "id": "northwind_pass"
@@ -70,7 +117,12 @@
             "id": "derna"
         },
         {
-            "id": "hyperia_parliament"
+            "id": "hyperia_parliament",
+            "items": [
+                "give @a diamond_sword[enchantments={sharpness:3,fire_aspect:2}]",
+                "give @a bow[enchantments={power:3,punch:2}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strength\"}]"
+            ]
         },
         {
             "id": "belestar_jetty",
@@ -84,12 +136,8 @@
         {
             "id": "mt_kaelos",
             "items": [
-                "item replace entity @a armor.head with iron_helmet[enchantments={protection:2,aqua_affinity:1}]",
-                "item replace entity @a armor.chest with iron_chestplate[enchantments={protection:2}]",
-                "item replace entity @a armor.legs with iron_leggings[enchantments={protection:2}]",
-                "item replace entity @a armor.feet with iron_boots[enchantments={protection:2,feather_falling:1}]",
-                "give @a iron_sword[enchantments={sharpness:2}]",
-                "give @a bow[enchantments={power:2,punch:1}]"
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"},max_stack_size=16] 8",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"},max_stack_size=16] 8"
             ]
         },
         {
@@ -99,7 +147,11 @@
             ]
         },
         {
-            "id": "meridian_parliament"
+            "id": "meridian_parliament",
+            "items": [
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_strength\"}]"
+            ]
         },
         {
             "id": "cydonia_mines"
@@ -116,7 +168,7 @@
                 "give @a diamond_axe[enchantments={sharpness:3,efficiency:5,silk_touch:1}]",
                 "give @a diamond_pickaxe[enchantments={efficiency:5,silk_touch:1}]",
                 "give @a bow[enchantments={power:5,punch:2,flame:1}]",
-                "give @a spectral_arrows 32",
+                "give @a spectral_arrow 32",
                 "give @a mace[damage=499,enchantments={density:5,wind_burst:2}]",
                 "give @a wind_charge 16",
                 "give @a golden_apple 3",
