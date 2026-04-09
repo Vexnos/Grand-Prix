@@ -97,7 +97,7 @@
                 "give @a diamond_sword[enchantments={sharpness:2}]",
                 "give @a bow[enchantments={power:2,punch:1}]",
                 "give @a spectral_arrow 16",
-                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]"
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"},max_stack_size=16]"
             ]
         },
         {
@@ -120,7 +120,7 @@
             "items": [
                 "give @a diamond_sword[enchantments={sharpness:3,fire_aspect:2}]",
                 "give @a bow[enchantments={power:3,punch:2}]",
-                "give @a potion[potion_contents={potion:\"minecraft:strength\"}]"
+                "give @a potion[potion_contents={potion:\"minecraft:strength\"},max_stack_size=16]"
             ]
         },
         {
@@ -148,8 +148,8 @@
         {
             "id": "meridian_parliament",
             "items": [
-                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"}]",
-                "give @a potion[potion_contents={potion:\"minecraft:strong_strength\"}]"
+                "give @a potion[potion_contents={potion:\"minecraft:strong_swiftness\"},max_stack_size=16]",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_strength\"},max_stack_size=16]"
             ]
         },
         {
@@ -188,7 +188,16 @@
         {
             "id": "nazgard_throne",
             "items": [
-                "give @a potion[potion_contents={potion:\"minecraft:long_fire_resistance\"}]"
+                "give @a potion[potion_contents={potion:\"minecraft:long_fire_resistance\"},max_stack_size=16]",
+                "give @a splash_potion[potion_contents={potion:\"minecraft:long_slowness\"},max_stack_size=16] 4",
+                "item replace entity @a armor.head with netherite_helmet[enchantments={protection:2,aqua_affinity:1,respiration:3}]",
+                "item replace entity @a armor.chest with netherite_chestplate[enchantments={protection:2}]",
+                "item replace entity @a armor.legs with netherite_leggings[enchantments={protection:2,swift_sneak:3}]",
+                "item replace entity @a armor.feet with netherite_boots[enchantments={protection:2,feather_falling:2,depth_strider:3,soul_speed:3}]",
+                "give @a netherite_sword[enchantments={sharpness:5,looting:3,sweeping_edge:3,fire_aspect:2,knockback:2}]",
+                "give @a netherite_axe[enchantments={sharpness:3,efficiency:5,silk_touch:1}]",
+                "give @a end_crystal 16",
+                "give @a potion[potion_contents={potion:\"minecraft:strong_strength\"},max_stack_size=16]"
             ]
         },
         {
