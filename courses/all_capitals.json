@@ -80,7 +80,7 @@
             "id": "voltaria_shrine"
         },
         {
-            "id": "kaltaria_village"
+            "id": "kaltaria_shrine"
         },
         {
             "id": "ardoni_council_chamber",
@@ -141,6 +141,9 @@
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_healing\"},max_stack_size=16] 8",
                 "give @a splash_potion[potion_contents={potion:\"minecraft:strong_harming\"},max_stack_size=16] 8"
             ]
+        },
+        {
+            "id": "port_kazu"
         },
         {
             "id": "kaeru",
