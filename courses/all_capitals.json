@@ -123,7 +123,7 @@
                 "give @a diamond_sword[enchantments={sharpness:3,fire_aspect:2}]",
                 "give @a bow[enchantments={power:3,punch:2}]",
                 "give @a potion[potion_contents={potion:\"minecraft:strength\"},max_stack_size=16]",
-                "give @a shield[banner_patterns=[{color:\"blue\",pattern:\"minecraft:gradient\"},{color:\"white\",pattern:\"minecraft:triangles_bottom\"},{color:\"light_blue\",pattern:\"minecraft:triangles_top\"},{color:\"white\",pattern:\"minecraft:flower\"}],base_color=\"light_blue\"] 1"
+                "give @a shield[banner_patterns=[{color:\"cyan\",pattern:\"minecraft:triangle_top\"},{color:\"white\",pattern:\"minecraft:flower\"},{color:\"white\",pattern:\"minecraft:cross\"},{color:\"cyan\",pattern:\"minecraft:triangle_bottom\"},{color:\"white\",pattern:\"minecraft:rhombus\"},{color:\"gray\",pattern:\"minecraft:circle\"}],base_color=\"gray\"]"
             ]
         },
         {
