@@ -2,14 +2,14 @@
 gamemode survival @a
 
 # Gamerules
-gamerule doMobSpawning true
-gamerule spawnMonsters true
-gamerule doDaylightCycle true
-execute unless score #mode gamemode matches 3 run gamerule fallDamage true
-gamerule doTraderSpawning true
-gamerule doPatrolSpawning true
+gamerule spawn_mobs true
+gamerule spawn_monsters true
+gamerule advance_time true
+execute unless score #mode gamemode matches 3 run gamerule fall_damage true
+gamerule spawn_wandering_traders true
+gamerule spawn_patrols true
 gamerule pvp true
-execute if score #mode gamemode matches 4 run gamerule naturalRegeneration false
+execute if score #mode gamemode matches 4 run gamerule natural_health_regeneration false
 
 # Worldborder
 worldborder center 0 0

@@ -6,7 +6,7 @@ execute if score #mode gamemode matches 4 unless entity @a[team=blue] run functi
 execute if score #mode gamemode matches 2 unless entity @a[team=1] run function race:start/spawn_horses
 
 # Nautilus Mode
-# execute if score #mode gamemode matches 3 run function race:start/spawn_nautili
+execute if score #mode gamemode matches 3 run function race:start/spawn_nautili
 
 # Camel Mode
 execute if score #mode gamemode matches 4 run function race:start/spawn_camels
