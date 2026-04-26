@@ -91,10 +91,8 @@ def compile_checkpoints(course):
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/{checkpoint['id']}")
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/{checkpoint['id']}")
-            '''
             # Nautilus Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] run function race:checkpoints/{checkpoint['id']}")
-            '''
             # Camel Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 4 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_camel] run function race:checkpoints/{checkpoint['id']}")
         elif nxt == None: # Finish Line needs special treatment
@@ -104,11 +102,9 @@ def compile_checkpoints(course):
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] if score @s checkpoints < #max checkpoints run function race:notfinished")
-            '''
             # Nautilus Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] if score @s checkpoints < #max checkpoints run function race:notfinished")
-            '''
             # Camel Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 4 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_camel] if score @s checkpoints >= #max checkpoints run function race:checkpoints/{checkpoint['id']}")
             checkpoints_lines.append(f"execute if score #mode gamemode matches 4 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_camel] if score @s checkpoints < #max checkpoints run function race:notfinished")
@@ -117,10 +113,8 @@ def compile_checkpoints(course):
             checkpoints_lines.append(f"execute if score #mode gamemode matches 0..1 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard] run function race:checkpoints/verify/{checkpoint['id']}")
             # Horse Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 2 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_horse] run function race:checkpoints/verify/{checkpoint['id']}")
-            '''
             # Nautilus Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 3 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_nautilus] run function race:checkpoints/verify/{checkpoint['id']}")
-            '''
             # Camel Mode
             checkpoints_lines.append(f"execute if score #mode gamemode matches 4 in minecraft:{checkpoint['dimension']} positioned {x} {y} {z} as @a[distance=..2,tag=!{checkpoint['id']},tag=!bodyguard,predicate=race:is_riding_camel] run function race:checkpoints/verify/{checkpoint['id']}")
     with open("data/race/function/checkpoints.mcfunction", "w") as file:
@@ -130,6 +124,7 @@ def compile_checkpoints(course):
     clear_folder(CHECKPOINTS_PATH)
     os.makedirs(f"{CHECKPOINTS_PATH}/verify")
     os.makedirs(f"{CHECKPOINTS_PATH}/items")
+    os.makedirs(f"{CHECKPOINTS_PATH}/mount_items")
 
     # Compile Individual Checkpoint Functions
     for previous, checkpoint, nxt in previous_and_next(course["checkpoints"]):
@@ -169,6 +164,12 @@ def compile_checkpoints(course):
                 checkpoints_lines.append(f"execute unless score #{checkpoint['id']} checkpoints matches 1.. run function race:checkpoints/items/{checkpoint['id']}\n")
                 result = "\n".join(checkpoint["items"])
                 with open(f"{CHECKPOINTS_PATH}items/{checkpoint['id']}.mcfunction", "w") as file:
+                    file.write(result)
+            if "mount_items" in checkpoint:
+                checkpoints_lines.append("# Mount Specific Items")
+                checkpoints_lines.append(f"execute unless score #{checkpoint['id']} checkpoints matches 1.. if score #mode gamemode matches 2..4 run function race:checkpoints/mount_items/{checkpoint['id']}\n")
+                result = "\n".join(checkpoint["mount_items"])
+                with open(f"{CHECKPOINTS_PATH}mount_items/{checkpoint['id']}.mcfunction", "w") as file:
                     file.write(result)
             checkpoints_lines.append("# Tags and Scoreboards")
             checkpoints_lines.append(f"scoreboard players set #{checkpoint['id']} checkpoints 1")
@@ -325,7 +326,7 @@ CHECKPOINTS_PATH = "data/race/function/checkpoints/"
 #-------Main-Routine-------
 if __name__ == "__main__":
     # Get player UUIDs
-    # players = import_players()
+    players = import_players()
     
     # Import course from json
     course = import_course()
@@ -335,8 +336,8 @@ if __name__ == "__main__":
         compile_advancements(course)
         compile_setup_function(course)
         compile_checkpoints(course)
-    '''
+    
     # Generate Nautilus Functions
     if players is not None:
         compile_nautilus(players)
-    '''
+    
