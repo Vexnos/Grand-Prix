@@ -6,5 +6,7 @@ execute if score #mode gamemode matches 4 as @a[tag=president,predicate=race:is_
 execute if score #startline phase matches 1 run effect give @a saturation infinite 0 true
 execute if score #startline phase matches 1 run effect give @a regeneration infinite 1 true
 
+execute as @e[type=nautilus,predicate=race:is_nautilus_in_water] run kill @s
+
 # Loop the function
 schedule function race:main_10t 10t
