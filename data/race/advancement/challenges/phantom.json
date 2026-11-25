@@ -22,24 +22,36 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:phantom",
-                    "location": {
-                        "position": {
-                            "x": {
-                                "min": 59,
-                                "max": 344
-                            },
-                            "y": {
-                                "min": 54,
-                                "max": 218
-                            },
-                            "z": {
-                                "min": -778,
-                                "max": -564
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "entity_type": "minecraft:phantom"
                             }
                         },
-                        "dimension": "minecraft:overworld"
-                    }
+                        {
+                            "type": "minecraft:location_check",
+                            "predicate": {
+                                "position": {
+                                    "x": {
+                                        "min": 59,
+                                        "max": 344
+                                    },
+                                    "y": {
+                                        "min": 54,
+                                        "max": 218
+                                    },
+                                    "z": {
+                                        "min": -778,
+                                        "max": -564
+                                    }
+                                },
+                                "dimension": "minecraft:overworld"
+                            }
+                        }
+                    ]
                 }
             }
         }

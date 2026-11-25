@@ -3,73 +3,58 @@
     "pools": [
         {
             "rolls": 1,
-            "bonus_rolls": 0,
             "entries": [
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:enderman_spawn_egg"
                 }
             ],
-            "conditions": [
-                {
-                    "condition": "minecraft:killed_by_player"
-                },
-                {
-                    "condition": "minecraft:random_chance_with_enchanted_bonus",
-                    "unenchanted_chance": 0.1,
-                    "enchanted_chance": {
-                        "type": "minecraft:linear",
-                        "base": 0.15,
-                        "per_level_above_first": 0.05
+            "condition": {
+                "type": "minecraft:all_of",
+                "terms": [
+                    {
+                        "type": "minecraft:killed_by_player"
                     },
-                    "enchantment": "minecraft:looting"
-                },
-                {
-                    "condition": "minecraft:location_check",
-                    "predicate": {
-                        "dimension": "minecraft:overworld"
+                    {
+                        "type": "minecraft:random_chance_with_enchanted_bonus",
+                        "unenchanted_chance": 0.1,
+                        "enchanted_chance": {
+                            "type": "minecraft:linear",
+                            "base": 0.15,
+                            "per_level_above_first": 0.05
+                        },
+                        "enchantment": "minecraft:looting"
                     }
-                }
-            ]
+                ]
+            }
         },
         {
-            "bonus_rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "functions": [
+                    "modifier": [
                         {
-                            "add": false,
+                            "type": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
                                 "max": 1,
                                 "min": 0
-                            },
-                            "function": "minecraft:set_count"
+                            }
                         },
                         {
+                            "type": "minecraft:enchanted_count_increase",
                             "count": {
                                 "type": "minecraft:uniform",
                                 "max": 1,
                                 "min": 0
                             },
-                            "enchantment": "minecraft:looting",
-                            "function": "minecraft:enchanted_count_increase",
-                            "conditions": []
+                            "enchantment": "minecraft:looting"
                         }
                     ],
                     "name": "minecraft:ender_pearl"
                 }
             ],
-            "rolls": 1,
-            "conditions": [
-                {
-                    "condition": "minecraft:location_check",
-                    "predicate": {
-                        "dimension": "minecraft:overworld"
-                    }
-                }
-            ]
+            "rolls": 1
         }
     ],
     "random_sequence": "minecraft:entities/enderman"

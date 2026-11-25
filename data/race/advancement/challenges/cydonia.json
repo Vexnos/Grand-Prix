@@ -22,7 +22,8 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "player": {
-                    "location": {
+                    "type": "minecraft:location_check",
+                    "predicate": {
                         "position": {
                             "x": {
                                 "min": -634,
@@ -42,7 +43,11 @@
                     }
                 },
                 "entity": {
-                    "type": "minecraft:player"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "minecraft:player"
+                    }
                 }
             }
         }

@@ -22,25 +22,37 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:creeper",
-                    "location": {
-                        "position": {
-                            "x": {
-                                "min": -4184,
-                                "max": -2862
-                            },
-                            "y": {
-                                "min": 45,
-                                "max": 175
-                            },
-                            "z": {
-                                "min": -664,
-                                "max": 904
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "entity_type": "minecraft:creeper"
                             }
                         },
-                        "biomes": "minecraft:jungle",
-                        "dimension": "minecraft:overworld"
-                    }
+                        {
+                            "type": "minecraft:location_check",
+                            "predicate": {
+                                "position": {
+                                    "x": {
+                                        "min": -4184,
+                                        "max": -2862
+                                    },
+                                    "y": {
+                                        "min": 45,
+                                        "max": 175
+                                    },
+                                    "z": {
+                                        "min": -664,
+                                        "max": 904
+                                    }
+                                },
+                                "biomes": "minecraft:jungle",
+                                "dimension": "minecraft:overworld"
+                            }
+                        }
+                    ]
                 }
             }
         }

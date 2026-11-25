@@ -21,37 +21,41 @@
         "root": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "player": {
-                    "location": {
-                        "position": {
-                            "x": {
-                                "min": -2975,
-                                "max": -2944
-                            },
-                            "y": {
-                                "min": 74,
-                                "max": 115
-                            },
-                            "z": {
-                                "min": 462,
-                                "max": 496
+                "location": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:location_check",
+                            "predicate": {
+                                "position": {
+                                    "x": {
+                                        "min": -2975,
+                                        "max": -2944
+                                    },
+                                    "y": {
+                                        "min": 74,
+                                        "max": 115
+                                    },
+                                    "z": {
+                                        "min": 462,
+                                        "max": 496
+                                    }
+                                },
+                                "biomes": "minecraft:jungle",
+                                "dimension": "minecraft:overworld"
                             }
                         },
-                        "biomes": "minecraft:jungle",
-                        "dimension": "minecraft:overworld"
-                    }
-                },
-                "location": [
-                    {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "items": [
-                                "minecraft:flint_and_steel",
-                                "minecraft:fire_charge"
-                            ]
+                        {
+                            "type": "minecraft:match_tool",
+                            "predicate": {
+                                "items": [
+                                    "minecraft:flint_and_steel",
+                                    "minecraft:fire_charge"
+                                ]
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },
